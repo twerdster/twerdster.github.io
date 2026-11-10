@@ -38,4 +38,4 @@ The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.pl
 - `archive.html`: recovered 2019 homepage.
 - `ARCHIVE_RECOVERY_NOTES.md`: Wayback recovery notes.
 
-CameraAI and Apple material is intentionally absent from the public page until suitable text, images, videos, and public links are supplied.
+Dedicated Camerai and Apple project material is intentionally absent from the public page until suitable text, images, videos, and public links are supplied.

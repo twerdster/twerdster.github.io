@@ -5,6 +5,15 @@
     "image": "https://twerdster.github.io/profile.jpg",
     "github": "https://github.com/twerdster",
     "linkedin": "https://www.linkedin.com/in/aaron-wetzler/",
+    "twitter": "https://x.com/aaronwetzler",
+    "current_role": {
+      "title": "CTO",
+      "organization_description":"An early-stage company building toward a future enabled by Physical AI."
+    },
+    "previous_roles": [
+      { "title": "Incubation and ML Lead", "organization": "Apple" },
+      { "title": "CTO", "organization": "Camerai", "note": "Acquired" }
+    ],
     "fields": ["computer vision", "machine learning", "gesture recognition", "numerical geometry"],
     "education": [
       { "institution": "Technion - Israel Institute of Technology", "degree": "Direct-track PhD in Electrical Engineering", "advisor": "Ron Kimmel" },

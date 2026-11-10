@@ -1,6 +1,6 @@
 # Aaron Wetzler
 
-Academic homepage for Aaron Wetzler. Research areas include computer vision, machine learning, gesture recognition, and numerical geometry.
+Academic homepage for Aaron Wetzler, CTO of an early-stage company. Previously Incubation and ML Lead at Apple and CTO of Camerai (acquired). Research areas include computer vision, machine learning, gesture recognition, and numerical geometry.
 
 ## Main resources
 
@@ -10,6 +10,7 @@ Academic homepage for Aaron Wetzler. Research areas include computer vision, mac
 - HandNet dataset page: `https://twerdster.github.io/HandNet/`
 - Publications: `https://twerdster.github.io/#publications`
 - LinkedIn: `https://www.linkedin.com/in/aaron-wetzler/`
+- Twitter: `https://x.com/aaronwetzler`
 - Recovered 2019 website: `https://twerdster.github.io/archive.html`
 
 Publication PDFs, BibTeX files, posters, slides, videos, and dataset links are listed directly on the homepage and in `data/site-content.json`.
