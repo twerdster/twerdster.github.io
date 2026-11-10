@@ -1,6 +1,6 @@
 # Aaron Wetzler academic website
 
-A static academic homepage built from the recovered Technion website. The public page is intentionally simple: biography, code and data, publications, thesis, project supervision, and education.
+A static academic homepage built from the recovered Technion website. The public page is intentionally simple: biography, code and data, publications, thesis, project supervision, education, and patents.
 
 ## Run locally
 
@@ -32,7 +32,7 @@ The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.pl
 
 - `index.html`: current academic homepage.
 - `styles.css`: responsive academic-page styling.
-- `data/site-content.json`: machine-readable publication and resource index.
+- `data/site-content.json`: machine-readable publication, patent, and resource index.
 - `llms.txt`: compact index for agents and crawlers.
 - `robots.txt` and `sitemap.xml`: search-engine discovery files.
 - `archive.html`: recovered 2019 homepage.

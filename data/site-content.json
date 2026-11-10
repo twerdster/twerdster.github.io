@@ -39,6 +39,8 @@
     }
   ],
   "publications": [
+    { "year": 2026, "title": "Democratizing Data-Efficient Robot Learning with Robot-Free Demonstrations", "venue": "8th Robot Learning Workshop at NeurIPS", "authors": ["Amir Belder", "Omri Berman", "Roman Rabinovich", "Navot Oz", "Nir Barazida", "Aaron Wetzler"], "workshop_page": "https://www.robot-learning.ml/2026/papers/", "openreview": "https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/WRL" },
+    { "year": 2020, "title": "CoBe: Coded Beacons for Localization, Object Tracking, and SLAM Augmentation", "venue": "IEEE International Conference on Automation Science and Engineering (CASE)", "authors": ["Roman Rabinovich", "Ibrahim Jubran", "Aaron Wetzler", "Ron Kimmel"], "paper": "https://arxiv.org/abs/1708.05625", "doi": "https://doi.org/10.1109/CASE48305.2020.9216779", "google_scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oSGdRWoAAAAJ&sortby=pubdate&citation_for_view=oSGdRWoAAAAJ:3fE2CSJIrl8C" },
     { "year": 2016, "title": "Real-Time Depth Refinement for Specular Objects", "venue": "CVPR", "paper": "OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf", "bibtex": "OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.bib" },
     { "year": 2015, "title": "Rule of Thumb: Deep Derotation for Improved Fingertip Detection", "venue": "BMVC", "paper": "WetzlerSlossbergKimmel-BMVC15.pdf", "bibtex": "WetzlerSlossbergKimmelBMVC15.bib", "dataset": "HandNet/" },
     { "year": 2015, "title": "Freehand Laser Scanning Using a Mobile Phone", "venue": "BMVC", "paper": "SlossbergWetzlerKimmelBMVC15.pdf", "bibtex": "SlossbergWetzlerKimmelBMVC15.bib" },
@@ -54,6 +56,17 @@
   ],
   "theses": [
     { "year": 2005, "title": "Low Cost 3D Laser Scanning Unit with Application to Face Recognition", "institution": "University of Cape Town", "file": "Undergrad-2005.pdf" }
+  ],
+  "patents": [
+    { "year": 2026, "title": "Three-Dimensional Reconstruction Across Various Image Capture Modalities", "number": "US 12,608,769", "url": "https://patents.google.com/patent/US12608769B1/en" },
+    { "year": 2025, "title": "Stereoscopic Capture Using Cameras with Different Fields of View", "number": "US 12,489,874", "url": "https://patents.google.com/patent/US12489874B2/en" },
+    { "year": 2025, "title": "Breath Signal Estimation Using Point Cloud Data", "number": "US 2025/0098987 A1", "url": "https://patents.google.com/patent/US20250098987A1/en" },
+    { "year": 2025, "title": "Depth Mapping Apparatus", "number": "US 2025/0029281 A1", "url": "https://patents.google.com/patent/US20250029281A1/en" },
+    { "years": "2020-2021", "title": "Gesture Recognition Using Multi-Sensory Data", "numbers": ["US 10,606,341", "US 10,963,041"], "url": "https://patents.google.com/patent/US10963041B2/en" },
+    { "year": 2021, "title": "Tracking Using Encoded Beacons", "number": "US 10,989,800", "url": "https://patents.google.com/patent/US10989800B2/en" },
+    { "year": 2019, "title": "Structured Light Generation and Processing on a Mobile Device", "number": "US 10,225,533", "url": "https://patents.google.com/patent/US10225533B2/en" },
+    { "year": 2018, "title": "3D Reconstruction from Photometric Stereo with Shadows", "number": "US 10,062,171", "url": "https://patents.google.com/patent/US10062171B2/en" },
+    { "year": 2016, "title": "Training Ensembles of Randomized Decision Trees", "number": "US 9,324,040", "url": "https://patents.google.com/patent/US9324040B2/en" }
   ],
   "archive": "archive.html"
 }
