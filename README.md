@@ -2,6 +2,8 @@
 
 A static academic homepage built from the recovered Technion website. The public page is intentionally simple: biography, code and data, publications, thesis, project supervision, education, and patents.
 
+The layout is inspired by Ariel Ephrat's academic homepage: a sticky section navigation, circular profile photo, serif headings, numbered sections, illustrated research highlights, and compact publication rows. Publications can be filtered by research area, and existing BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. All content and original citation links remain available without JavaScript.
+
 ## Run locally
 
 ```sh
@@ -32,6 +34,8 @@ The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.pl
 
 - `index.html`: current academic homepage.
 - `styles.css`: responsive academic-page styling.
+- `site.js`: progressive enhancements for themes, publication filters, inline citations, and active navigation.
+- `assets/fonts/` and `assets/icons/`: self-hosted Google Fonts and Lucide SVG icons, with their licenses. Fonts and icons do not require external services at runtime.
 - `data/site-content.json`: machine-readable publication, patent, and resource index.
 - `llms.txt`: compact index for agents and crawlers.
 - `robots.txt` and `sitemap.xml`: search-engine discovery files.

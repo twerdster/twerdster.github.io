@@ -5,10 +5,13 @@ Academic homepage for Aaron Wetzler, CTO of an early-stage company. Previously I
 ## Main resources
 
 - Homepage: `https://twerdster.github.io/`
+- Research, code, and data: `https://twerdster.github.io/#software`
 - Machine-readable index: `https://twerdster.github.io/data/site-content.json`
 - Tea source code: `https://github.com/twerdster/tea`
 - HandNet dataset page: `https://twerdster.github.io/HandNet/`
 - Publications: `https://twerdster.github.io/#publications`
+- Google Scholar: `https://scholar.google.com/citations?user=oSGdRWoAAAAJ&hl=en`
+- Experience and education: `https://twerdster.github.io/#experience`
 - Patents: `https://twerdster.github.io/#patents`
 - LinkedIn: `https://www.linkedin.com/in/aaron-wetzler/`
 - Twitter: `https://x.com/aaronwetzler`

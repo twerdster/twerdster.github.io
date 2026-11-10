@@ -17,7 +17,17 @@
     <meta name="twitter:card" content="summary" />
     <title>Aaron Wetzler</title>
     <link rel="canonical" href="https://twerdster.github.io/" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="preload" href="assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      try {
+        var savedTheme = localStorage.getItem('aaron-wetzler-theme');
+        document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+      } catch (error) {}
+    </script>
     <link rel="stylesheet" href="styles.css" />
+    <script src="site.js" defer></script>
     <link rel="alternate" type="application/json" href="data/site-content.json" title="Machine-readable site index" />
     <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable site summary" />
     <script type="application/ld+json">
@@ -42,73 +52,112 @@
     </script>
   </head>
   <body>
-    <main class="page">
-      <header class="profile" id="top">
-        <img class="profile-photo" src="profile.jpg" alt="Aaron Wetzler" width="200" height="200" fetchpriority="high" />
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-nav">
+      <div class="site-nav-inner">
+        <a class="site-nav-brand" href="#top">Aaron Wetzler</a>
+        <nav aria-label="Main navigation">
+          <a href="#about">About</a>
+          <a href="#software">Research</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#patents">Patents</a>
+        </nav>
+        <button class="icon-button theme-toggle" type="button" aria-label="Use dark theme" aria-pressed="false" title="Use dark theme" hidden>
+          <span class="icon icon-moon" aria-hidden="true"></span>
+          <span class="icon icon-sun" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <main class="page" id="main">
+      <header class="profile" id="top" aria-labelledby="profile-name">
+        <div class="profile-photo-wrap">
+          <img class="profile-photo" src="profile.jpg" alt="Aaron Wetzler" width="168" height="168" fetchpriority="high" />
+        </div>
         <div class="profile-copy">
-          <h1>Aaron Wetzler</h1>
-          <p class="profile-field">CTO of an early-stage company<br />Previously Incubation and ML Lead at Apple; previously CTO of Camerai (acquired)</p>
-          <nav class="profile-links" aria-label="Primary links">
-            <a href="https://github.com/twerdster">GitHub</a>
-            <a href="https://www.linkedin.com/in/aaron-wetzler/" rel="me">LinkedIn</a>
-            <a href="https://x.com/aaronwetzler" rel="me">Twitter</a>
-            <a href="#publications">Publications</a>
-            <a href="#patents">Patents</a>
-            <a href="#software">Code &amp; data</a>
-            <a href="archive.html">Original website</a>
+          <h1 id="profile-name">Aaron Wetzler</h1>
+          <p class="profile-field">CTO, <strong>Early-stage company</strong></p>
+          <p class="profile-previous">Previously Incubation and ML Lead at Apple<br />and CTO of Camerai (acquired)</p>
+          <nav class="profile-links" aria-label="Social profiles">
+            <a href="https://scholar.google.com/citations?user=oSGdRWoAAAAJ&amp;hl=en" rel="me"><span class="icon icon-scholar" aria-hidden="true"></span>Google Scholar</a>
+            <a href="https://www.linkedin.com/in/aaron-wetzler/" rel="me"><span class="icon icon-linkedin" aria-hidden="true"></span>LinkedIn</a>
+            <a href="https://github.com/twerdster" rel="me"><span class="icon icon-github" aria-hidden="true"></span>GitHub</a>
+            <a href="https://x.com/aaronwetzler" rel="me"><span class="icon icon-twitter" aria-hidden="true"></span>Twitter</a>
           </nav>
         </div>
       </header>
 
-      <section aria-labelledby="about-heading">
-        <h2 id="about-heading">About</h2>
-        <p>
-          I am currently CTO of an early-stage company building toward a future enabled by Physical AI.
-          Previously, I led a technology incubation team at Apple, where we worked on some of the company's most ambitious projects,
-          from real-time networks running on phones to autonomous robotics and the Vision Pro perception stack for different user experiences.
-          Prior to joining Apple, I was CTO of Camerai, where we built AI training and inference systems for real-time video processing on phones.
-        </p>
-        <p>
-          My academic work spans computer vision, machine learning, gesture recognition, and numerical geometry.
-          I received my PhD in Electrical Engineering from the
-          <a href="https://www.technion.ac.il/">Technion - Israel Institute of Technology</a>, where I worked with
-          <a href="https://www.cs.technion.ac.il/~ron/">Prof. Ron Kimmel</a> in the Geometric Image Processing Lab.
-          I received a BSc in Mechatronics from the <a href="https://www.uct.ac.za/">University of Cape Town</a>.
-        </p>
-      </section>
-
-      <section id="software" aria-labelledby="software-heading">
-        <h2 id="software-heading">Code &amp; Data</h2>
-        <div class="resource-list">
-          <article class="resource">
-            <h3>Tea</h3>
-            <p>
-              A randomized decision-tree learning framework designed for large datasets and parallel training on multiple GPUs.
-              Tea was developed as part of my PhD research at the Technion.
-            </p>
-            <p class="item-links"><a href="https://github.com/twerdster/tea">code</a></p>
-          </article>
-          <article class="resource">
-            <h3>HandNet</h3>
-            <p>
-              A depth-image dataset for hand and fingertip detection, collected with synchronized tracking and depth cameras.
-              It accompanies the BMVC 2015 paper <em>Rule of Thumb</em>.
-            </p>
-            <p class="item-links">
-              <a href="HandNet/">dataset page</a>
-              <span aria-hidden="true">|</span>
-              <a href="WetzlerSlossbergKimmel-BMVC15.pdf">paper</a>
-              <span aria-hidden="true">|</span>
-              <a href="Supplementary-ID-72.zip">supplementary material</a>
-            </p>
-          </article>
+      <section class="section" id="about" aria-labelledby="about-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="about-heading">About Me</h2></div>
+        <div class="bio-prose">
+          <p>
+            I am currently CTO of an early-stage company building toward a future enabled by Physical AI.
+            Previously, I led a technology incubation team at Apple, where we worked on some of the company's most ambitious projects,
+            from real-time networks running on phones to autonomous robotics and the Vision Pro perception stack for different user experiences.
+            Prior to joining Apple, I was CTO of Camerai, where we built AI training and inference systems for real-time video processing on phones.
+          </p>
+          <p>
+            My academic work spans computer vision, machine learning, gesture recognition, and numerical geometry.
+            I received my PhD in Electrical Engineering from the
+            <a href="https://www.technion.ac.il/">Technion - Israel Institute of Technology</a>, where I worked with
+            <a href="https://www.cs.technion.ac.il/~ron/">Prof. Ron Kimmel</a> in the Geometric Image Processing Lab.
+            I received a BSc in Mechatronics from the <a href="https://www.uct.ac.za/">University of Cape Town</a>.
+          </p>
         </div>
       </section>
 
-      <section id="publications" aria-labelledby="publications-heading">
-        <h2 id="publications-heading">Publications</h2>
-        <ol class="publication-list">
-          <li class="publication publication-text">
+      <section class="section" id="software" aria-labelledby="software-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="software-heading">Research, Code &amp; Data</h2></div>
+        <div class="highlights-grid">
+          <article class="highlight">
+            <a class="highlight-media" href="HandNet/" aria-label="HandNet dataset"><img src="HandNet/HandNetData.gif" alt="Depth images and tracked fingertip positions from the HandNet dataset" loading="lazy" width="280" height="175" /></a>
+            <div class="highlight-copy">
+              <p class="eyebrow">Dataset &middot; BMVC 2015</p>
+              <h3><a href="HandNet/">HandNet<span class="icon icon-external" aria-hidden="true"></span></a></h3>
+              <p>A depth-image dataset for hand and fingertip detection, collected with synchronized tracking and depth cameras.</p>
+              <p class="item-links"><a href="HandNet/">Dataset</a><span>|</span><a href="WetzlerSlossbergKimmel-BMVC15.pdf">Paper</a><span>|</span><a href="Supplementary-ID-72.zip">Supplement</a></p>
+            </div>
+          </article>
+          <article class="highlight">
+            <a class="highlight-media" href="Or-elRosmanWetzlerKimmelBruckstein.pdf" aria-label="RGBD-Fusion paper"><img src="depthcvpr.png" alt="RGBD-Fusion high precision depth reconstructions" loading="lazy" width="280" height="175" /></a>
+            <div class="highlight-copy">
+              <p class="eyebrow">3D reconstruction &middot; CVPR 2015</p>
+              <h3><a href="Or-elRosmanWetzlerKimmelBruckstein.pdf">RGBD-Fusion<span class="icon icon-external" aria-hidden="true"></span></a></h3>
+              <p>Real-time high precision depth recovery from RGB-D images.</p>
+              <p class="item-links"><a href="Or-elRosmanWetzlerKimmelBruckstein.pdf">Paper</a><span>|</span><a href="https://www.youtube.com/watch?v=5nLnOTyrd-s">Video</a><span>|</span><a href="https://cs.technion.ac.il/~royorel/rgbd_fusion.html">Project</a></p>
+            </div>
+          </article>
+          <article class="highlight">
+            <a class="highlight-media" href="SlossbergWetzlerKimmelBMVC15.pdf" aria-label="Freehand laser scanning paper"><img src="Freehand.png" alt="Freehand laser scanning using a mobile phone" loading="lazy" width="280" height="175" /></a>
+            <div class="highlight-copy">
+              <p class="eyebrow">Mobile vision &middot; BMVC 2015</p>
+              <h3><a href="SlossbergWetzlerKimmelBMVC15.pdf">Freehand Laser Scanning<span class="icon icon-external" aria-hidden="true"></span></a></h3>
+              <p>3D scanning using a mobile phone and a laser pointer.</p>
+              <p class="item-links"><a href="SlossbergWetzlerKimmelBMVC15.pdf">Paper</a><span>|</span><a href="https://www.youtube.com/watch?v=_Nr1Jh4NsFs">Video</a></p>
+            </div>
+          </article>
+        </div>
+        <article class="software-resource" id="tea">
+          <div><p class="eyebrow">Open-source software</p><h3><a href="https://github.com/twerdster/tea">Tea<span class="icon icon-external" aria-hidden="true"></span></a></h3></div>
+          <p>A randomized decision-tree learning framework for large datasets and parallel training on multiple GPUs, developed as part of my PhD research at the Technion.</p>
+          <a class="resource-link" href="https://github.com/twerdster/tea"><span class="icon icon-github" aria-hidden="true"></span>Source code</a>
+        </article>
+      </section>
+
+      <section class="section" id="publications" aria-labelledby="publications-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="publications-heading">Publications</h2></div>
+        <div class="publication-filters" role="group" aria-label="Filter publications by research area" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All <span>(14)</span></button>
+          <button type="button" data-filter="robotics" aria-pressed="false">Robotics</button>
+          <button type="button" data-filter="vision" aria-pressed="false">Vision &amp; 3D</button>
+          <button type="button" data-filter="hands" aria-pressed="false">Hand recognition</button>
+          <button type="button" data-filter="geometry" aria-pressed="false">Geometry</button>
+        </div>
+        <p class="sr-only" id="publication-status" role="status" aria-live="polite"></p>
+        <ol class="publication-list" id="publication-list">
+          <li class="publication publication-text" data-category="robotics">
+            <div class="publication-year" aria-hidden="true"><span>2026</span><span>Robot learning</span></div>
             <div>
               <h3>Democratizing Data-Efficient Robot Learning with Robot-Free Demonstrations</h3>
               <p class="authors">A. Belder, O. Berman, R. Rabinovich, N. Oz, N. Barazida, and <strong>A. Wetzler</strong></p>
@@ -116,7 +165,8 @@
               <p class="item-links"><a href="https://www.robot-learning.ml/2026/papers/">workshop page</a><span>|</span><a href="https://openreview.net/group?id=NeurIPS.cc/2026/Workshop/WRL">OpenReview</a></p>
             </div>
           </li>
-          <li class="publication publication-text">
+          <li class="publication publication-text" data-category="vision">
+            <div class="publication-year" aria-hidden="true"><span>2020</span><span>Localization &amp; SLAM</span></div>
             <div>
               <h3>CoBe: Coded Beacons for Localization, Object Tracking, and SLAM Augmentation</h3>
               <p class="authors">R. Rabinovich, I. Jubran, <strong>A. Wetzler</strong>, and R. Kimmel</p>
@@ -124,7 +174,7 @@
               <p class="item-links"><a href="https://arxiv.org/abs/1708.05625">paper</a><span>|</span><a href="https://doi.org/10.1109/CASE48305.2020.9216779">DOI</a><span>|</span><a href="https://scholar.google.com/citations?view_op=view_citation&amp;hl=en&amp;user=oSGdRWoAAAAJ&amp;sortby=pubdate&amp;citation_for_view=oSGdRWoAAAAJ:3fE2CSJIrl8C">Google Scholar</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf"><img src="specular_depth_refinement.png" alt="Depth refinement result for a specular object" /></a>
             <div>
               <h3>Real-Time Depth Refinement for Specular Objects</h3>
@@ -133,7 +183,7 @@
               <p class="item-links"><a href="OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf">paper</a><span>|</span><a href="https://www.youtube.com/watch?v=hoIKMitKom0">video</a><span>|</span><a href="https://cs.technion.ac.il/~royorel/specular_depth_refinement.html">project page</a><span>|</span><a href="OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="hands">
             <a class="publication-image" href="WetzlerSlossbergKimmel-BMVC15.pdf"><img src="HandPic.png" alt="HandNet fingertip detection visualization" /></a>
             <div>
               <h3>Rule of Thumb: Deep Derotation for Improved Fingertip Detection</h3>
@@ -142,7 +192,7 @@
               <p class="item-links"><a href="WetzlerSlossbergKimmel-BMVC15.pdf">paper</a><span>|</span><a href="WetzlerSlossbergKimmelBMVC15_poster.pdf">poster</a><span>|</span><a href="RuleOfThumb.pptx">slides</a><span>|</span><a href="HandNet/">HandNet</a><span>|</span><a href="WetzlerSlossbergKimmelBMVC15.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="SlossbergWetzlerKimmelBMVC15.pdf"><img src="Freehand.png" alt="Freehand laser scanning reconstruction" /></a>
             <div>
               <h3>Freehand Laser Scanning Using a Mobile Phone</h3>
@@ -151,7 +201,7 @@
               <p class="item-links"><a href="SlossbergWetzlerKimmelBMVC15.pdf">paper</a><span>|</span><a href="https://www.youtube.com/watch?v=_Nr1Jh4NsFs">video</a><span>|</span><a href="SlossbergWetzlerKimmelBMVC15.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="Or-elRosmanWetzlerKimmelBruckstein.pdf"><img src="depthcvpr.png" alt="RGBD-Fusion depth recovery result" /></a>
             <div>
               <h3>RGBD-Fusion: Real-Time High Precision Depth Recovery</h3>
@@ -160,7 +210,7 @@
               <p class="item-links"><a href="Or-elRosmanWetzlerKimmelBruckstein.pdf">paper</a><span>|</span><a href="https://www.youtube.com/watch?v=5nLnOTyrd-s">video</a><span>|</span><a href="https://cs.technion.ac.il/~royorel/rgbd_fusion.html">project page</a><span>|</span><a href="Or-elRosmanWetzlerKimmelBruckstein.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="MeccaWetzlerKimmelBruckstein-SIAM14.pdf"><img src="eve.png" alt="Near-field photometric stereo result" /></a>
             <div>
               <h3>Near Field Photometric Stereo with Point Light Sources</h3>
@@ -169,7 +219,7 @@
               <p class="item-links"><a href="MeccaWetzlerKimmelBruckstein-SIAM14.pdf">paper</a><span>|</span><a href="MeccaWetzlerKimmelBruckstein-SIAM14.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf"><img src="BeamSketch.png" alt="Samsung Beam and reflecting prism demonstration" /></a>
             <div>
               <h3>What Can You Do with a Beam and a Reflecting Prism?</h3>
@@ -178,7 +228,7 @@
               <p class="item-links"><a href="WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf">poster</a><span>|</span><a href="https://www.youtube.com/watch?v=wI5I1x-XrMY">video</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="WetzlerMeccaKimmelBruckstein-3DV-2014.pdf"><img src="3dvCover.png" alt="Close-range photometric stereo result" /></a>
             <div>
               <h3>Close Range Photometric Stereo with Point Light Sources</h3>
@@ -187,7 +237,7 @@
               <p class="item-links"><a href="WetzlerMeccaKimmelBruckstein-3DV-2014.pdf">paper</a><span>|</span><a href="3DV2014_Poster.pdf">poster</a><span>|</span><a href="WetzlerMeccaKimmelBruckstein-3DV-2014.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="MeccaTankusWetzlerBruckstein-SIAM14.pdf"><img src="SIAM2014.png" alt="Photometric stereo with perspective viewing result" /></a>
             <div>
               <h3>A Differential Approach to Photometric Stereo with Perspective Viewing</h3>
@@ -196,7 +246,7 @@
               <p class="item-links"><a href="MeccaTankusWetzlerBruckstein-SIAM14.pdf">paper</a><span>|</span><a href="MeccaTankusWetzlerBruckstein-SIAM14.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="vision">
             <a class="publication-image" href="MeccaWetzlerKimmelBruckstein-3DV-2013.pdf"><img src="PhotometricStereoWithShadows.png" alt="Photometric stereo with shadows result" /></a>
             <div>
               <h3>Direct Shape Recovery from Photometric Stereo with Shadows</h3>
@@ -205,7 +255,7 @@
               <p class="item-links"><a href="MeccaWetzlerKimmelBruckstein-3DV-2013.pdf">paper</a><span>|</span><a href="3DVposter_2013.pdf">poster</a><span>|</span><a href="MeccaWetzlerKimmelBruckstein-3DV-2013.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="geometry">
             <a class="publication-image" href="WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf"><img src="UbiquitousBeltrami.png" alt="Laplace-Beltrami image and shape processing examples" /></a>
             <div>
               <h3>The Laplace-Beltrami Operator: A Ubiquitous Tool for Image and Shape Processing</h3>
@@ -214,7 +264,7 @@
               <p class="item-links"><a href="WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf">paper</a><span>|</span><a href="WetzlerAflaloDubrovinaKimmel-ISSM-2013.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="geometry">
             <a class="publication-image" href="WetzlerRosmanKimmel-IEEEI-2012.pdf"><img src="PatchBeltrami3D.png" alt="Patch-space denoising of a 3D point cloud" /></a>
             <div>
               <h3>Patch-Space Beltrami Denoising of 3D Point Clouds</h3>
@@ -223,7 +273,7 @@
               <p class="item-links"><a href="WetzlerRosmanKimmel-IEEEI-2012.pdf">paper</a><span>|</span><a href="FIRST-poster.pdf">poster</a><span>|</span><a href="WetzlerRosmanKimmel-IEEEI-2012.bib">bibtex</a></p>
             </div>
           </li>
-          <li class="publication">
+          <li class="publication" data-category="geometry">
             <a class="publication-image" href="WetzlerKimmel-SSVM-2011.pdf"><img src="PatchBeltrami.png" alt="Beltrami flow denoising result" /></a>
             <div>
               <h3>Efficient Beltrami Flow Denoising in Patch-Space</h3>
@@ -235,38 +285,46 @@
         </ol>
       </section>
 
-      <section aria-labelledby="thesis-heading">
-        <h2 id="thesis-heading">Thesis</h2>
-        <article class="publication thesis">
-          <a class="publication-image" href="Undergrad-2005.pdf"><img src="Laser.bmp" alt="Low-cost 3D laser scanning unit" /></a>
-          <div>
-            <h3>Low Cost 3D Laser Scanning Unit with Application to Face Recognition</h3>
-            <p class="authors"><strong>A. Wetzler</strong></p>
-            <p class="venue">Undergraduate thesis, University of Cape Town, 2005</p>
-            <p class="item-links"><a href="Undergrad-2005.pdf">thesis</a></p>
-          </div>
-        </article>
-      </section>
+      <div class="section two-column" id="experience" data-nav-section>
+        <section aria-labelledby="experience-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="experience-heading">Work Experience</h2></div>
+          <dl class="timeline-list">
+            <div><dt>Early-stage company</dt><dd>CTO <span class="timeline-note">Current</span></dd></div>
+            <div><dt>Apple</dt><dd>Incubation and ML Lead</dd></div>
+            <div><dt>Camerai</dt><dd>CTO <span class="timeline-note">Acquired</span></dd></div>
+          </dl>
+        </section>
+        <section aria-labelledby="education-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">05</span><h2 id="education-heading">Education</h2></div>
+          <dl class="timeline-list">
+            <div><dt>Technion - Israel Institute of Technology</dt><dd>Direct-track PhD, Electrical Engineering</dd><dd class="education-advisor">Advisor: <a href="https://www.cs.technion.ac.il/~ron/">Prof. Ron Kimmel</a></dd></div>
+            <div><dt>University of Cape Town</dt><dd>BSc, Mechatronics</dd></div>
+          </dl>
+        </section>
+      </div>
 
-      <section aria-labelledby="supervision-heading">
-        <h2 id="supervision-heading">Teaching &amp; Project Supervision</h2>
-        <p>
-          At the Technion I designed and supervised more than 30 student projects in the Geometric Image Processing,
-          Computer Graphics and Multimedia, Network Software Systems, and Signal and Image Processing laboratories.
-          The recovered project list is available on the <a href="archive.html#Projects">original website</a>.
-        </p>
-      </section>
+      <div class="section two-column">
+        <section aria-labelledby="supervision-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">06</span><h2 id="supervision-heading">Teaching &amp; Supervision</h2></div>
+          <p>At the Technion I designed and supervised more than 30 student projects in the Geometric Image Processing,
+            Computer Graphics and Multimedia, Network Software Systems, and Signal and Image Processing laboratories.</p>
+          <p><a class="text-link" href="archive.html#Projects">Student projects<span class="icon icon-external" aria-hidden="true"></span></a></p>
+        </section>
+        <section aria-labelledby="thesis-heading">
+          <div class="section-heading"><span class="section-number" aria-hidden="true">07</span><h2 id="thesis-heading">Thesis</h2></div>
+          <article class="thesis">
+            <a class="thesis-image" href="Undergrad-2005.pdf"><img src="Laser.bmp" alt="Low-cost 3D laser scanning unit" loading="lazy" width="88" height="88" /></a>
+            <div>
+              <h3>Low Cost 3D Laser Scanning Unit with Application to Face Recognition</h3>
+              <p class="venue">Undergraduate thesis, University of Cape Town, 2005</p>
+              <p class="item-links"><a href="Undergrad-2005.pdf">Thesis PDF</a></p>
+            </div>
+          </article>
+        </section>
+      </div>
 
-      <section aria-labelledby="education-heading">
-        <h2 id="education-heading">Education</h2>
-        <dl class="education-list">
-          <div><dt>Technion - Israel Institute of Technology</dt><dd>Direct-track PhD, Electrical Engineering</dd></div>
-          <div><dt>University of Cape Town</dt><dd>BSc, Mechatronics</dd></div>
-        </dl>
-      </section>
-
-      <section id="patents" aria-labelledby="patents-heading">
-        <h2 id="patents-heading">Patents</h2>
+      <section class="section" id="patents" aria-labelledby="patents-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">08</span><h2 id="patents-heading">Patents</h2></div>
         <ul class="patent-list">
           <li><a href="https://patents.google.com/patent/US12608769B1/en">Three-Dimensional Reconstruction Across Various Image Capture Modalities</a>. <span class="patent-number">US 12,608,769, 2026</span></li>
           <li><a href="https://patents.google.com/patent/US12489874B2/en">Stereoscopic Capture Using Cameras with Different Fields of View</a>. <span class="patent-number">US 12,489,874, 2025</span></li>
@@ -280,8 +338,9 @@
         </ul>
       </section>
 
-      <footer>
-        <p><a href="https://github.com/twerdster">GitHub</a> <span aria-hidden="true">&middot;</span> <a href="https://www.linkedin.com/in/aaron-wetzler/" rel="me">LinkedIn</a> <span aria-hidden="true">&middot;</span> <a href="https://x.com/aaronwetzler" rel="me">Twitter</a> <span aria-hidden="true">&middot;</span> <a href="archive.html">2019 website archive</a></p>
+      <footer class="site-footer">
+        <p>&copy; Aaron Wetzler</p>
+        <nav aria-label="Footer links"><a href="https://github.com/twerdster">GitHub</a><a href="https://www.linkedin.com/in/aaron-wetzler/" rel="me">LinkedIn</a><a href="https://x.com/aaronwetzler" rel="me">Twitter</a><a href="archive.html">2019 website archive</a></nav>
       </footer>
     </main>
   </body>
