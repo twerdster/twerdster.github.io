@@ -39,11 +39,54 @@
       "bibtex": "WetzlerSlossbergKimmelBMVC15.bib",
       "poster": "WetzlerSlossbergKimmelBMVC15_poster.pdf",
       "slides": "RuleOfThumb.pptx",
+      "license": "CC-BY-4.0",
+      "license_url": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "HandNet by Aaron Wetzler, Ron Slossberg and Ron Kimmel. Cite the BMVC 2015 paper, link the dataset and license, and indicate changes.",
       "dataset_access": {
-        "status": "Full training and test sets are not currently hosted on this site.",
-        "contact": "https://www.linkedin.com/in/aaron-wetzler/"
+        "status": "Public and ungated on Hugging Face, including commercial reuse under CC BY 4.0.",
+        "url": "https://huggingface.co/datasets/twerdster/HandNet",
+        "archives": "https://huggingface.co/datasets/twerdster/HandNet/tree/main/archives",
+        "manifest": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/manifest.json",
+        "checksums": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/SHA256SUMS",
+        "data_dictionary": "https://huggingface.co/datasets/twerdster/HandNet/blob/main/DATA_DICTIONARY.md",
+        "downloads": [
+          {"name": "TrainData.rar", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TrainData.rar", "bytes": 12977627177, "sha256": "40c1878124fba91bf76f1ff15d25d067ea416a828b5670623123dc87c3921ac0"},
+          {"name": "TestData.zip", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TestData.zip", "bytes": 642222352, "sha256": "b1bd373368b0d3dea7681228b26b65880e85c962dbc8650aa148022f3e691171"},
+          {"name": "ValidationData.zip", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/ValidationData.zip", "bytes": 178069511, "sha256": "be935ed630ff734ab65eefb8da81bfc0d9ebd2844ed4bd3f99a6fcfdb59e6afd"},
+          {"name": "TrainData_DerotGT.zip", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TrainData_DerotGT.zip", "bytes": 10846508573, "sha256": "b84bfacbdd8df663e51fd5838a42cde8f0fb02148281449208736f5cfe081629"},
+          {"name": "ValidationData_DerotGT.zip", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/ValidationData_DerotGT.zip", "bytes": 148671962, "sha256": "d141d67c7938c9bb19d17b71af67c2bebe035faefa39a0609e69fc84f12ac1cf"},
+          {"name": "TestData_Perturbed.zip", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TestData_Perturbed.zip", "bytes": 534164788, "sha256": "bf158e204c9b6ded1f7b2caa0193242d72d5960493a6e1105ba198bca496d7e6"},
+          {"name": "ValidationData_Perturbed.zip", "url": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/ValidationData_Perturbed.zip", "bytes": 148312479, "sha256": "c431b22f8ffc3a302fbcf60cab088ccd2b031abc6f2ada4a1a20ebe27db63e9f"}
+        ]
       },
-      "description": "Depth-image dataset for hand and fingertip detection."
+      "release": {
+        "date": "2026-11-10",
+        "original_frames": 214971,
+        "original_splits": { "train": 202198, "test": 10000, "validation": 2773 },
+        "distribution_archives": 7,
+        "archive_bytes": 25475576842,
+        "note": "The seven archive files retain their original bytes; transformed variants do not add independent recordings."
+      },
+      "explorer": {
+        "embedded": "HandNet/#explorer",
+        "standalone": "HandNet/explorer/",
+        "sample_count": 20,
+        "hosting": "Self-contained static viewer with relative, locally vendored scripts and sample assets.",
+        "research_space": "https://huggingface.co/spaces/twerdster/HandNet-Explorer",
+        "research_space_sample_count": 96
+      },
+      "hub_preview": {
+        "viewer": "https://huggingface.co/datasets/twerdster/HandNet/viewer/preview/preview",
+        "parquet": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet",
+        "schema": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.schema.json",
+        "rows": 96,
+        "note": "Derived display rows, including transformed counterparts; not the complete dataset or raw depth arrays."
+      },
+      "original_matlab_code": {
+        "url": "https://github.com/twerdster/HandNet",
+        "license_note": "Historical MATLAB code retains its original terms; the CC BY 4.0 data release does not relicense that code."
+      },
+      "description": "214,971 annotated depth frames from ten participants, with measured 3D positions and orientations for five fingertips and the palm."
     }
   ],
   "publications": [

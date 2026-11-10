@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#172b45">
+  <meta name="description" content="Interactive supplementary material for HandNet: calibrated depth images, magnetic sensor annotations, and ground-truth orientation normalization.">
+  <script>if(new URLSearchParams(location.search).get('embed')==='1')document.documentElement.dataset.embedded='true';</script>
+  <title>HandNet | Dataset Visualization & Supplementary Material</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 40 40%27%3E%3Crect width=%2740%27 height=%2740%27 rx=%274%27 fill=%27%23172b45%27/%3E%3Ctext x=%2720%27 y=%2729%27 text-anchor=%27middle%27 font-family=%27Arial,sans-serif%27 font-size=%2727%27 fill=%27white%27%3EH%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="#" aria-label="HandNet home">HandNet <span>Supplementary material</span></a>
+      <nav aria-label="Main navigation"><a href="#explore">Visualization</a><a href="#method">Method</a><a href="#download">Data &amp; reproducibility</a></nav>
+    </div>
+  </header>
+  <main>
+    <section class="paper-header wrap">
+      <div class="publication-meta">BRITISH MACHINE VISION CONFERENCE · 2015</div>
+      <h1>Rule of Thumb: Deep Derotation<br>for Improved Fingertip Detection</h1>
+      <p class="authors">Aaron Wetzler <span>·</span> Ron Slossberg <span>·</span> Ron Kimmel</p>
+      <p class="affiliation">Technion — Israel Institute of Technology, Haifa, Israel</p>
+      <div class="paper-links">
+        <a class="paper-link" href="https://arxiv.org/abs/1507.05726" target="_blank" rel="noreferrer">Paper <span>↗</span></a>
+        <a href="https://github.com/twerdster/HandNet" target="_blank" rel="noreferrer">Original code <span>↗</span></a>
+        <a href="https://huggingface.co/datasets/twerdster/HandNet" target="_blank" rel="noreferrer">Dataset <span>↗</span></a>
+        <a href="#citation">Citation</a>
+      </div>
+      <div class="abstract-grid">
+        <div class="abstract"><h2>Overview</h2><p>HandNet pairs real depth images with magnetic measurements of the position and orientation of five fingertips and the palm. The accompanying paper introduces <strong>DeROT</strong>: estimate global hand orientation, normalize in-plane rotation, and detect fingertips in the normalized image. This supplementary viewer exposes the released data and the geometry of ground-truth normalization.</p><p class="scope-note">The viewer uses stored samples from the original archives. It does not run a trained network or report new benchmark results.</p></div>
+        <dl class="release-facts"><div><dt>Released frames</dt><dd>214,971</dd></div><div><dt>Depth resolution</dt><dd>320 × 240</dd></div><div><dt>Tracked locations</dt><dd>5 fingertips + palm</dd></div><div><dt>Coordinates</dt><dd>Camera XYZ · mm</dd></div><div><dt>Data license</dt><dd><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noreferrer">CC BY 4.0</a></dd></div></dl>
+      </div>
+    </section>
+
+    <section id="explore" class="explore wrap section-space">
+      <div class="section-heading"><div><span class="section-number">1</span><h2>Dataset visualization</h2></div><p id="sampleTotal">Loading stored samples</p></div>
+      <p class="section-intro">Select a released split and variant, inspect a frame, or compare its matched original/transformed counterpart. All displayed images and measurements originate in the source MAT files.</p>
+      <div class="explorer-shell">
+        <div class="explorer-toolbar">
+          <div class="field"><label for="splitSelect">Split / variant</label><select id="splitSelect" aria-label="Split and variant"><option value="all">All samples</option></select></div>
+          <div class="field sample-field"><label for="sampleSelect">Source frame</label><select id="sampleSelect" aria-label="Source frame"><option>Loading samples…</option></select></div>
+          <div class="transport"><button id="previous" class="icon-button" title="Previous sample" aria-label="Previous sample">←</button><button id="play" class="icon-button play-button" title="Play samples" aria-label="Play samples">▶</button><button id="next" class="icon-button" title="Next sample" aria-label="Next sample">→</button><button id="shuffle" class="icon-button" title="Random sample" aria-label="Random sample">⤨</button></div>
+          <span class="sample-counter" id="sampleCounter">— / —</span>
+        </div>
+        <div class="visual-grid">
+          <div class="point-view">
+            <div class="panel-heading"><span>Fig. 1 · Calibrated depth point cloud</span><span id="pointCount">LOADING</span></div>
+            <div id="pointcloud" class="point-canvas" role="img" aria-label="Interactive 3D depth point cloud and six tracked sensor locations"><div id="sceneLabels" class="scene-labels"></div><div id="loadingState" class="loading-state"><span class="loader"></span><strong>Loading source geometry</strong><span>Reading a stored HandNet sample…</span></div></div>
+            <div class="view-controls"><span class="drag-hint">Drag: orbit · Scroll: zoom · Shift + drag: pan</span><button id="resetView" class="canvas-button">Reset camera ↺</button></div>
+            <div class="axis-key"><span><i class="x-axis"></i> X</span><span><i class="y-axis"></i> Y</span><span><i class="z-axis"></i> Z</span><small>Sensor orientation axes</small></div>
+          </div>
+          <div class="depth-view">
+            <div class="panel-heading light"><span>Fig. 2 · Source camera image</span><span id="depthDimensions">320 × 240</span></div>
+            <div class="image-tabs" role="tablist" aria-label="Camera layer"><button role="tab" aria-selected="true" data-layer="depth">Depth</button><button role="tab" aria-selected="false" data-layer="ir">Infrared</button><button role="tab" aria-selected="false" data-layer="labels">Part labels</button><button role="tab" aria-selected="false" data-layer="heatmap">Heatmap</button></div>
+            <div class="depth-canvas-wrap"><canvas id="depthCanvas" width="640" height="480" aria-label="Source camera image"></canvas><div id="depthEmpty" hidden>Layer unavailable for this sample</div></div>
+            <div class="depth-key"><span id="depthNear">NEAR</span><div class="depth-gradient"></div><span id="depthFar">FAR</span></div>
+            <div class="layer-description" id="layerDescription">Source depth image with annotation locations.</div>
+            <label class="checkbox-row"><input type="checkbox" id="projectedLabels" checked><span>Show source annotation locations</span></label>
+            <div class="sensor-readout"><span id="sensorReadoutName">ALL SIX SENSORS</span><p id="sensorReadoutValue">Select a sensor to inspect its coordinates.</p></div>
+          </div>
+        </div>
+        <div class="explorer-bottom">
+          <div class="finger-legend" aria-label="Choose a sensor" id="sensorLegend"></div>
+          <div class="point-settings"><label for="colorMode">Point color<select id="colorMode"><option value="depth">Depth</option><option value="height">Height</option><option value="mono">Uniform</option></select></label><label for="pointSize">Size<input id="pointSize" type="range" min="1" max="6" step="0.5" value="2.5"></label><label class="axes-toggle"><input type="checkbox" id="showAxes"><span>Sensor axes</span></label></div>
+        </div>
+        <div class="frame-caption"><span id="frameSource">SOURCE FRAME</span><span id="frameDescription">Frame provenance</span><button id="comparePair" hidden>Compare matched frame ⇄</button><a id="frameFileLink" href="https://huggingface.co/datasets/twerdster/HandNet/tree/main" target="_blank" rel="noreferrer">Source archive ↗</a></div>
+      </div>
+      <p class="figure-caption"><strong>Figures 1–2.</strong> The surface is reconstructed from calibrated depth and displayed at a two-pixel stride within the source foreground mask. Spheres mark measured sensor centers; 2D markers use source heatmap peaks. The six tracked locations are not a complete hand-joint skeleton. Color and contrast normalization are for display.</p>
+      <div class="sample-gallery" id="sampleGallery" aria-label="Quick sample selection"></div>
+      <div class="measurement-grid">
+        <section class="measurement-panel"><div class="subsection-heading"><h3>Sensor measurements</h3><span>Recorded camera frame · mm</span></div><div class="table-scroll"><table class="measurement-table"><thead><tr><th>Sensor</th><th>X</th><th>Y</th><th>Z</th><th>u</th><th>v</th></tr></thead><tbody id="measurementTable"><tr><td colspan="6">Loading measurements…</td></tr></tbody></table></div><p class="table-note">XYZ: recorded magnetic sensor centers. u, v: zero-based source annotation heatmap peaks, before any interactive rotation.</p></section>
+        <section class="provenance-panel"><div class="subsection-heading"><h3>Frame provenance</h3><span>Original archive member</span></div><dl class="provenance-fields" id="provenanceFields"><div><dt>Source</dt><dd>Loading…</dd></div></dl></section>
+      </div>
+      <details class="calibration-details"><summary>Calibration and display conventions</summary><div class="calibration-content"><p>The native camera coordinate system is <strong>+X right, +Y down, +Z away</strong>, with positions in millimetres and zero-based image coordinates. Depth reconstruction uses the original camera calibration:</p><div class="equation">X = (u − c<sub>x</sub>) Z / f<sub>x</sub> &nbsp; &nbsp; Y = (v − c<sub>y</sub>) Z / f<sub>y</sub></div><p class="calibration-values" id="calibrationValues">fₓ = 240.30773969018747 &nbsp; fᵧ = 240.07488537862218<br>cₓ = 178.29264757987775 &nbsp; cᵧ = 117.9581118815394</p><p>The 3D display flips Y and Z together to preserve handedness. Numeric measurements retain the source coordinate system. Sensor axes use the columns of each recorded 3 × 3 orientation matrix. Heatmap peaks can differ from projected sensor centers, particularly in transformed archives.</p></div></details>
+    </section>
+
+    <section id="method" class="method-section wrap section-space">
+      <div class="section-heading"><div><span class="section-number">2</span><h2>Ground-truth orientation normalization</h2></div><a class="section-source" href="https://arxiv.org/abs/1507.05726" target="_blank" rel="noreferrer">Method in the paper ↗</a></div>
+      <div class="method-grid">
+        <div class="method-copy"><h3>From orientation regression to a canonical image</h3><p>The paper estimates a global hand orientation and uses it to choose an in-plane rotation before fingertip detection. Removing rotational variability is intended to reduce the appearance space that the detector must learn.</p><ol class="method-steps"><li><strong>Measure or estimate orientation.</strong> HandNet provides magnetic orientation annotations; the published DeROT method learns to predict orientation from depth.</li><li><strong>Normalize image rotation.</strong> An orientation-dependent rule chooses a canonical in-plane view, with the thumb base on a consistent side.</li><li><strong>Detect and transform back.</strong> Fingertip detections in the normalized view are mapped to the original camera frame.</li></ol><div class="method-limitation"><strong>Scope of this demonstration.</strong><p>The controls use the recorded palm orientation as ground truth. They demonstrate the geometric normalization convention from the original code. No orientation network or fingertip detector is executed.</p></div><p class="method-reference">Reference implementation: <a href="https://github.com/twerdster/HandNet/blob/master/derotate.m" target="_blank" rel="noreferrer">derotate.m</a> and <a href="https://github.com/twerdster/HandNet/blob/master/rotateData.m" target="_blank" rel="noreferrer">rotateData.m</a>.</p></div>
+        <div class="normalization-panel"><div class="subsection-heading"><h3>Fig. 3 · In-plane rotation</h3><a href="#explore">Inspect selected frame ↑</a></div><div class="rotation-preview"><figure><canvas id="rotationOriginal" width="320" height="240" aria-label="Original recorded depth image"></canvas><figcaption>(a) Recorded depth</figcaption></figure><figure><canvas id="rotationCurrent" width="320" height="240" aria-label="Geometrically rotated depth image"></canvas><figcaption>(b) Rotated depth</figcaption></figure></div><div class="rotation-controls"><label for="rotation">Additional in-plane rotation <output id="rotationValue">0°</output></label><input id="rotation" type="range" min="-180" max="180" step="1" value="0"><div class="rotation-scale"><span>−180°</span><button id="resetRotation">Reset rotation</button><span>+180°</span></div><button id="applyCanonical" class="canonical-button">Apply ground-truth normalization <span>→</span></button><p class="small-print" id="rotationDisclaimer">This geometric demonstration uses measured palm orientation. It does not run the paper’s learned network.</p></div><p class="figure-caption"><strong>Figure 3.</strong> Rotation is applied around the calibrated optical center in 2D and the camera Z axis in 3D. This changes the displayed geometry; it is not a new recorded capture. Numeric sensor tables above remain the recorded source measurements.</p></div>
+      </div>
+    </section>
+
+    <section id="download" class="download-section wrap section-space">
+      <div class="section-heading"><div><span class="section-number">3</span><h2>Data &amp; reproducibility</h2></div><a class="section-source" href="https://huggingface.co/datasets/twerdster/HandNet" target="_blank" rel="noreferrer">Dataset repository ↗</a></div>
+      <div class="download-grid"><div class="download-intro"><h3>Original release archives</h3><p>The repository preserves all seven original distribution archives: standard training, test, and validation splits; ground-truth-derotated training and validation; and rotation-perturbed test and validation data.</p><div class="split-table-wrap"><table class="split-table"><thead><tr><th>Standard split</th><th>Released MAT frames</th></tr></thead><tbody><tr><td>Training</td><td>202,198</td></tr><tr><td>Test</td><td>10,000</td></tr><tr><td>Validation</td><td>2,773</td></tr><tr class="total-row"><td>Total</td><td>214,971</td></tr></tbody></table></div><p class="license-note">Data: CC BY 4.0. New viewer code: MIT. The historical MATLAB source retains its original terms.</p></div><div class="archive-list" id="archiveList"><a href="https://huggingface.co/datasets/twerdster/HandNet/tree/main" target="_blank" rel="noreferrer"><span>Browse original archives</span><span>↗</span></a></div></div>
+      <div class="reproducibility-grid"><div><h3>Provenance and display subset</h3><p>Stored examples include their source archive member, session and frame indices, and MAT SHA-256. The <a href="data/samples.json" target="_blank" rel="noreferrer">local sample manifest</a> records calibration, units, sampling and display preprocessing. The <a href="data/archive-manifest.json" target="_blank" rel="noreferrer">archive manifest</a> records original byte sizes and checksums.</p></div><div><h3>Historical frame counts</h3><p>The paper reports 212,928 unique hand poses. The released standard archives contain 214,971 MAT frames. This viewer reports the distributed archive counts and does not claim to reconcile the discrepancy.</p></div></div>
+      <section id="citation" class="citation-card"><div><h3>Citation</h3><p>Aaron Wetzler, Ron Slossberg, and Ron Kimmel. <em>Rule of Thumb: Deep Derotation for Improved Fingertip Detection.</em> British Machine Vision Conference, 2015.</p><button id="copyCitation">Copy BibTeX <span>⧉</span></button></div><pre><code>@inproceedings{wetzler2015rule,
+  title={Rule of Thumb: Deep Derotation
+    for Improved Fingertip Detection},
+  author={Wetzler, Aaron and Slossberg, Ron
+    and Kimmel, Ron},
+  booktitle={British Machine Vision Conference},
+  year={2015}
+}</code></pre></section>
+    </section>
+  </main>
+  <footer><div class="wrap footer-inner"><span>HandNet · Interactive supplementary material</span><span>Stored data only · No model inference</span><a href="#">Back to top ↑</a></div></footer>
+</body>
+</html>

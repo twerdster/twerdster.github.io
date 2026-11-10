@@ -2,9 +2,17 @@
 
 A static academic homepage built from the recovered Technion website. The public page is intentionally simple: biography, code and data, publications, thesis, project supervision, education, and patents.
 
-The layout is inspired by Ariel Ephrat's academic homepage: a sticky section navigation, circular profile photo, serif headings, numbered sections, illustrated research highlights, and compact publication rows. Publications can be filtered by research area, and existing BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. All content and original citation links remain available without JavaScript.
+The layout is inspired by Ariel Ephrat's academic homepage: a sticky section navigation, circular profile photo, serif headings, numbered sections, illustrated research highlights, and compact publication rows. Publications can be filtered by research area, and existing BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. Core academic content and original citation links remain available without JavaScript; the interactive HandNet viewer requires JavaScript.
 
-All three hosted HTML pages share `styles.css` and `site.js`, including navigation, fonts, light/dark preference, citation previews, and responsive layout. HandNet is a dataset page with working research-material downloads and explicit full-dataset access information. The academic archive retains its 12 publications, 21 student projects, undergraduate thesis, six videos, and legacy section anchors, including `archive.html#Projects`. PDFs, slides, ZIPs, and external websites retain their native formats.
+The homepage, academic archive and HandNet project page share `styles.css` and `site.js`, including navigation, fonts, light/dark preference, citation previews, and responsive layout. HandNet includes a self-contained 20-sample viewer and direct links to the public dataset. The academic archive retains its 12 publications, 21 student projects, undergraduate thesis, six videos, and legacy section anchors, including `archive.html#Projects`. PDFs, slides, ZIPs, and external websites retain their native formats.
+
+## HandNet data and viewer
+
+The [HandNet page](https://twerdster.github.io/HandNet/) embeds a [20-sample viewer](https://twerdster.github.io/HandNet/#explorer), also available [standalone](https://twerdster.github.io/HandNet/explorer/). The viewer's scripts, vendored dependencies, images and calibrated point clouds are served from this repository with relative URLs. It does not embed the Hugging Face app or require a CDN. Serve the site over HTTP with the local command below; opening an HTML file directly can prevent browser fetches of sample assets.
+
+The [complete dataset](https://huggingface.co/datasets/twerdster/HandNet) is public and ungated on Hugging Face. Its [seven unchanged archives](https://huggingface.co/datasets/twerdster/HandNet/tree/main/archives) total 25,475,576,842 bytes and contain 214,971 original frames plus transformed variants. Data is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), including commercial reuse with attribution, a license link and an indication of changes. Credit Aaron Wetzler, Ron Slossberg and Ron Kimmel and cite the BMVC 2015 paper. The linked historical MATLAB source keeps its own original terms.
+
+The [extended research Space](https://huggingface.co/spaces/twerdster/HandNet-Explorer) and [Parquet preview](https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet) contain 96 derived visualization rows. The local 20-sample selection and the 96-row preview do not replace the full archives. Images are rendered for display; the viewers show measured sensor annotations and geometric transformations, not new learned detector results.
 
 ## Run locally
 
@@ -14,7 +22,7 @@ npm run dev
 
 Open <http://127.0.0.1:4173/>.
 
-The site has no runtime dependencies and can be hosted directly with GitHub Pages.
+No package installation or build is required to serve the site on GitHub Pages. The HandNet viewer includes its browser dependencies locally.
 
 ## Published site
 
@@ -41,7 +49,8 @@ The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.pl
 - `data/site-content.json`: machine-readable publication, patent, and resource index.
 - `llms.txt`: compact index for agents and crawlers.
 - `robots.txt` and `sitemap.xml`: search-engine discovery files.
-- `HandNet/index.html`: dataset overview, available downloads, citation, and usage terms, using the shared design. The original empty training/test download links are replaced by an accurate access notice.
+- `HandNet/index.html`: academic dataset overview, embedded 20-sample viewer, public Hugging Face downloads, citation and CC BY 4.0 data terms.
+- `HandNet/explorer/`: standalone viewer with locally vendored dependencies and 20 real sample assets; paths are relative so the app can be embedded or opened directly over HTTP.
 - `archive.html`: recovered 2019 academic content presented in the shared design.
 - `site.css` and `HandNet/style/`: retained legacy assets, unused by the current HTML pages.
 - `ARCHIVE_RECOVERY_NOTES.md`: Wayback recovery notes.
