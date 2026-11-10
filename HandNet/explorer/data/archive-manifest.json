@@ -1,0 +1,71 @@
+{
+  "release_date": "2026-11-10",
+  "license": "CC-BY-4.0",
+  "total_bytes": 25475576842,
+  "unique_original_frames": 214971,
+  "archives": [
+    {
+      "path": "archives/TrainData.rar",
+      "filename": "TrainData.rar",
+      "bytes": 12977627177,
+      "sha256": "40c1878124fba91bf76f1ff15d25d067ea416a828b5670623123dc87c3921ac0",
+      "mat_frames": 202198,
+      "validation": "Complete libarchive RAR member read without extraction",
+      "verified_seconds": 13.73
+    },
+    {
+      "path": "archives/TestData.zip",
+      "filename": "TestData.zip",
+      "bytes": 642222352,
+      "sha256": "b1bd373368b0d3dea7681228b26b65880e85c962dbc8650aa148022f3e691171",
+      "mat_frames": 10000,
+      "validation": "ZIP central directory and full member CRC validation",
+      "verified_seconds": 0.83
+    },
+    {
+      "path": "archives/ValidationData.zip",
+      "filename": "ValidationData.zip",
+      "bytes": 178069511,
+      "sha256": "be935ed630ff734ab65eefb8da81bfc0d9ebd2844ed4bd3f99a6fcfdb59e6afd",
+      "mat_frames": 2773,
+      "validation": "ZIP central directory and full member CRC validation",
+      "verified_seconds": 0.23
+    },
+    {
+      "path": "archives/TrainData_DerotGT.zip",
+      "filename": "TrainData_DerotGT.zip",
+      "bytes": 10846508573,
+      "sha256": "b84bfacbdd8df663e51fd5838a42cde8f0fb02148281449208736f5cfe081629",
+      "mat_frames": 202198,
+      "validation": "ZIP central directory and full member CRC validation",
+      "verified_seconds": 35.9
+    },
+    {
+      "path": "archives/ValidationData_DerotGT.zip",
+      "filename": "ValidationData_DerotGT.zip",
+      "bytes": 148671962,
+      "sha256": "d141d67c7938c9bb19d17b71af67c2bebe035faefa39a0609e69fc84f12ac1cf",
+      "mat_frames": 2773,
+      "validation": "ZIP central directory and full member CRC validation",
+      "verified_seconds": 0.46
+    },
+    {
+      "path": "archives/TestData_Perturbed.zip",
+      "filename": "TestData_Perturbed.zip",
+      "bytes": 534164788,
+      "sha256": "bf158e204c9b6ded1f7b2caa0193242d72d5960493a6e1105ba198bca496d7e6",
+      "mat_frames": 10000,
+      "validation": "ZIP central directory and full member CRC validation",
+      "verified_seconds": 1.55
+    },
+    {
+      "path": "archives/ValidationData_Perturbed.zip",
+      "filename": "ValidationData_Perturbed.zip",
+      "bytes": 148312479,
+      "sha256": "c431b22f8ffc3a302fbcf60cab088ccd2b031abc6f2ada4a1a20ebe27db63e9f",
+      "mat_frames": 2773,
+      "validation": "ZIP central directory and full member CRC validation",
+      "verified_seconds": 0.43
+    }
+  ]
+}

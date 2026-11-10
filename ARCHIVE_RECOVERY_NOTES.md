@@ -6,7 +6,15 @@ This directory is a local static reconstruction of the archived Technion academi
 
 The homepage is from the October 25, 2019 Wayback snapshot. Supporting files are pulled from the closest available Wayback captures under `www.cs.technion.ac.il/~twerd/`.
 
-The recovered content is now presented in the shared homepage design. `archive.html` preserves the historical publications, student project descriptions and names, thesis, videos, and section anchors. `HandNet/index.html` uses the same styles and replaces the original empty download links with real paper, poster, slides, and supplementary-material links. Full HandNet training and test sets were not recovered and are not hosted here. The original page appearance remains available in the Wayback snapshot above; legacy CSS and project images are retained locally.
+The initial reconstruction presented the recovered content in the shared homepage design. `archive.html` preserved the historical publications, student project descriptions and names, thesis, videos, and section anchors. The reconstructed `HandNet/index.html` used the same styles and replaced the original empty download links with real paper, poster, slides, and supplementary-material links. Full HandNet training and test sets were not recovered as part of that Wayback work. The original page appearance remains available in the Wayback snapshot above; legacy CSS and project images are retained locally.
+
+## HandNet update — November 10, 2026
+
+Subsequent work published the existing HandNet dataset copy to [Hugging Face](https://huggingface.co/datasets/twerdster/HandNet). All seven distribution archives retain their original bytes; their hashes and sizes are recorded in the dataset's [manifest](https://huggingface.co/datasets/twerdster/HandNet/resolve/main/manifest.json) and [SHA256SUMS](https://huggingface.co/datasets/twerdster/HandNet/resolve/main/SHA256SUMS). The 214,971 original released frames are distinct from the 2015 paper's historical count; transformed archives reuse examples.
+
+Aaron Wetzler selected [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) for this open data release, including commercial reuse with attribution. The maintained project page now states those terms and links the public data instead of directing access requests to a contact profile. The original MATLAB source repository retains its historical terms and is not relicensed by this website update.
+
+A [20-sample viewer](https://twerdster.github.io/HandNet/explorer/) is hosted within this repository and [embedded in the project page](https://twerdster.github.io/HandNet/#explorer). It serves scripts, vendored dependencies and real sample assets through relative URLs. The separate [research Space](https://huggingface.co/spaces/twerdster/HandNet-Explorer) and [96-row Parquet preview](https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet) provide a larger derived visualization selection. These additions are maintained 2026 content, not recovered 2019 material; the Wayback recovery record below remains separate.
 
 ## Run Locally
 
@@ -18,7 +26,7 @@ Then open:
 
 <http://127.0.0.1:4173/>
 
-This site has no runtime dependencies. The npm script only starts Python's built-in static file server.
+No package installation is required to serve the site. The npm script starts Python's built-in static file server; the maintained HandNet viewer carries its browser dependencies locally.
 
 ## Refresh The Archive
 

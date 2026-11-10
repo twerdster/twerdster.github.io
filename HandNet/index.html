@@ -22,7 +22,9 @@
       } catch (error) {}
     </script>
     <link rel="stylesheet" href="../styles.css?v=20261110-pages" />
+    <link rel="stylesheet" href="handnet-page.css?v=20261110-open" />
     <script src="../site.js?v=20261110-pages" defer></script>
+    <script src="handnet-page.js?v=20261110-open" defer></script>
     <link rel="alternate" type="application/json" href="../data/site-content.json" title="Machine-readable site index" />
     <script type="application/ld+json">
       {
@@ -32,11 +34,76 @@
         "url": "https://twerdster.github.io/HandNet/",
         "description": "Depth images, fingertip heatmaps, and fingertip and palm labels collected with synchronized RealSense F200 and TrakSTAR tracking.",
         "creator": [
-          { "@type": "Person", "name": "Aaron Wetzler", "url": "https://twerdster.github.io/" },
-          { "@type": "Person", "name": "Ron Slossberg" },
-          { "@type": "Person", "name": "Ron Kimmel" }
+          {
+            "@type": "Person",
+            "name": "Aaron Wetzler",
+            "url": "https://twerdster.github.io/"
+          },
+          {
+            "@type": "Person",
+            "name": "Ron Slossberg"
+          },
+          {
+            "@type": "Person",
+            "name": "Ron Kimmel"
+          }
         ],
-        "citation": "A. Wetzler, R. Slossberg, and R. Kimmel. Rule of Thumb: Deep Derotation for Improved Fingertip Detection. BMVC, 2015."
+        "citation": "A. Wetzler, R. Slossberg, and R. Kimmel. Rule of Thumb: Deep Derotation for Improved Fingertip Detection. BMVC, 2015.",
+        "license": "https://creativecommons.org/licenses/by/4.0/",
+        "sameAs": "https://huggingface.co/datasets/twerdster/HandNet",
+        "isAccessibleForFree": true,
+        "distribution": [
+          {
+            "@type": "DataDownload",
+            "name": "TrainData.rar",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TrainData.rar",
+            "contentSize": "12977627177 bytes",
+            "encodingFormat": "application/vnd.rar"
+          },
+          {
+            "@type": "DataDownload",
+            "name": "TestData.zip",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TestData.zip",
+            "contentSize": "642222352 bytes",
+            "encodingFormat": "application/zip"
+          },
+          {
+            "@type": "DataDownload",
+            "name": "ValidationData.zip",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/ValidationData.zip",
+            "contentSize": "178069511 bytes",
+            "encodingFormat": "application/zip"
+          },
+          {
+            "@type": "DataDownload",
+            "name": "TrainData_DerotGT.zip",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TrainData_DerotGT.zip",
+            "contentSize": "10846508573 bytes",
+            "encodingFormat": "application/zip"
+          },
+          {
+            "@type": "DataDownload",
+            "name": "ValidationData_DerotGT.zip",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/ValidationData_DerotGT.zip",
+            "contentSize": "148671962 bytes",
+            "encodingFormat": "application/zip"
+          },
+          {
+            "@type": "DataDownload",
+            "name": "TestData_Perturbed.zip",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/TestData_Perturbed.zip",
+            "contentSize": "534164788 bytes",
+            "encodingFormat": "application/zip"
+          },
+          {
+            "@type": "DataDownload",
+            "name": "ValidationData_Perturbed.zip",
+            "contentUrl": "https://huggingface.co/datasets/twerdster/HandNet/resolve/main/archives/ValidationData_Perturbed.zip",
+            "contentSize": "148312479 bytes",
+            "encodingFormat": "application/zip"
+          }
+        ],
+        "dateModified": "2026-11-10"
       }
     </script>
   </head>
@@ -68,7 +135,7 @@
         <h1>HandNet</h1>
         <p class="page-subtitle">A depth-image dataset for hand and fingertip detection, collected with synchronized depth cameras and electromagnetic tracking.</p>
         <nav class="page-links" aria-label="HandNet sections">
-          <a href="#description">Overview</a><a href="#downloads">Downloads</a><a href="#citation">Citation</a><a href="#terms">Usage</a>
+          <a href="#description">Overview</a><a href="#explorer">Interactive examples</a><a href="#downloads">Downloads</a><a href="#citation">Citation</a><a href="#terms">License</a>
         </nav>
       </header>
 
@@ -89,10 +156,22 @@
         </dl>
       </section>
 
-      <section class="section" id="downloads" aria-labelledby="downloads-heading" data-nav-section>
-        <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="downloads-heading">Downloads</h2></div>
+      <section class="section" id="explorer" aria-labelledby="explorer-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="explorer-heading">Interactive Dataset Examples</h2></div>
         <div class="bio-prose">
-          <p>The full training and test sets are not currently hosted on this site. For dataset access requests, <a href="https://www.linkedin.com/in/aaron-wetzler/">contact Aaron Wetzler</a>.</p>
+          <p>Inspect 20 precomputed examples from the released archives, including eight matched original/transformed pairs. The viewer presents calibrated depth surfaces, infrared and label images, source heatmaps, and the measured positions and orientations of five fingertip sensors and one palm sensor.</p>
+          <p>All example assets and rendering code are stored with this website. Viewing them requires no dataset download, account, backend, or connection to Hugging Face. <a href="explorer/">Open the standalone viewer</a>.</p>
+        </div>
+        <iframe class="handnet-explorer-frame" id="handnet-explorer" src="explorer/index.html?embed=1" title="HandNet: twenty self-contained research examples" loading="lazy" height="1250" allow="clipboard-write"></iframe>
+        <noscript><p><a href="explorer/">Open the interactive examples</a>. The original <a href="HandNetData.gif">depth-image animation</a> is also available.</p></noscript>
+        <p class="handnet-example-note">The point clouds are downsampled, calibrated reconstructions; the displayed depth images are contrast-rendered previews. Six tracked sensor locations are not a full anatomical joint skeleton. Ground-truth normalization is a geometric demonstration, not a prediction from the paper’s trained model.</p>
+      </section>
+
+      <section class="section" id="downloads" aria-labelledby="downloads-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="downloads-heading">Downloads</h2></div>
+        <div class="bio-prose">
+          <p>The complete <a href="https://huggingface.co/datasets/twerdster/HandNet">HandNet release on Hugging Face</a> contains all seven original distribution archives (23.73 GiB), including 202,198 training, 10,000 test, and 2,773 validation frames, plus ground-truth-derotated and rotation-perturbed variants. The data is openly available under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>.</p>
+          <p>The <a href="https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet">96-row Parquet preview (3.3 MB)</a> contains display-ready images and sensor annotations. Native depth and annotation arrays remain in the original archives. The <a href="https://huggingface.co/spaces/twerdster/HandNet-Explorer">research explorer on Hugging Face</a> provides the larger interactive preview.</p>
         </div>
         <ul class="download-list">
           <li>
@@ -115,7 +194,7 @@
       </section>
 
       <section class="section" id="citation" aria-labelledby="citation-heading" data-nav-section>
-        <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="citation-heading">Citation</h2></div>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="citation-heading">Citation</h2></div>
         <article class="publication">
           <a class="publication-image" href="../WetzlerSlossbergKimmel-BMVC15.pdf"><img src="HandPic_clear.png" alt="HandNet fingertip and palm annotations" loading="lazy" width="184" height="115" /></a>
           <div>
@@ -128,9 +207,10 @@
       </section>
 
       <section class="section" id="terms" aria-labelledby="terms-heading" data-nav-section>
-        <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="terms-heading">Usage &amp; Attribution</h2></div>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">05</span><h2 id="terms-heading">Usage &amp; Attribution</h2></div>
         <div class="bio-prose">
-          <p>The dataset is for academic, non-commercial use. For other uses, please contact the authors directly. Research using HandNet should cite the paper above.</p>
+          <p>HandNet data, including the precomputed examples on this page, is available under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International (CC BY 4.0)</a>, including academic and commercial use. You may share and adapt the data provided you credit Aaron Wetzler, Ron Slossberg, and Ron Kimmel, link the license, and indicate changes. Please cite the BMVC 2015 paper when using HandNet.</p>
+          <p>These terms match the <a href="https://huggingface.co/datasets/twerdster/HandNet">open dataset release on Hugging Face</a>. The new browser viewer is <a href="explorer/LICENSE">MIT licensed</a>; the original <a href="https://github.com/twerdster/HandNet">MATLAB repository</a> retains its historical code terms.</p>
         </div>
       </section>
 
