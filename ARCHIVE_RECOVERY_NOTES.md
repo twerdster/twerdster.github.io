@@ -6,6 +6,8 @@ This directory is a local static reconstruction of the archived Technion academi
 
 The homepage is from the October 25, 2019 Wayback snapshot. Supporting files are pulled from the closest available Wayback captures under `www.cs.technion.ac.il/~twerd/`.
 
+The recovered content is now presented in the shared homepage design. `archive.html` preserves the historical publications, student project descriptions and names, thesis, videos, and section anchors. `HandNet/index.html` uses the same styles and replaces the original empty download links with real paper, poster, slides, and supplementary-material links. Full HandNet training and test sets were not recovered and are not hosted here. The original page appearance remains available in the Wayback snapshot above; legacy CSS and project images are retained locally.
+
 ## Run Locally
 
 ```sh
@@ -25,6 +27,8 @@ npm run fetch:archive
 ```
 
 The fetch script downloads the archived internal files, rewrites Technion-hosted internal links to local paths, removes the old Google Analytics snippet, and writes `archive-manifest.json`.
+
+This is a historical recovery utility, not the publishing workflow. Run recovery in a separate checkout when investigating source captures so it cannot rewrite the maintained site pages.
 
 ## Recovery Notes
 

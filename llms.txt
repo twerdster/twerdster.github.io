@@ -16,5 +16,8 @@ Academic homepage for Aaron Wetzler, CTO of an early-stage company. Previously I
 - LinkedIn: `https://www.linkedin.com/in/aaron-wetzler/`
 - Twitter: `https://x.com/aaronwetzler`
 - Recovered 2019 website: `https://twerdster.github.io/archive.html`
+- Archived student projects: `https://twerdster.github.io/archive.html#Projects`
 
 The publication list includes the 2026 NeurIPS Robot Learning Workshop paper on robot-free demonstrations and the 2020 CoBe paper on coded beacons. Publication PDFs, BibTeX files, posters, slides, videos, patent records, and dataset links are listed directly on the homepage and in `data/site-content.json`.
+
+The HandNet page provides dataset information, usage terms, a citation, and links to the paper, poster, presentation, and supplementary archive. Full training and test sets are not currently hosted on the site; dataset access requests should go to Aaron's LinkedIn profile. The academic archive retains 12 publications, 21 student projects, the undergraduate thesis, and six demonstration video links. All hosted HTML pages share the homepage's typography, navigation, and theme.

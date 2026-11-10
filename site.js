@@ -21,11 +21,13 @@
   });
 
   const filters = document.querySelector('.publication-filters');
-  const filterButtons = [...filters.querySelectorAll('button')];
+  const filterButtons = [...document.querySelectorAll('.publication-filters button')];
   const publications = [...document.querySelectorAll('.publication-list > li')];
   const publicationStatus = document.getElementById('publication-status');
-  filterButtons[0].querySelector('span').textContent = `(${publications.length})`;
-  filters.hidden = false;
+  if (filters) {
+    filterButtons[0].querySelector('span').textContent = `(${publications.length})`;
+    filters.hidden = false;
+  }
 
   filterButtons.forEach((button) => {
     button.setAttribute('aria-controls', 'publication-list');
@@ -146,11 +148,14 @@
   });
 
   const nav = document.querySelector('.site-nav');
-  const navLinks = [...nav.querySelectorAll('nav a')];
+  const navLinks = [...document.querySelectorAll('.site-nav nav a, .page-links a')].filter((link) => {
+    return link.origin === location.origin && link.pathname === location.pathname && link.hash;
+  });
   const sections = [...document.querySelectorAll('[data-nav-section]')];
   let scheduled = false;
 
   function updateNavigation() {
+    if (!sections.length) return;
     const threshold = nav.getBoundingClientRect().height + 48;
     let current = sections[0].id;
     sections.forEach((section) => {

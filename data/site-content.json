@@ -36,6 +36,13 @@
       "url": "HandNet/",
       "paper": "WetzlerSlossbergKimmel-BMVC15.pdf",
       "supplementary_material": "Supplementary-ID-72.zip",
+      "bibtex": "WetzlerSlossbergKimmelBMVC15.bib",
+      "poster": "WetzlerSlossbergKimmelBMVC15_poster.pdf",
+      "slides": "RuleOfThumb.pptx",
+      "dataset_access": {
+        "status": "Full training and test sets are not currently hosted on this site.",
+        "contact": "https://www.linkedin.com/in/aaron-wetzler/"
+      },
       "description": "Depth-image dataset for hand and fingertip detection."
     }
   ],

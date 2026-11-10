@@ -1,189 +1,143 @@
 <!doctype html>
-
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1"/>
-<meta charset="utf-8"/>
-<br/>
-<br/>
-<title>HandNet - Project page</title>
-<link rel="stylesheet" type="text/css" href="../site.css"/>
-<style type="text/css">
-      body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
-      ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
-      ul#tabs li { display: inline; }
-      ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
-      ul#tabs li a:hover { background-color: #f1f0ee; }
-      ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
-      div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
-      div.tabContent.hide { display: none; }
-    </style>
-<script type="text/javascript">
-
-var tabLinks = new Array();
-    var contentDivs = new Array();
-
-    function init() {
-
-      // Grab the tab links and content divs from the page
-      var tabListItems = document.getElementById('tabs').childNodes;
-      for ( var i = 0; i < tabListItems.length; i++ ) {
-        if ( tabListItems[i].nodeName == "LI" ) {
-          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
-          var id = getHash( tabLink.getAttribute('href') );
-          tabLinks[id] = tabLink;
-          contentDivs[id] = document.getElementById( id );
-        }
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="HandNet, a depth-image dataset for hand and fingertip detection by Aaron Wetzler, Ron Slossberg, and Ron Kimmel. Paper, citation, supplementary material, and dataset information." />
+    <meta name="author" content="Aaron Wetzler" />
+    <meta name="color-scheme" content="light dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="HandNet | Aaron Wetzler" />
+    <meta property="og:description" content="A depth-image dataset for hand and fingertip detection, accompanying Rule of Thumb, BMVC 2015." />
+    <meta property="og:url" content="https://twerdster.github.io/HandNet/" />
+    <meta property="og:image" content="https://twerdster.github.io/HandNet/HandPic_clear.png" />
+    <title>HandNet | Aaron Wetzler</title>
+    <link rel="canonical" href="https://twerdster.github.io/HandNet/" />
+    <link rel="preload" href="../assets/fonts/newsreader-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="../assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin />
+    <script>
+      try {
+        var savedTheme = localStorage.getItem('aaron-wetzler-theme');
+        document.documentElement.dataset.theme = savedTheme === 'dark' ? 'dark' : 'light';
+      } catch (error) {}
+    </script>
+    <link rel="stylesheet" href="../styles.css?v=20261110-pages" />
+    <script src="../site.js?v=20261110-pages" defer></script>
+    <link rel="alternate" type="application/json" href="../data/site-content.json" title="Machine-readable site index" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "HandNet",
+        "url": "https://twerdster.github.io/HandNet/",
+        "description": "Depth images, fingertip heatmaps, and fingertip and palm labels collected with synchronized RealSense F200 and TrakSTAR tracking.",
+        "creator": [
+          { "@type": "Person", "name": "Aaron Wetzler", "url": "https://twerdster.github.io/" },
+          { "@type": "Person", "name": "Ron Slossberg" },
+          { "@type": "Person", "name": "Ron Kimmel" }
+        ],
+        "citation": "A. Wetzler, R. Slossberg, and R. Kimmel. Rule of Thumb: Deep Derotation for Improved Fingertip Detection. BMVC, 2015."
       }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-nav">
+      <div class="site-nav-inner">
+        <a class="site-nav-brand" href="../">Aaron Wetzler</a>
+        <nav aria-label="Main navigation">
+          <a href="../#about">About</a>
+          <a href="../#software">Research</a>
+          <a href="../#publications">Publications</a>
+          <a href="../#experience">Experience</a>
+          <a href="../#patents">Patents</a>
+        </nav>
+        <button class="icon-button theme-toggle" type="button" aria-label="Use dark theme" aria-pressed="false" title="Use dark theme" hidden>
+          <span class="icon icon-moon" aria-hidden="true"></span>
+          <span class="icon icon-sun" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
 
-      // Assign onclick events to the tab links, and
-      // highlight the first tab
-      var i = 0;
+    <main class="page" id="main">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../">Aaron Wetzler</a><span aria-hidden="true">/</span><a href="../#software">Research</a><span aria-hidden="true">/</span><span aria-current="page">HandNet</span>
+      </nav>
+      <header class="page-header" id="top">
+        <p class="eyebrow">Dataset &middot; BMVC 2015</p>
+        <h1>HandNet</h1>
+        <p class="page-subtitle">A depth-image dataset for hand and fingertip detection, collected with synchronized depth cameras and electromagnetic tracking.</p>
+        <nav class="page-links" aria-label="HandNet sections">
+          <a href="#description">Overview</a><a href="#downloads">Downloads</a><a href="#citation">Citation</a><a href="#terms">Usage</a>
+        </nav>
+      </header>
 
-      for ( var id in tabLinks ) {
-        tabLinks[id].onclick = showTab;
-        tabLinks[id].onfocus = function() { this.blur() };
-        if ( i == 0 ) tabLinks[id].className = 'selected';
-        i++;
-      }
+      <section class="section" id="description" aria-labelledby="description-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">01</span><h2 id="description-heading">Dataset Overview</h2></div>
+        <div class="bio-prose">
+          <p>HandNet accompanies <em>Rule of Thumb: Deep Derotation for Improved Fingertip Detection</em>. It contains depth images, annotated heatmaps, and discrete fingertip and palm labels, captured using a RealSense F200 synchronized with TrakSTAR trackers.</p>
+          <p>The dataset was recorded with 10 participants, with approximately 45 minutes of recording per participant.</p>
+        </div>
+        <figure class="dataset-figure">
+          <img src="HandNetData.gif" alt="Animated depth images and annotations from the HandNet dataset" width="696" height="157" />
+          <figcaption>Depth images and annotations from HandNet.</figcaption>
+        </figure>
+        <dl class="dataset-facts">
+          <div><dt>Depth camera</dt><dd>Intel RealSense F200</dd></div>
+          <div><dt>Tracking</dt><dd>TrakSTAR electromagnetic trackers</dd></div>
+          <div><dt>Annotations</dt><dd>Fingertips and palm</dd></div>
+        </dl>
+      </section>
 
-      // Hide all content divs except the first
-      var i = 0;
+      <section class="section" id="downloads" aria-labelledby="downloads-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">02</span><h2 id="downloads-heading">Downloads</h2></div>
+        <div class="bio-prose">
+          <p>The full training and test sets are not currently hosted on this site. For dataset access requests, <a href="https://www.linkedin.com/in/aaron-wetzler/">contact Aaron Wetzler</a>.</p>
+        </div>
+        <ul class="download-list">
+          <li>
+            <div><h3>Paper</h3><p>Rule of Thumb: Deep Derotation for Improved Fingertip Detection.</p></div>
+            <a class="document-link" href="../WetzlerSlossbergKimmel-BMVC15.pdf" download aria-label="Download the Rule of Thumb paper as PDF"><span class="icon icon-download" aria-hidden="true"></span>PDF</a>
+          </li>
+          <li>
+            <div><h3>Poster</h3><p>The BMVC 2015 research poster.</p></div>
+            <a class="document-link" href="../WetzlerSlossbergKimmelBMVC15_poster.pdf" download aria-label="Download the BMVC 2015 poster as PDF"><span class="icon icon-download" aria-hidden="true"></span>PDF</a>
+          </li>
+          <li>
+            <div><h3>Presentation</h3><p>Slides accompanying the paper.</p></div>
+            <a class="document-link" href="../RuleOfThumb.pptx" download aria-label="Download the Rule of Thumb presentation as PowerPoint"><span class="icon icon-download" aria-hidden="true"></span>PPTX</a>
+          </li>
+          <li>
+            <div><h3>Supplementary Material</h3><p>Supplementary material accompanying the BMVC 2015 paper.</p></div>
+            <a class="document-link" href="../Supplementary-ID-72.zip" download aria-label="Download supplementary material as ZIP"><span class="icon icon-download" aria-hidden="true"></span>ZIP</a>
+          </li>
+        </ul>
+      </section>
 
-      for ( var id in contentDivs ) {
-        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
-        i++;
-      }
-    }
+      <section class="section" id="citation" aria-labelledby="citation-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">03</span><h2 id="citation-heading">Citation</h2></div>
+        <article class="publication">
+          <a class="publication-image" href="../WetzlerSlossbergKimmel-BMVC15.pdf"><img src="HandPic_clear.png" alt="HandNet fingertip and palm annotations" loading="lazy" width="184" height="115" /></a>
+          <div>
+            <h3>Rule of Thumb: Deep Derotation for Improved Fingertip Detection</h3>
+            <p class="authors"><strong>A. Wetzler</strong>, R. Slossberg, and R. Kimmel</p>
+            <p class="venue">BMVC, 2015</p>
+            <p class="item-links"><a href="../WetzlerSlossbergKimmel-BMVC15.pdf">Paper</a><a href="../WetzlerSlossbergKimmelBMVC15.bib">BibTeX</a></p>
+          </div>
+        </article>
+      </section>
 
-    function showTab() {
-      var selectedId = getHash( this.getAttribute('href') );
+      <section class="section" id="terms" aria-labelledby="terms-heading" data-nav-section>
+        <div class="section-heading"><span class="section-number" aria-hidden="true">04</span><h2 id="terms-heading">Usage &amp; Attribution</h2></div>
+        <div class="bio-prose">
+          <p>The dataset is for academic, non-commercial use. For other uses, please contact the authors directly. Research using HandNet should cite the paper above.</p>
+        </div>
+      </section>
 
-      // Highlight the selected tab, and dim all others.
-      // Also show the selected content div, and hide all others.
-      for ( var id in contentDivs ) {
-        if ( id == selectedId ) {
-          tabLinks[id].className = 'selected';
-          contentDivs[id].className = 'tabContent';
-        } else {
-          tabLinks[id].className = '';
-          contentDivs[id].className = 'tabContent hide';
-        }
-      }
-
-      // Stop the browser following the link
-      return false;
-    }
-
-    function getFirstChildWithTagName( element, tagName ) {
-      for ( var i = 0; i < element.childNodes.length; i++ ) {
-        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
-      }
-    }
-
-    function getHash( url ) {
-      var hashPos = url.lastIndexOf ( '#' );
-      return url.substring( hashPos + 1 );
-    }
-</script>
-</head>
-<body onload="init()">
-
-<div id="body" style="width:50%; margin:auto">  
-
-<ul id="tabs">
-      <li><a href="#description">Info</a></li>
-      <li><a href="#downloads">Download</a></li>
-    
-</ul>
-
-<div class="tabContent" id="description">
-<table id="hor-minimalist-b">
-<thead>
-</thead>
-<tbody>
-<tr>
-	<td><img src="./HandPic.png" alt="" width="500" height="auto" /></a></td>
-	<td>
-	<h1>HandNet</h1>
-
-		This page will contain details and download links to the full HandNet database.
-		If you are interested in the database please drop me an email at 
-	
-	&lt;twerd <span class="grey">at</span> cs <span class="grey">dot</span> technion <span class="grey">dot</span> ac <span class="grey">dot</span> il&gt;</br>
-	
-	
-	</td>
-</tr>
-
-
-</tbody>
-
-</table>
-	
-</div>
-
-<div class="tabContent" id="description">
-<h2>Database info</h2>
-<table id="hor-minimalist-b">
-<thead>
-</thead>
-<tbody>
-<tr>
-<h3>
-If you use any of the files from this database please be aware that the data is for academic, non-commerical
-purposes. For any other use please contact the authors directly.
-
-If you find this data useful in your research please cite the following paper:
-</h3>
-	<td><a href="">
-	<img src="../HandPic.png" alt="" width="130" height="auto" /></a></td>
-	<td> Rule of Thumb: Deep Derotation for Improved Fingertip Detection,<br>
-	A Wetzler, R Slossberg and R Kimmel, BMVC 2015 <br>
-	</td>
-</tr>
-</tbody>
-</table>
-
-
-</div>
-
-<div class="tabContent" id="downloads">     
-<table id="hor-minimalist-b">
-<col width="83">
-<col width="230">
-<col width="500">
-<thead>
-</thead>
-<tbody>
-
-<tr><td><a href="">	<img src="" alt="" width="80" height="auto" /></a></td>
-	<td> All HandNet depth images<br>
-	<br><a href="">[Download training]</a>
-	<br><a href="">[Download testing]</a>
-	<br><a href="">[Download all]</a></td>
-	<td>These are the depth images from the database. 10 participants. 45 minutes of diluted recording per participant. More details will follow soon.</td></tr>
-<tr><td><a href="">	<img src="" alt="" width="80" height="auto" /></a></td>
-	<td> All annotated HandNet heatmap images<br>
-	<br><a href="">[Download training]</a>
-	<br><a href="">[Download testing]</a>
-	<br><a href="">[Download all]</a></td>
-	<td>These are the heatmap images generated from the database using TrakStar trackers synched with a RealSense F200. </td></tr>
-<tr><td><a href="">	<img src="" alt="" width="80" height="auto" /></a></td>
-	<td> All annotated HandNet label images<br>
-	<br><a href="">[Download training]</a>
-	<br><a href="">[Download testing]</a>
-	<br><a href="">[Download all]</a></td>
-	<td>These are the discrete fingertip and palm label images generated from the database using TrakStar trackers synched with a RealSense F200. </td></tr>
-		
-	
-</tbody>
-</table>
-</div>
-
-
-</div>
-
-</body>
+      <footer class="site-footer">
+        <p>&copy; Aaron Wetzler</p>
+        <nav aria-label="Footer links"><a href="../">Homepage</a><a href="https://github.com/twerdster">GitHub</a><a href="https://www.linkedin.com/in/aaron-wetzler/" rel="me">LinkedIn</a><a href="https://x.com/aaronwetzler" rel="me">Twitter</a><a href="../archive.html">2019 website archive</a></nav>
+      </footer>
+    </main>
+  </body>
 </html>

@@ -4,6 +4,8 @@ A static academic homepage built from the recovered Technion website. The public
 
 The layout is inspired by Ariel Ephrat's academic homepage: a sticky section navigation, circular profile photo, serif headings, numbered sections, illustrated research highlights, and compact publication rows. Publications can be filtered by research area, and existing BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. All content and original citation links remain available without JavaScript.
 
+All three hosted HTML pages share `styles.css` and `site.js`, including navigation, fonts, light/dark preference, citation previews, and responsive layout. HandNet is a dataset page with working research-material downloads and explicit full-dataset access information. The academic archive retains its 12 publications, 21 student projects, undergraduate thesis, six videos, and legacy section anchors, including `archive.html#Projects`. PDFs, slides, ZIPs, and external websites retain their native formats.
+
 ## Run locally
 
 ```sh
@@ -34,12 +36,14 @@ The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.pl
 
 - `index.html`: current academic homepage.
 - `styles.css`: responsive academic-page styling.
-- `site.js`: progressive enhancements for themes, publication filters, inline citations, and active navigation.
+- `site.js`: shared progressive enhancements for themes, optional publication filters, inline citations, and active navigation. Cross-page navigation links are not treated as local section links.
 - `assets/fonts/` and `assets/icons/`: self-hosted Google Fonts and Lucide SVG icons, with their licenses. Fonts and icons do not require external services at runtime.
 - `data/site-content.json`: machine-readable publication, patent, and resource index.
 - `llms.txt`: compact index for agents and crawlers.
 - `robots.txt` and `sitemap.xml`: search-engine discovery files.
-- `archive.html`: recovered 2019 homepage.
+- `HandNet/index.html`: dataset overview, available downloads, citation, and usage terms, using the shared design. The original empty training/test download links are replaced by an accurate access notice.
+- `archive.html`: recovered 2019 academic content presented in the shared design.
+- `site.css` and `HandNet/style/`: retained legacy assets, unused by the current HTML pages.
 - `ARCHIVE_RECOVERY_NOTES.md`: Wayback recovery notes.
 
 Dedicated Camerai and Apple project material is intentionally absent from the public page until suitable text, images, videos, and public links are supplied.
