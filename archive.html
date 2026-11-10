@@ -1,0 +1,464 @@
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8"/>
+<br/>
+<br/>
+<title>Aaron Wetzler - Homepage</title>
+<link rel="stylesheet" type="text/css" href="site.css"/>
+<style type="text/css">
+      body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+      ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+      ul#tabs li { display: inline; }
+      ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+      ul#tabs li a:hover { background-color: #f1f0ee; }
+      ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+      div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
+      div.tabContent.hide { display: none; }
+    </style>
+<script type="text/javascript">
+
+var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+
+</script>
+</head>
+<body onload="init()">
+
+<div id="body" style="width:50%; margin:auto">  
+
+<ul id="tabs">
+      <li><a href="#about">About me</a></li>
+      <li><a href="#Publications">Publications</a></li>
+      <li><a href="#Projects">Projects</a></li>
+	  <li><a href="#Videos">Videos/links</a></li>
+</ul>
+
+<div class="tabContent" id="about">
+<table id="hor-minimalist-b">
+<thead>
+</thead>
+<tbody>
+<tr>
+	<td><img src="./me.jpg" alt="" width="300" height="auto" /></a></td>
+	<td>
+	<h1>Aaron Wetzler</h1>
+
+		I am a direct-track PhD candidate at the <a href="http://webee.technion.ac.il/">EE Department</a> of the <a href="http://www1.technion.ac.il/en">Technion Israel Institute of Technology</a>, currently working with Professor <a href="http://www.cs.technion.ac.il/~ron/">Ron Kimmel</a> on problems relating to machine learning, gesture recognition, computer vision and numerical geometry of shapes.
+		I completed my BSc in Mechatronics in the <a href="http://www.ebe.uct.ac.za/departments/eleceng/">EE Department</a> of the <a href="https://www.uct.ac.za/">University of Cape Town</a>.
+
+		<h2>Contact Info</h2>
+
+		<h3>Office Address</h3>
+		Room 435 </br>
+		Taub Building </br>
+		Technion </br>
+		Haifa, 32000 </br>
+
+
+		<h3>Email</h3>
+
+		&lt;twerd <span class="grey">at</span> cs <span class="grey">dot</span> technion <span class="grey">dot</span> ac <span class="grey">dot</span> il&gt;</br>
+		&lt;twerd <span class="grey">at</span> tx <span class="grey">dot</span> techunix <span class="grey">dot</span> ac <span class="grey">dot</span> il&gt;</br>
+
+	</td>
+</tr>
+
+
+</tbody>
+
+</table>
+<div align="center">
+	</div>
+	
+</div>
+
+<div class="tabContent" id="Publications">
+<h2>Publications</h2>
+<table id="hor-minimalist-b">
+<thead>
+</thead>
+<tbody>
+<tr>
+	<td><a href="">
+	<img src="./specular_depth_refinement.png" alt="" width="130" height="auto" /></a></td>
+	<td> Real-Time Depth Refinement for Specular Objects,<br>
+	R Or-El, R Hershkovitz, A Wetzler, G Rosman,  A M Bruckstein and R Kimmel, CVPR 2016<br>
+	<a href="./OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="https://www.youtube.com/watch?v=hoIKMitKom0">[Video]&nbsp&nbsp&nbsp</a>
+	<a href="https://cs.technion.ac.il/~royorel/specular_depth_refinement.html">[Webpage]&nbsp&nbsp&nbsp</a>
+	<a href="./OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="">
+	<img src="./HandPic.png" alt="" width="130" height="auto" /></a></td>
+	<td> Rule of Thumb: Deep Derotation for Improved Fingertip Detection,<br>
+	A Wetzler, R Slossberg and R Kimmel, BMVC 2015 <br>
+	<a href="./WetzlerSlossbergKimmel-BMVC15.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./WetzlerSlossbergKimmelBMVC15_poster.pdf">[Poster]&nbsp&nbsp&nbsp</a>	
+	<a href="./RuleOfThumb.pptx">[Slides]&nbsp&nbsp&nbsp</a>	
+	<a href="./Supplementary-ID-72.zip">[Supplementary material]&nbsp&nbsp&nbsp</a>
+	<a href="./HandNet">[HandNet page]&nbsp&nbsp&nbsp</a>
+	<a href="./WetzlerSlossbergKimmelBMVC15.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="">
+	<img src="./Freehand.png" alt="" width="130" height="auto" /></a></td>
+	<td> Freehand Laser Scanning Using a Mobile Phone, <br>
+	R Slossberg, A Wetzler and R Kimmel, BMVC 2015 <br>
+	<a href="./SlossbergWetzlerKimmelBMVC15.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	[Poster][Slides]
+	<a href="https://www.youtube.com/watch?v=_Nr1Jh4NsFs">[Video]&nbsp&nbsp&nbsp</a>
+	<a href="./SlossbergWetzlerKimmelBMVC15.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="">
+	<img src="./depthcvpr.png" alt="" width="130" height="auto" /></a></td>
+	<td> RGBD-Fusion: Real-Time High Precision Depth Recovery,<br>
+	R Or-El, G Rosman, A Wetzler, R Kimmel and A M Bruckstein, CVPR 2015<br>
+	<a href="./Or-elRosmanWetzlerKimmelBruckstein.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="https://www.youtube.com/watch?v=5nLnOTyrd-s&feature=youtu.be">[Video]&nbsp&nbsp&nbsp</a>
+	<a href="https://cs.technion.ac.il/~royorel/rgbd_fusion.html">[Webpage]&nbsp&nbsp&nbsp</a>
+	<a href="./Or-elRosmanWetzlerKimmelBruckstein.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./MeccaWetzlerKimmelBruckstein-SIAM14.pdf">
+	<img src="./eve.png" alt="" width="130" height="auto" /></a></td>
+	<td> Near Field Photometric Stereo with Point Light Sources,<br>
+	R Mecca, A Wetzler, R Kimmel and A M Bruckstein, SIAM 2014<br>
+	<a href="./MeccaWetzlerKimmelBruckstein-SIAM14.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./MeccaWetzlerKimmelBruckstein-SIAM14.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf">
+	<img src="./BeamSketch.png" alt="" width="130" height="auto" /></a></td>
+	<td> What can you do with a Beam and a reflecting prism?,<br>
+	A Wetzler, R Herskovitz, N Carmeli and R Kimmel, ECCV Demo 2014<br>
+	<a href="./WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf">[Poster]&nbsp&nbsp&nbsp</a><a href="https://www.youtube.com/watch?v=wI5I1x-XrMY">[Video]&nbsp&nbsp&nbsp</a>
+	
+	</td>
+</tr>
+<tr>
+	<td><a href="./WetzlerMeccaKimmelBruckstein-3DV-2014.pdf">
+	<img src="./3dvCover.png" alt="" width="130" height="auto" /></a></td>
+	<td> Close Range Photometric Stereo with Point Light Sources,<br>
+	A Wetzler, R Mecca, R Kimmel and A M Bruckstein, 3DV 2014<br>
+	<a href="./WetzlerMeccaKimmelBruckstein-3DV-2014.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./3DV2014_Poster.pdf">[Poster]&nbsp&nbsp&nbsp</a>
+	<a href="./WetzlerMeccaKimmelBruckstein-3DV-2014.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./MeccaTankusWetzlerBruckstein-SIAM14.pdf">
+	<img src="./SIAM2014.png" alt="" width="130" height="auto" /></a></td>
+	<td>A Dfferential Approach to Photometric Stereo with Perspective Viewing,<br>
+	R Mecca, A Tankus, A Wetzler and A M Bruckstein, SIAM 2014<br>
+	<a href="./MeccaTankusWetzlerBruckstein-SIAM14.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./MeccaTankusWetzlerBruckstein-SIAM14.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./MeccaWetzlerKimmelBruckstein-3DV-2013.pdf">
+	<img src="./PhotometricStereoWithShadows.png" alt="" width="130" height="auto" /></a></td>
+	<td>Direct Shape Recovery from Photometric Stereo with Shadows,<br>
+	R Mecca, A Wetzler, R Kimmel and A M Bruckstein, 3DV 2013<br>
+	<a href="./MeccaWetzlerKimmelBruckstein-3DV-2013.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./3DVposter_2013.pdf">[Poster]&nbsp&nbsp&nbsp</a>
+	<a href="./MeccaWetzlerKimmelBruckstein-3DV-2013.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf">
+	<img src="./UbiquitousBeltrami.png" alt="" width="130" height="auto" /></a></td>
+	<td>The Laplace-Beltrami operator: a ubiquitous tool for image and shape processing,<br>
+	A Wetzler, Y Aflalo, A Dubrovina and R Kimmel, ISSM 2013<br>
+	<a href="./WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./WetzlerAflaloDubrovinaKimmel-ISSM-2013.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./WetzlerRosmanKimmel-IEEEI-2012.pdf">
+	<img src="./PatchBeltrami3D.png" alt="" width="130" height="auto" /></a></td>
+	<td>Patch-Space Beltrami Denoising of 3D Point Clouds,<br>
+	A Wetzler, G Rosman and R Kimmel, IEEEI 2012<br>
+	<a href="./WetzlerRosmanKimmel-IEEEI-2012.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./FIRST-poster.pdf">[Poster]&nbsp&nbsp&nbsp</a>
+	<a href="./WetzlerRosmanKimmel-IEEEI-2012.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+<tr>
+	<td><a href="./WetzlerKimmel-SSVM-2011.pdf">
+	<img src="./PatchBeltrami.png" alt="" width="130" height="auto" /></a></td>
+	<td>Efficient Beltrami Flow Denoising in Patch-Space,<br>	
+	A Wetzler and R Kimmel, SSVM 2011<br>
+	<a href="./WetzlerKimmel-SSVM-2011.pdf">[Paper]&nbsp&nbsp&nbsp</a>
+	<a href="./SSVM-poster.pdf">[Poster]&nbsp&nbsp&nbsp</a>
+	<a href="./Beltrami.zip">[Code]&nbsp&nbsp&nbsp</a>	
+	<a href="./WetzlerKimmel-SSVM-2011.bib">[Bibtex]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+</tbody>
+</table>
+<h2>Theses</h2>
+<table id="hor-minimalist-b">
+<thead>
+</thead>
+<tbody>
+<tr>
+	<td><a href="./Undergrad-2005.pdf">
+	<img src="./Laser.bmp" alt="" width="130" height="auto" /></a></td>
+	<td>Undergraduate thesis<br>
+	Low cost 3D Laser Scanning Unit with application to Face Recognition, <br>
+	A Wetzler, University of Cape Town 2005<br>
+	<a href="./Undergrad-2005.pdf">[Thesis]&nbsp&nbsp&nbsp</a>
+	</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+<div class="tabContent" id="Projects">     
+<h3>Since 2010 I have designed and supervised over 30 student projects at the Technion in the following labs: 
+<a href="http://gip.cs.technion.ac.il/">GIP</a>: Geometric Image Processing lab, 
+<a href="http://cgm.technion.ac.il/">CGM</a>: Laboratory of Computer Graphics and Multimedia, 
+<a href="http://nssl.eew.technion.ac.il/">NSSL</a>: Network Software Systems Laboratory, 
+<a href="http://sipl.technion.ac.il/">SIPL</a>: Signal and Image Processing Laboratory. 
+Most of them are listed below. Anyone who is interested to hear about new or old projects is welcome to contact me by email. </h3>
+<table id="hor-minimalist-b">
+<col width="83">
+<col width="230">
+<col width="500">
+<thead>
+</thead>
+<tbody>
+<tr><td><a href="">	<img src="./Projects/FrancisNaara/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> AR / 3D Skype to Android<br>
+	Raafat Francis | Hashem Naara<br></td>
+	<td>This project focused around streaming real time depth images from a Kinect to an Android tablet. An AR marker detected
+	by the Vuforia AR toolkit was used to determine the location of the camera. The end result yielded a Skype like experience
+	with the real time 3D data hovering above the marker like a hologram. </td></tr>
+
+<tr><td><a href="">	<img src="./Projects/WeissHagay/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Augmented Reality Posters<br>
+	Michael Weiss | Myr Hagay<br></td>
+	<td>There is no dynamic activity involved in looking at a poster. In this project the students
+	used the contents of a poster to create an AR marker enabling them to add virtual content when viewed through an Android phone. </td></tr>
+
+<tr><td><a href="">	<img src="./Projects/BuchrisKleynik/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> QR code applications on Android<br>
+	Tamir Buchris | Vitaly Kleynik<br></td>
+	<td>In this project we aimed to design a system to enable students on campus to scan QR codes positioned outside lecture rooms to provide information about current or upcoming lectures.
+	The system was also able to provide information about a lecturer or a certain room. It automatically generated QR codes for each new entry into a database
+	which was then stuck to the door or wall outside the relevant space. </td></tr>
+
+<tr><td><a href="">	<img src="./Projects/SitrukBanani/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Smartphone Game<br>
+	Liav Sitruk | Idan Banani<br></td>
+	<td>This project revolved around learning how to use the Box2D and Cocos2D libraries for game making. </td></tr>
+	
+<tr><td><a href="">	<img src="./Projects/MerlisNeeman/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Hebrew Speech Recognition on iPad<br>
+	Nadav Merlis | Liora Neeman<br></td>
+	<td>State of the art Speech recognition systems are complex and difficult to replicate. Using recent research pioneered by Prof. Koby Kramer the students 
+	developed a dictation application for the iPad which recognized and typed out spoken Hebrew letters.</td></tr>
+	
+<tr><td><a href="">	<img src="./Projects/SlossbergShaked/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> 3D Stereo Reconstruction using iPhones<br>
+	Ron Slossberg | Omer Shaked<br></td>
+	<td>Using a simple dual iPhone holder the video streams of two devices were synchronized over BlueTooth. This enabled 3D reconstruction
+	on the devices using block matching stereo.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/Kemarsky/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Marker tracking<br>
+	Alex Kemarsky<br></td>
+	<td>The use of highly efficient and repeatable FAST features was used to learn points on a predefined marker image. These were then
+	detected using a decision tree on a new image resulting in a real time marker detection and pose extraction utility for PCs.</td></tr>
+	
+
+<tr><td><a href="">	<img src="./Projects/MansourSrour/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Predator TLD on iOS<br>
+	Mariaan Mansour | Majd Srour<br></td>
+	<td>The popular TLD algorithm presented by Dr. Zdenek Kalal was implemented from scratch for near real time use on an iPad.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/KucherPovichuk/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> 3D Volume Carving on iPhone<br>
+	Sergey Kucher | Alex Povichuk<br></td>
+	<td>Voxel carving is a straightforward procedure for removing voxels that are known not to belong to the  visual hull of an object.
+	In this project an iPhone was paired with the Vuforia AR SDK and a green base and marker. This enabled known pose extraction of the camera
+	and a full volume carving framework was implemented on an iPhone including marching cubes to provide the final scanned mesh.</td></tr>
+	
+<tr><td><a href="">	<img src="./Projects/Zehavi/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Hand tracking<br>
+	Sa'ar Zehavi<br></td>
+	<td>Detecting and tracking a hand in a depth stream is an important component for any user interface. In this project a system was built
+	based on a known hand tracking approach. The method was implemented and adjusted to enable hand tracking for a close
+range PMD nano camera.</td></tr>
+	
+<tr><td><a href="">	<img src="./Projects/SchwabskyCohen/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> OpenFusion<br>
+	Nurit Schwabsky | Vered Cohen <br></td>
+	<td>The popular KinectFusion algorithm was implemented from scratch with minimal dependencies on external libraries other than CUDA
+	and OpenCV. The framework was designed to be fully camera agnostic with an abstract camera interface.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/HerschkovitzCarmeli/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> CamPong<br>
+	Rom Herschkovitz | Nofar Carmeli <br></td>
+	<td>Using a prism and a Samsung Galaxy Beam this project focused on extracting the location of a user's hand in front
+	of the devices inbuilt camera and projector. This enabled realtime projection and play of a Pong game on any flat surface.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/Krakauer/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Face Depth Estimation from a Single Color Image<br>
+	Tova Krakauer <br></td>
+	<td>In this project, a Random Decision Forest was trained on a database of depth and color images captured of a painted manequin face.
+	The different areas of the face were painted different colors and the forest was trained to recognize these different patches
+	based on the depth image alone.</td></tr>
+	
+<tr><td><a href="">	<img src="./Projects/MayaanLeybovich/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> HeartBeat for iOS<br>
+	Or Mayaan | Michael Leybovich <br></td>
+	<td>The flash available on an iPhone is strong enough to consistently illuminate a user's skin when pressed tightly against the skin surface.
+	In this project the red channel of the camera was used to record a signal
+	that varies in synch with a user's heart rate as the reflectance properties change with blood pressure.</td></tr>
+	
+<tr><td><a href="">	<img src="./Projects/GodlinKligman/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> 3D Scanner on Android<br>
+	Arkadi Godlin | Alex Kligman | Alon Zivrin <br></td>
+	<td>The Samsung Beam has an inbuilt projector. Using a prism to redirect the light of the projector to overlap the capture frustrum
+	of the inbuilt camera enables multiple different applications including structured light 3D reconstruction.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/JabareenAgbariah/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Multi-View 3D reconstruction application for iPhone<br>
+	Mohamad Jabareen | Mostafa Agbariah <br></td>
+	<td>The popular 123DCatch App is based on multiview 3D reconstruction. In this project readily available OpenSource tools were used
+	to replicate the capture and reconstruction pipeline as a proof of concept iPhone app which can replicate complex functionality. The images
+	were captured and uploaded to a server where they were processed by the PMVS2 software on the server's GPU.</td></tr>
+
+<tr><td><a href="">	<img src="./PeretzFurshpan/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Multi-user virtual war-room for Oculus Rift<br>
+	Noam Peretz | Mor Furshpan <br></td>
+	<td>Senior commanders and strategic planners typically use 2D maps to keep track of armed forces. This project aimed to expose
+	the potential for using full Virtual Reality in such scenarios for collaboration and planning. Voice chatting and synchronized avatar
+	motions allow multiple entities to interact in a virtual space useful designed specifically to simulate military scenarios.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/GoldbaumOstrovski/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> Full positional tracking for Oculus Rift <br>
+	Dor Goldbaum | Vlady Ostrovski <br></td>
+	<td>The incredibly popular Oculus Rift has a significant disadvantage in the form of no positional tracking. In this project we tested
+	two different methods for positional tracking of the Rift. </td></tr>
+
+<tr><td><a href="">	<img src="./Projects/KuppermanHayoonOfirNachumGuyKatz/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> AUVSI Seafarer 2014 GrayOwl Image Processing team<br>
+	Li-tal Kupperman | Eli Hayoon | Nadav Ofir | Ziv Nachum | Itay Guy | Liat Katz <br></td>
+	<td>The anual AUVSI Seafarer competition is one of the most popular of its kind for university level aeronautic students.
+As flight and control systems have become more advanced so have the computer vision tasks assigned to the competition. We designed
+a fully operational ground control and onboard vision system to detect and identify target properties from images
+captured on a student built, fully autonomous GrayOwl drone.	</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/Richardson/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> CutOut for Android<br>
+	Elad Richardson <br></td>
+	<td>One of the most common tasks in image editing is that of segmentation. If performed manually it can be a frustrating and time
+	consuming process. In this project an Android app was built to perform highly efficient object segmentation based only on user scribbles.</td></tr>
+
+<tr><td><a href="">	<img src="./Projects/ReuveniBekkerman/projImg.jpg" alt="" width="80" height="auto" /></a></td>
+	<td> RobotRun game<br>
+	Hadar Reuveny | Amit Bekerman <br></td>
+	<td>RobotRun is a game designed in Unity3D which uses the Intel Creative 3D camera to detect the position of a player's hand.
+	This information is used to control a robot on screen. The objective of the game is to avoid obstacles in a similar way to 
+	Temple Run. The scenery and obstacles are dynamically created allowing good players to continue running indefinitely.</td></tr>
+	
+	
+	
+</tbody>
+</table>
+</div>
+
+<div class="tabContent" id="Videos">    
+ Videos of hand tracking and fingertip detection.
+ <ul id="tabs">
+      <li><a href="https://www.youtube.com/watch?v=D99wyKbYGHI">Full hand and fingertip identity detection and tracking</a></li><br>
+      <li><a href="https://www.youtube.com/watch?v=mxTDHY5ciLU">Pizza worm</a></li><br>
+      <li><a href="https://www.youtube.com/watch?v=5LCsgZQj56w">Fingertip detection</a></li><br>
+	  <li><a href="https://www.youtube.com/watch?v=09AtnKS3evQ">Grasping using a PMD nano</a></li><br>
+	  <li><a href="https://www.youtube.com/watch?v=oTYEWWDxXNw">Joint detection using a Kinect</a></li><br>
+	  <li><a href="https://www.youtube.com/watch?v=5iJ7h0OMrc8">Fingertip detection for multitouch simulation</a></li><br>
+</ul>
+</div>
+
+
+</div>
+
+</body>
+</html>

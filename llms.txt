@@ -1,0 +1,15 @@
+# Aaron Wetzler
+
+Academic homepage for Aaron Wetzler. Research areas include computer vision, machine learning, gesture recognition, and numerical geometry.
+
+## Main resources
+
+- Homepage: `https://twerdster.github.io/`
+- Machine-readable index: `https://twerdster.github.io/data/site-content.json`
+- Tea source code: `https://github.com/twerdster/tea`
+- HandNet dataset page: `https://twerdster.github.io/HandNet/`
+- Publications: `https://twerdster.github.io/#publications`
+- LinkedIn: `https://www.linkedin.com/in/aaron-wetzler/`
+- Recovered 2019 website: `https://twerdster.github.io/archive.html`
+
+Publication PDFs, BibTeX files, posters, slides, videos, and dataset links are listed directly on the homepage and in `data/site-content.json`.

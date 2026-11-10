@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Aaron Wetzler's academic homepage: computer vision, machine learning, geometry, publications, code, and datasets." />
+    <meta name="author" content="Aaron Wetzler" />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Aaron Wetzler" />
+    <meta property="og:description" content="Academic homepage for Aaron Wetzler: computer vision, machine learning, geometry, publications, code, and datasets." />
+    <meta property="og:url" content="https://twerdster.github.io/" />
+    <meta property="og:image" content="https://twerdster.github.io/profile.jpg" />
+    <meta property="og:image:alt" content="Aaron Wetzler" />
+    <meta property="profile:first_name" content="Aaron" />
+    <meta property="profile:last_name" content="Wetzler" />
+    <meta name="twitter:card" content="summary" />
+    <title>Aaron Wetzler</title>
+    <link rel="canonical" href="https://twerdster.github.io/" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="alternate" type="application/json" href="data/site-content.json" title="Machine-readable site index" />
+    <link rel="alternate" type="text/plain" href="llms.txt" title="LLM-readable site summary" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aaron Wetzler",
+        "url": "https://twerdster.github.io/",
+        "image": "https://twerdster.github.io/profile.jpg",
+        "sameAs": [
+          "https://github.com/twerdster",
+          "https://www.linkedin.com/in/aaron-wetzler/"
+        ],
+        "alumniOf": [
+          { "@type": "CollegeOrUniversity", "name": "Technion - Israel Institute of Technology" },
+          { "@type": "CollegeOrUniversity", "name": "University of Cape Town" }
+        ],
+        "knowsAbout": ["Computer vision", "Machine learning", "Gesture recognition", "Numerical geometry"]
+      }
+    </script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="profile" id="top">
+        <img class="profile-photo" src="profile.jpg" alt="Aaron Wetzler" width="200" height="200" fetchpriority="high" />
+        <div class="profile-copy">
+          <h1>Aaron Wetzler</h1>
+          <p class="profile-field">Computer vision, machine learning, and geometric methods</p>
+          <nav class="profile-links" aria-label="Primary links">
+            <a href="https://github.com/twerdster">GitHub</a>
+            <a href="https://www.linkedin.com/in/aaron-wetzler/">LinkedIn</a>
+            <a href="#publications">Publications</a>
+            <a href="#software">Code &amp; data</a>
+            <a href="archive.html">Original website</a>
+          </nav>
+        </div>
+      </header>
+
+      <section aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          My academic work spans computer vision, machine learning, gesture recognition, and numerical geometry.
+          I completed a direct-track PhD in Electrical Engineering at the
+          <a href="https://www.technion.ac.il/">Technion - Israel Institute of Technology</a>, where I worked with
+          <a href="https://www.cs.technion.ac.il/~ron/">Prof. Ron Kimmel</a> in the Geometric Image Processing Lab.
+          I received a BSc in Mechatronics from the <a href="https://www.uct.ac.za/">University of Cape Town</a>.
+        </p>
+      </section>
+
+      <section id="software" aria-labelledby="software-heading">
+        <h2 id="software-heading">Code &amp; Data</h2>
+        <div class="resource-list">
+          <article class="resource">
+            <h3>Tea</h3>
+            <p>
+              A randomized decision-tree learning framework designed for large datasets and parallel training on multiple GPUs.
+              Tea was developed as part of my PhD research at the Technion.
+            </p>
+            <p class="item-links"><a href="https://github.com/twerdster/tea">code</a></p>
+          </article>
+          <article class="resource">
+            <h3>HandNet</h3>
+            <p>
+              A depth-image dataset for hand and fingertip detection, collected with synchronized tracking and depth cameras.
+              It accompanies the BMVC 2015 paper <em>Rule of Thumb</em>.
+            </p>
+            <p class="item-links">
+              <a href="HandNet/">dataset page</a>
+              <span aria-hidden="true">|</span>
+              <a href="WetzlerSlossbergKimmel-BMVC15.pdf">paper</a>
+              <span aria-hidden="true">|</span>
+              <a href="Supplementary-ID-72.zip">supplementary material</a>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" aria-labelledby="publications-heading">
+        <h2 id="publications-heading">Publications</h2>
+        <ol class="publication-list">
+          <li class="publication">
+            <a class="publication-image" href="OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf"><img src="specular_depth_refinement.png" alt="Depth refinement result for a specular object" /></a>
+            <div>
+              <h3>Real-Time Depth Refinement for Specular Objects</h3>
+              <p class="authors">R. Or-El, R. Hershkovitz, <strong>A. Wetzler</strong>, G. Rosman, A. M. Bruckstein, and R. Kimmel</p>
+              <p class="venue">CVPR, 2016</p>
+              <p class="item-links"><a href="OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf">paper</a><span>|</span><a href="https://www.youtube.com/watch?v=hoIKMitKom0">video</a><span>|</span><a href="https://cs.technion.ac.il/~royorel/specular_depth_refinement.html">project page</a><span>|</span><a href="OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="WetzlerSlossbergKimmel-BMVC15.pdf"><img src="HandPic.png" alt="HandNet fingertip detection visualization" /></a>
+            <div>
+              <h3>Rule of Thumb: Deep Derotation for Improved Fingertip Detection</h3>
+              <p class="authors"><strong>A. Wetzler</strong>, R. Slossberg, and R. Kimmel</p>
+              <p class="venue">BMVC, 2015</p>
+              <p class="item-links"><a href="WetzlerSlossbergKimmel-BMVC15.pdf">paper</a><span>|</span><a href="WetzlerSlossbergKimmelBMVC15_poster.pdf">poster</a><span>|</span><a href="RuleOfThumb.pptx">slides</a><span>|</span><a href="HandNet/">HandNet</a><span>|</span><a href="WetzlerSlossbergKimmelBMVC15.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="SlossbergWetzlerKimmelBMVC15.pdf"><img src="Freehand.png" alt="Freehand laser scanning reconstruction" /></a>
+            <div>
+              <h3>Freehand Laser Scanning Using a Mobile Phone</h3>
+              <p class="authors">R. Slossberg, <strong>A. Wetzler</strong>, and R. Kimmel</p>
+              <p class="venue">BMVC, 2015</p>
+              <p class="item-links"><a href="SlossbergWetzlerKimmelBMVC15.pdf">paper</a><span>|</span><a href="https://www.youtube.com/watch?v=_Nr1Jh4NsFs">video</a><span>|</span><a href="SlossbergWetzlerKimmelBMVC15.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="Or-elRosmanWetzlerKimmelBruckstein.pdf"><img src="depthcvpr.png" alt="RGBD-Fusion depth recovery result" /></a>
+            <div>
+              <h3>RGBD-Fusion: Real-Time High Precision Depth Recovery</h3>
+              <p class="authors">R. Or-El, G. Rosman, <strong>A. Wetzler</strong>, R. Kimmel, and A. M. Bruckstein</p>
+              <p class="venue">CVPR, 2015</p>
+              <p class="item-links"><a href="Or-elRosmanWetzlerKimmelBruckstein.pdf">paper</a><span>|</span><a href="https://www.youtube.com/watch?v=5nLnOTyrd-s">video</a><span>|</span><a href="https://cs.technion.ac.il/~royorel/rgbd_fusion.html">project page</a><span>|</span><a href="Or-elRosmanWetzlerKimmelBruckstein.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="MeccaWetzlerKimmelBruckstein-SIAM14.pdf"><img src="eve.png" alt="Near-field photometric stereo result" /></a>
+            <div>
+              <h3>Near Field Photometric Stereo with Point Light Sources</h3>
+              <p class="authors">R. Mecca, <strong>A. Wetzler</strong>, R. Kimmel, and A. M. Bruckstein</p>
+              <p class="venue">SIAM Journal on Imaging Sciences, 2014</p>
+              <p class="item-links"><a href="MeccaWetzlerKimmelBruckstein-SIAM14.pdf">paper</a><span>|</span><a href="MeccaWetzlerKimmelBruckstein-SIAM14.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf"><img src="BeamSketch.png" alt="Samsung Beam and reflecting prism demonstration" /></a>
+            <div>
+              <h3>What Can You Do with a Beam and a Reflecting Prism?</h3>
+              <p class="authors"><strong>A. Wetzler</strong>, R. Hershkovitz, N. Carmeli, and R. Kimmel</p>
+              <p class="venue">ECCV Demo, 2014</p>
+              <p class="item-links"><a href="WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf">poster</a><span>|</span><a href="https://www.youtube.com/watch?v=wI5I1x-XrMY">video</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="WetzlerMeccaKimmelBruckstein-3DV-2014.pdf"><img src="3dvCover.png" alt="Close-range photometric stereo result" /></a>
+            <div>
+              <h3>Close Range Photometric Stereo with Point Light Sources</h3>
+              <p class="authors"><strong>A. Wetzler</strong>, R. Mecca, R. Kimmel, and A. M. Bruckstein</p>
+              <p class="venue">3DV, 2014</p>
+              <p class="item-links"><a href="WetzlerMeccaKimmelBruckstein-3DV-2014.pdf">paper</a><span>|</span><a href="3DV2014_Poster.pdf">poster</a><span>|</span><a href="WetzlerMeccaKimmelBruckstein-3DV-2014.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="MeccaTankusWetzlerBruckstein-SIAM14.pdf"><img src="SIAM2014.png" alt="Photometric stereo with perspective viewing result" /></a>
+            <div>
+              <h3>A Differential Approach to Photometric Stereo with Perspective Viewing</h3>
+              <p class="authors">R. Mecca, A. Tankus, <strong>A. Wetzler</strong>, and A. M. Bruckstein</p>
+              <p class="venue">SIAM Journal on Imaging Sciences, 2014</p>
+              <p class="item-links"><a href="MeccaTankusWetzlerBruckstein-SIAM14.pdf">paper</a><span>|</span><a href="MeccaTankusWetzlerBruckstein-SIAM14.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="MeccaWetzlerKimmelBruckstein-3DV-2013.pdf"><img src="PhotometricStereoWithShadows.png" alt="Photometric stereo with shadows result" /></a>
+            <div>
+              <h3>Direct Shape Recovery from Photometric Stereo with Shadows</h3>
+              <p class="authors">R. Mecca, <strong>A. Wetzler</strong>, R. Kimmel, and A. M. Bruckstein</p>
+              <p class="venue">3DV, 2013</p>
+              <p class="item-links"><a href="MeccaWetzlerKimmelBruckstein-3DV-2013.pdf">paper</a><span>|</span><a href="3DVposter_2013.pdf">poster</a><span>|</span><a href="MeccaWetzlerKimmelBruckstein-3DV-2013.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf"><img src="UbiquitousBeltrami.png" alt="Laplace-Beltrami image and shape processing examples" /></a>
+            <div>
+              <h3>The Laplace-Beltrami Operator: A Ubiquitous Tool for Image and Shape Processing</h3>
+              <p class="authors"><strong>A. Wetzler</strong>, Y. Aflalo, A. Dubrovina, and R. Kimmel</p>
+              <p class="venue">ISMM, 2013</p>
+              <p class="item-links"><a href="WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf">paper</a><span>|</span><a href="WetzlerAflaloDubrovinaKimmel-ISSM-2013.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="WetzlerRosmanKimmel-IEEEI-2012.pdf"><img src="PatchBeltrami3D.png" alt="Patch-space denoising of a 3D point cloud" /></a>
+            <div>
+              <h3>Patch-Space Beltrami Denoising of 3D Point Clouds</h3>
+              <p class="authors"><strong>A. Wetzler</strong>, G. Rosman, and R. Kimmel</p>
+              <p class="venue">IEEEI, 2012</p>
+              <p class="item-links"><a href="WetzlerRosmanKimmel-IEEEI-2012.pdf">paper</a><span>|</span><a href="FIRST-poster.pdf">poster</a><span>|</span><a href="WetzlerRosmanKimmel-IEEEI-2012.bib">bibtex</a></p>
+            </div>
+          </li>
+          <li class="publication">
+            <a class="publication-image" href="WetzlerKimmel-SSVM-2011.pdf"><img src="PatchBeltrami.png" alt="Beltrami flow denoising result" /></a>
+            <div>
+              <h3>Efficient Beltrami Flow Denoising in Patch-Space</h3>
+              <p class="authors"><strong>A. Wetzler</strong> and R. Kimmel</p>
+              <p class="venue">SSVM, 2011</p>
+              <p class="item-links"><a href="WetzlerKimmel-SSVM-2011.pdf">paper</a><span>|</span><a href="SSVM-poster.pdf">poster</a><span>|</span><a href="WetzlerKimmel-SSVM-2011.bib">bibtex</a></p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section aria-labelledby="thesis-heading">
+        <h2 id="thesis-heading">Thesis</h2>
+        <article class="publication thesis">
+          <a class="publication-image" href="Undergrad-2005.pdf"><img src="Laser.bmp" alt="Low-cost 3D laser scanning unit" /></a>
+          <div>
+            <h3>Low Cost 3D Laser Scanning Unit with Application to Face Recognition</h3>
+            <p class="authors"><strong>A. Wetzler</strong></p>
+            <p class="venue">Undergraduate thesis, University of Cape Town, 2005</p>
+            <p class="item-links"><a href="Undergrad-2005.pdf">thesis</a></p>
+          </div>
+        </article>
+      </section>
+
+      <section aria-labelledby="supervision-heading">
+        <h2 id="supervision-heading">Teaching &amp; Project Supervision</h2>
+        <p>
+          At the Technion I designed and supervised more than 30 student projects in the Geometric Image Processing,
+          Computer Graphics and Multimedia, Network Software Systems, and Signal and Image Processing laboratories.
+          The recovered project list is available on the <a href="archive.html#Projects">original website</a>.
+        </p>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <dl class="education-list">
+          <div><dt>Technion - Israel Institute of Technology</dt><dd>Direct-track PhD, Electrical Engineering</dd></div>
+          <div><dt>University of Cape Town</dt><dd>BSc, Mechatronics</dd></div>
+        </dl>
+      </section>
+
+      <footer>
+        <p><a href="https://github.com/twerdster">GitHub</a> <span aria-hidden="true">&middot;</span> <a href="https://www.linkedin.com/in/aaron-wetzler/">LinkedIn</a> <span aria-hidden="true">&middot;</span> <a href="archive.html">2019 website archive</a></p>
+      </footer>
+    </main>
+  </body>
+</html>

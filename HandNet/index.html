@@ -1,0 +1,189 @@
+<!doctype html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<meta charset="utf-8"/>
+<br/>
+<br/>
+<title>HandNet - Project page</title>
+<link rel="stylesheet" type="text/css" href="../site.css"/>
+<style type="text/css">
+      body { font-size: 80%; font-family: 'Lucida Grande', Verdana, Arial, Sans-Serif; }
+      ul#tabs { list-style-type: none; margin: 30px 0 0 0; padding: 0 0 0.3em 0; }
+      ul#tabs li { display: inline; }
+      ul#tabs li a { color: #42454a; background-color: #dedbde; border: 1px solid #c9c3ba; border-bottom: none; padding: 0.3em; text-decoration: none; }
+      ul#tabs li a:hover { background-color: #f1f0ee; }
+      ul#tabs li a.selected { color: #000; background-color: #f1f0ee; font-weight: bold; padding: 0.7em 0.3em 0.38em 0.3em; }
+      div.tabContent { border: 1px solid #c9c3ba; padding: 0.5em; background-color: #f1f0ee; }
+      div.tabContent.hide { display: none; }
+    </style>
+<script type="text/javascript">
+
+var tabLinks = new Array();
+    var contentDivs = new Array();
+
+    function init() {
+
+      // Grab the tab links and content divs from the page
+      var tabListItems = document.getElementById('tabs').childNodes;
+      for ( var i = 0; i < tabListItems.length; i++ ) {
+        if ( tabListItems[i].nodeName == "LI" ) {
+          var tabLink = getFirstChildWithTagName( tabListItems[i], 'A' );
+          var id = getHash( tabLink.getAttribute('href') );
+          tabLinks[id] = tabLink;
+          contentDivs[id] = document.getElementById( id );
+        }
+      }
+
+      // Assign onclick events to the tab links, and
+      // highlight the first tab
+      var i = 0;
+
+      for ( var id in tabLinks ) {
+        tabLinks[id].onclick = showTab;
+        tabLinks[id].onfocus = function() { this.blur() };
+        if ( i == 0 ) tabLinks[id].className = 'selected';
+        i++;
+      }
+
+      // Hide all content divs except the first
+      var i = 0;
+
+      for ( var id in contentDivs ) {
+        if ( i != 0 ) contentDivs[id].className = 'tabContent hide';
+        i++;
+      }
+    }
+
+    function showTab() {
+      var selectedId = getHash( this.getAttribute('href') );
+
+      // Highlight the selected tab, and dim all others.
+      // Also show the selected content div, and hide all others.
+      for ( var id in contentDivs ) {
+        if ( id == selectedId ) {
+          tabLinks[id].className = 'selected';
+          contentDivs[id].className = 'tabContent';
+        } else {
+          tabLinks[id].className = '';
+          contentDivs[id].className = 'tabContent hide';
+        }
+      }
+
+      // Stop the browser following the link
+      return false;
+    }
+
+    function getFirstChildWithTagName( element, tagName ) {
+      for ( var i = 0; i < element.childNodes.length; i++ ) {
+        if ( element.childNodes[i].nodeName == tagName ) return element.childNodes[i];
+      }
+    }
+
+    function getHash( url ) {
+      var hashPos = url.lastIndexOf ( '#' );
+      return url.substring( hashPos + 1 );
+    }
+</script>
+</head>
+<body onload="init()">
+
+<div id="body" style="width:50%; margin:auto">  
+
+<ul id="tabs">
+      <li><a href="#description">Info</a></li>
+      <li><a href="#downloads">Download</a></li>
+    
+</ul>
+
+<div class="tabContent" id="description">
+<table id="hor-minimalist-b">
+<thead>
+</thead>
+<tbody>
+<tr>
+	<td><img src="./HandPic.png" alt="" width="500" height="auto" /></a></td>
+	<td>
+	<h1>HandNet</h1>
+
+		This page will contain details and download links to the full HandNet database.
+		If you are interested in the database please drop me an email at 
+	
+	&lt;twerd <span class="grey">at</span> cs <span class="grey">dot</span> technion <span class="grey">dot</span> ac <span class="grey">dot</span> il&gt;</br>
+	
+	
+	</td>
+</tr>
+
+
+</tbody>
+
+</table>
+	
+</div>
+
+<div class="tabContent" id="description">
+<h2>Database info</h2>
+<table id="hor-minimalist-b">
+<thead>
+</thead>
+<tbody>
+<tr>
+<h3>
+If you use any of the files from this database please be aware that the data is for academic, non-commerical
+purposes. For any other use please contact the authors directly.
+
+If you find this data useful in your research please cite the following paper:
+</h3>
+	<td><a href="">
+	<img src="../HandPic.png" alt="" width="130" height="auto" /></a></td>
+	<td> Rule of Thumb: Deep Derotation for Improved Fingertip Detection,<br>
+	A Wetzler, R Slossberg and R Kimmel, BMVC 2015 <br>
+	</td>
+</tr>
+</tbody>
+</table>
+
+
+</div>
+
+<div class="tabContent" id="downloads">     
+<table id="hor-minimalist-b">
+<col width="83">
+<col width="230">
+<col width="500">
+<thead>
+</thead>
+<tbody>
+
+<tr><td><a href="">	<img src="" alt="" width="80" height="auto" /></a></td>
+	<td> All HandNet depth images<br>
+	<br><a href="">[Download training]</a>
+	<br><a href="">[Download testing]</a>
+	<br><a href="">[Download all]</a></td>
+	<td>These are the depth images from the database. 10 participants. 45 minutes of diluted recording per participant. More details will follow soon.</td></tr>
+<tr><td><a href="">	<img src="" alt="" width="80" height="auto" /></a></td>
+	<td> All annotated HandNet heatmap images<br>
+	<br><a href="">[Download training]</a>
+	<br><a href="">[Download testing]</a>
+	<br><a href="">[Download all]</a></td>
+	<td>These are the heatmap images generated from the database using TrakStar trackers synched with a RealSense F200. </td></tr>
+<tr><td><a href="">	<img src="" alt="" width="80" height="auto" /></a></td>
+	<td> All annotated HandNet label images<br>
+	<br><a href="">[Download training]</a>
+	<br><a href="">[Download testing]</a>
+	<br><a href="">[Download all]</a></td>
+	<td>These are the discrete fingertip and palm label images generated from the database using TrakStar trackers synched with a RealSense F200. </td></tr>
+		
+	
+</tbody>
+</table>
+</div>
+
+
+</div>
+
+</body>
+</html>

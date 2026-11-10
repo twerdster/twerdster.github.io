@@ -1,0 +1,50 @@
+{
+  "person": {
+    "name": "Aaron Wetzler",
+    "url": "https://twerdster.github.io/",
+    "image": "https://twerdster.github.io/profile.jpg",
+    "github": "https://github.com/twerdster",
+    "linkedin": "https://www.linkedin.com/in/aaron-wetzler/",
+    "fields": ["computer vision", "machine learning", "gesture recognition", "numerical geometry"],
+    "education": [
+      { "institution": "Technion - Israel Institute of Technology", "degree": "Direct-track PhD in Electrical Engineering", "advisor": "Ron Kimmel" },
+      { "institution": "University of Cape Town", "degree": "BSc in Mechatronics" }
+    ]
+  },
+  "software_and_data": [
+    {
+      "id": "tea",
+      "name": "Tea",
+      "type": "software",
+      "url": "https://github.com/twerdster/tea",
+      "description": "Randomized decision-tree learning framework for large datasets and parallel training on multiple GPUs."
+    },
+    {
+      "id": "handnet",
+      "name": "HandNet",
+      "type": "dataset",
+      "url": "HandNet/",
+      "paper": "WetzlerSlossbergKimmel-BMVC15.pdf",
+      "supplementary_material": "Supplementary-ID-72.zip",
+      "description": "Depth-image dataset for hand and fingertip detection."
+    }
+  ],
+  "publications": [
+    { "year": 2016, "title": "Real-Time Depth Refinement for Specular Objects", "venue": "CVPR", "paper": "OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.pdf", "bibtex": "OrelHershkowitzWetzlerRosmanBrucksteinKimmel-CVPR-2016.bib" },
+    { "year": 2015, "title": "Rule of Thumb: Deep Derotation for Improved Fingertip Detection", "venue": "BMVC", "paper": "WetzlerSlossbergKimmel-BMVC15.pdf", "bibtex": "WetzlerSlossbergKimmelBMVC15.bib", "dataset": "HandNet/" },
+    { "year": 2015, "title": "Freehand Laser Scanning Using a Mobile Phone", "venue": "BMVC", "paper": "SlossbergWetzlerKimmelBMVC15.pdf", "bibtex": "SlossbergWetzlerKimmelBMVC15.bib" },
+    { "year": 2015, "title": "RGBD-Fusion: Real-Time High Precision Depth Recovery", "venue": "CVPR", "paper": "Or-elRosmanWetzlerKimmelBruckstein.pdf", "bibtex": "Or-elRosmanWetzlerKimmelBruckstein.bib" },
+    { "year": 2014, "title": "Near Field Photometric Stereo with Point Light Sources", "venue": "SIAM Journal on Imaging Sciences", "paper": "MeccaWetzlerKimmelBruckstein-SIAM14.pdf", "bibtex": "MeccaWetzlerKimmelBruckstein-SIAM14.bib" },
+    { "year": 2014, "title": "What Can You Do with a Beam and a Reflecting Prism?", "venue": "ECCV Demo", "poster": "WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf" },
+    { "year": 2014, "title": "Close Range Photometric Stereo with Point Light Sources", "venue": "3DV", "paper": "WetzlerMeccaKimmelBruckstein-3DV-2014.pdf", "bibtex": "WetzlerMeccaKimmelBruckstein-3DV-2014.bib" },
+    { "year": 2014, "title": "A Differential Approach to Photometric Stereo with Perspective Viewing", "venue": "SIAM Journal on Imaging Sciences", "paper": "MeccaTankusWetzlerBruckstein-SIAM14.pdf", "bibtex": "MeccaTankusWetzlerBruckstein-SIAM14.bib" },
+    { "year": 2013, "title": "Direct Shape Recovery from Photometric Stereo with Shadows", "venue": "3DV", "paper": "MeccaWetzlerKimmelBruckstein-3DV-2013.pdf", "bibtex": "MeccaWetzlerKimmelBruckstein-3DV-2013.bib" },
+    { "year": 2013, "title": "The Laplace-Beltrami Operator: A Ubiquitous Tool for Image and Shape Processing", "venue": "ISMM", "paper": "WetzlerAflaloDubrovinaKimmel-ISMM-2013.pdf", "bibtex": "WetzlerAflaloDubrovinaKimmel-ISSM-2013.bib" },
+    { "year": 2012, "title": "Patch-Space Beltrami Denoising of 3D Point Clouds", "venue": "IEEEI", "paper": "WetzlerRosmanKimmel-IEEEI-2012.pdf", "bibtex": "WetzlerRosmanKimmel-IEEEI-2012.bib" },
+    { "year": 2011, "title": "Efficient Beltrami Flow Denoising in Patch-Space", "venue": "SSVM", "paper": "WetzlerKimmel-SSVM-2011.pdf", "bibtex": "WetzlerKimmel-SSVM-2011.bib" }
+  ],
+  "theses": [
+    { "year": 2005, "title": "Low Cost 3D Laser Scanning Unit with Application to Face Recognition", "institution": "University of Cape Town", "file": "Undergrad-2005.pdf" }
+  ],
+  "archive": "archive.html"
+}
