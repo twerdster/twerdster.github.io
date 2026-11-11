@@ -149,6 +149,7 @@ h2 { font-size: 28px; }
 .publication:first-child { padding-top: 4px; }
 .publication:last-child { border-bottom: 0; padding-bottom: 0; }
 .publication-image { display: flex; align-items: center; justify-content: center; width: 184px; aspect-ratio: 16 / 10; overflow: hidden; border: 1px solid var(--rule); border-radius: 6px; background: #fff; }
+.publication-image-square { aspect-ratio: 1; }
 .publication-image img { width: 100%; height: 100%; padding: 6px; object-fit: contain; }
 .publication-year { display: flex; flex-direction: column; gap: 4px; padding-top: 1px; color: var(--muted); }
 .publication-year span:first-child { color: var(--text); font-family: var(--serif); font-size: 34px; line-height: 1.2; }
@@ -287,6 +288,7 @@ h2 { font-size: 28px; }
   .publication-filters button { font-size: 11px; }
   .publication { grid-template-columns: minmax(0, 1fr); gap: 16px; padding: 24px 0; }
   .publication-image { width: 100%; max-width: 320px; }
+  .publication-image-square { max-width: 184px; }
   .publication-year { flex-direction: row; align-items: baseline; gap: 12px; }
   .publication-year span:first-child { font-size: 26px; }
   .publication h3 { font-size: 22px; }

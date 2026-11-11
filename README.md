@@ -18,6 +18,8 @@ The [extended research Space](https://huggingface.co/spaces/twerdster/HandNet-Ex
 
 The homepage's 21 research entries were reconciled with Aaron's full Google Scholar profile on November 10, 2026. They include conference and workshop papers, journal articles, a book chapter, a preprint, and two entries explicitly labeled as projects. Conference and preprint versions are combined rather than duplicated; the undergraduate thesis remains in the Thesis section. Learning Invariant Representations of Planar Curves uses its ICLR 2017 publication year rather than the 2016 preprint year. Eighteen entries have downloadable BibTeX files. The nine patent lines group related grant and application publications, including the four application records added during this reconciliation. Keep `index.html`, `data/site-content.json`, and `llms.txt` synchronized when updating these lists; the 2019 archive is a historical snapshot, not the current publication list.
 
+Eight additional entries have Aaron's selected square thumbnails in `assets/publications/`. These are lossless WebP copies of the approved 512-pixel crops, lazy-loaded with explicit dimensions. Their image paths, original sources and figure references are recorded in `data/site-content.json`. The NeurIPS workshop entry remains text-only until a source figure is available.
+
 ## Run locally
 
 ```sh
