@@ -1,6 +1,6 @@
 # Aaron Wetzler academic website
 
-A static academic homepage built from the recovered Technion website. The main page contains the biography, publications, student projects, theses, code and data, experience and education, research videos, and patents.
+A static academic homepage for Aaron Wetzler, CTO of an early-stage company, built from the recovered Technion website. The main page contains the biography, publications, student projects, theses, code and data, experience and education, research videos, and patents.
 
 The layout uses the former academic archive's straightforward section structure, with a sticky section navigation, circular profile photo, serif headings, numbered sections and compact illustrated rows. All publication, project and undergraduate-thesis thumbnail frames are 184 by 115 pixels on desktop and mobile. Publications can be filtered by research area; publication and project BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. Core academic content and original citation links remain available without JavaScript; the interactive HandNet viewer requires JavaScript.
 

@@ -2,6 +2,10 @@
 
 The production academic homepage is https://twerdster.github.io/ and publishes from the main branch of twerdster/twerdster.github.io (GitHub Pages legacy root source). AGENTS.md requires README.md, data/site-content.json and llms.txt to remain synchronized.
 
+## Current role metadata (2026-11-12)
+
+The profile, biography, experience and machine-readable role metadata use a generic company description. Existing anchor styles, assets and site runtime are preserved.
+
 ## Current organization (2026-11-12)
 
 The main page now consolidates the former archive: About, 19 Publications, 23 Student Projects, two Theses, Code & Data, Experience & Education, six Research Videos, and nine patent lines. The 21 original student projects retain their titles, student credits and images; descriptions are tightened to factual summaries. Mobile Point Fusion and Freehand Voxel Carving Scanning on a Mobile Device moved from Publications to Student Projects, retaining their figures, source links and citations. The ECCV Beam/prism demo remains a publication. Duplicate research highlight cards and the separate Teaching & Supervision summary were removed in favor of the complete sections.
