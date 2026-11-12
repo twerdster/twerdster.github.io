@@ -2,6 +2,10 @@
 
 The production academic homepage is https://twerdster.github.io/ and publishes from the main branch of twerdster/twerdster.github.io (GitHub Pages legacy root source). AGENTS.md requires README.md, data/site-content.json and llms.txt to remain synchronized.
 
+## GrayOwl code withdrawal (2026-11-12)
+
+Aaron requested removal of the GrayOwl source code and the repository README sections from Status up to, but not including, Links. The website retains the project description, six student credits, original image, repository and public team/report/poster/video links. GrayOwl source, notebook and Colab links are removed; its JSON status is source_withdrawn, with no source_files or updated_component fields. The current catalog has fourteen source-bearing repositories, CutOut's related prototype, three documentation repositories, four introductory repositories and one withdrawn-code project. Four updated components remain publicly linked, with 70 tests and four executed notebooks. The earlier five-component/86-test results below are historical and do not describe current GrayOwl availability. Source recovery evidence remains private. Local 390- and 1440-pixel checks confirm all 23 project rows, decoded images, the unchanged 184-by-115 GrayOwl frame, no overflow, browser errors or external page-asset requests, and the five retained resource links with JavaScript disabled. All other project JSON records are unchanged. Both context files were reviewed again and updated before the withdrawal commit; website history is not rewritten. The task-owned local QA server used port 8244 and is stopped after validation.
+
 ## NeurIPS publication image (2026-11-12)
 
 Aaron supplied Photo 1.jpg for Democratizing Data-Efficient Robot Learning with Robot-Free Demonstrations. The unchanged 1099-by-816 JPEG is assets/publications/neurips-robot-free-demonstrations.jpg (163,930 bytes; SHA-256 d66938245b44978b0cfdc051c3e7097e5c0cbe59dfdfe219d17601e1cc366a38). Its full wearable-glove and matched-robot-hand figure fits inside the existing 184-by-115 thumbnail frame without cropping or CSS changes. The thumbnail links to the same OpenReview paper PDF. JSON provenance explicitly records the user-supplied source; README.md, llms.txt and this maintenance context no longer describe the figure as pending. Desktop and 390-pixel phone previews confirm decoding, contain fitting, unchanged frame dimensions and no horizontal overflow. Robotics filtering shows the paper and All restores 19 publications; there are no browser errors or external page assets. Both context files were reviewed and updated before commit.
@@ -18,7 +22,7 @@ All publication, student-project and undergraduate-thesis thumbnail frames are 1
 
 ## Student project recovery (2026-11-12)
 
-Five updated Python components are now published separately from archival source:
+Before the GrayOwl withdrawal, five updated Python components were published separately from archival source:
 HeartBeat signal processing (20 tests), Volume Carving geometry/occupancy (16),
 Face Depth difference features (18), GrayOwl curve geometry (16), and a newly
 composed CutOut Fast Marching/scribble example (16). All 86 tests and five actual
@@ -32,7 +36,7 @@ link each notebook and Colab; updated_component records scope and validation
 separately from historical source_status. Checked-in notebooks have cleared outputs.
 The private Jupyter environment is
 /Users/aaron/repos/student-projects/.notebook-venv; raw or executed private evidence
-remains outside the repositories. No training jobs or new hosted Spaces started. The five public notebook files resolve and retain cleared outputs; the follow-up website checks again pass all four screen widths, image decoding, original thumbnail dimensions, no horizontal overflow/browser errors and no-JavaScript links. Both context files were reviewed and synchronized for this notebook-link publication.
+remains outside the repositories. No training jobs or new hosted Spaces started. At that stage, the five public notebook files resolved and retained cleared outputs; the follow-up website checks passed all four screen widths, image decoding, original thumbnail dimensions, no horizontal overflow/browser errors and no-JavaScript links. Both context files were reviewed and synchronized for this notebook-link publication.
 
 All 35 project/software repositories now have representative top README figures
 and three factual badges; original images are retained and new schematics are
@@ -45,7 +49,7 @@ and confirmed security disclosures are preserved. Original-code and updated-code
 sections document the difference. Mobile and Stereo Xcode project listing works;
 unsigned arm64 builds fail at concrete omitted/missing assets/legacy dependencies.
 All other legacy build/hardware limits are recorded in the private per-project
-matrix. Runtime success for these five components is not a full-app build claim.
+matrix. The historical runtime success for these five components is not a full-app build claim; only four components remain published.
 
 Student outreach is private: 23 verified unsent Gmail drafts cover 45 students.
 Three current public professional addresses are verified; 42 remain dated
@@ -61,7 +65,7 @@ README and repository About links also work.
 
 
 The second source search rechecked Gmail, live Dropbox, migrated Dropbox archives
-and connected Google Drive. Five source imports are now published: Mobile Point
+and connected Google Drive. Five source imports were published in that pass: Mobile Point
 Fusion v2.3 (28 project files, 17 source; January 2015 snapshot), original iPhone
 stereo source pinned at 69a76767b2ce74f7b580ddb7b81a43fbb1dd346b, three Face Depth
 MATLAB fragments, 51 GrayOwl MATLAB/Python/C#/web files, and three project-specific
@@ -69,7 +73,7 @@ CutOut prototype files. The latter is strongly related to the archived result
 materials; authorship is unverified and it is not the Android application. Of 85
 newly imported files, 73 retain original bytes and 12 have privacy/security edits.
 Credentials, private endpoints/identifiers and paths are removed from GrayOwl;
-one Mobile comment path is redacted. Per-repo provenance manifests record this.
+one Mobile comment path is redacted. Per-repo provenance manifests record this. GrayOwl source and updated code were subsequently withdrawn; the remaining four imports stay published.
 Raw originals remain private at
 /Volumes/AgentSSD/agent-work/website-student-recheck-2026-11-12; search evidence is
 /Users/aaron/.codex/website-source-recheck-2026-11-12. No full modern app build is
@@ -99,7 +103,7 @@ GitHub's wrapper submodule tree URL returns 404. SUMMARY.md and SKILL.md were bo
 reviewed and updated before this commit.
 
 
-All 23 student projects have separate public GitHub repositories under twerdster and direct homepage repository links. STUDENT_PROJECTS.md is the public GitHub menu. Fifteen repositories have reviewed historical source or pinned original public code. CutOut has a related algorithm prototype whose Android app remains missing. Three repositories have documents without verified app source, and four have introductory READMEs. Original public source is pinned for OpenFusion, HeartBeat, Alex Fish's Freehand Voxel Carving and the preserved Predator iOS implementation. Recovered private source comprises nine Hand Tracking files, 21 iPhone Volume Carving files, and 225 source files across QRoom, AR Posters, Marker Tracking, Android 3D Scanner and the Oculus War-Room. Of these 255 private-source files, 253 retain original bytes and two QRoom database configurations were sanitized. Original SDKs/binaries, private data and licensing-uncertain dependencies are excluded; several snapshots are intentionally partial. The initial archive restoration did not establish modern application builds. OpenFusion's configuration fails at its obsolete CMake minimum; MATLAB/PMD and legacy mobile/Windows/Unity setups were unavailable. The later, separately labeled component ports below have their own executed tests and notebooks.
+All 23 student projects have separate public GitHub repositories under twerdster and direct homepage repository links. STUDENT_PROJECTS.md is the public GitHub menu. Fourteen repositories currently have reviewed historical source or pinned original public code; GrayOwl retains project information after its code withdrawal. CutOut has a related algorithm prototype whose Android app remains missing. Three repositories have documents without verified app source, and four have introductory READMEs. Original public source is pinned for OpenFusion, HeartBeat, Alex Fish's Freehand Voxel Carving and the preserved Predator iOS implementation. Recovered private source comprises nine Hand Tracking files, 21 iPhone Volume Carving files, and 225 source files across QRoom, AR Posters, Marker Tracking, Android 3D Scanner and the Oculus War-Room. Of these 255 private-source files, 253 retain original bytes and two QRoom database configurations were sanitized. Original SDKs/binaries, private data and licensing-uncertain dependencies are excluded; several snapshots are intentionally partial. The initial archive restoration did not establish modern application builds. OpenFusion's configuration fails at its obsolete CMake minimum; MATLAB/PMD and legacy mobile/Windows/Unity setups were unavailable. The later, separately labeled component ports below have their own executed tests and notebooks.
 
 Nine recovered PDFs across eight project repositories provide reports, slides, summaries and a CutOut poster. The main page adds verified original lab pages, student GitHub code, demos, GrayOwl team/report/poster material, and Elad Richardson's CutOut portfolio. Private or broken links were not promoted as public resources. The intro removes currently; HeartBeat's summary avoids the old incorrect red-channel-specific claim. Existing section counts, original student credits, publications, patents, theses, HandNet data and viewer files remain intact. No analytics were added.
 

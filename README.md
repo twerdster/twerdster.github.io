@@ -31,13 +31,14 @@ Repository About links point back to the relevant website section.
 
 ## Tested component notebooks
 
-Five student repositories now include separately labeled Python updates and
+Four student repositories include separately labeled Python updates and
 Jupyter notebooks: HeartBeat signal processing, iPhone Volume Carving occupancy
-and silhouettes, Face Depth difference features, GrayOwl curve geometry, and a
-new CutOut Fast Marching/scribble example. Their 86 unit tests and all five
-notebooks passed on macOS/Python 3.14. Original-code comparison harnesses cover
-the supported HeartBeat/voxel components and CutOut numerical stencil; MATLAB
-runtime comparisons were unavailable for the Face Depth and GrayOwl helpers.
+and silhouettes, Face Depth difference features, and a new CutOut Fast
+Marching/scribble example. Their 70 unit tests and all four notebooks passed on
+macOS/Python 3.14. Original-code comparison harnesses cover the supported
+HeartBeat/voxel components and CutOut numerical stencil; MATLAB runtime
+comparisons were unavailable for the Face Depth helpers. GrayOwl source code
+and its updated geometry notebook have been withdrawn.
 
 The project rows link directly to each notebook and Colab. These are small
 component demonstrations, not complete modern versions of the legacy mobile,
@@ -47,9 +48,9 @@ viewers and the Beltrami/Blender repositories have their own runtime scope.
 
 ## Student project repositories
 
-[STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) is the GitHub directory for all 23 independent project repositories. Fifteen have recovered historical source or pinned original public code, CutOut has a related algorithm prototype with its Android app still missing, three have documents without verified app source, and four have introductory READMEs. The homepage links every repository and adds verified original project pages, source, reports, posters and demos. The JSON index records explicit source statuses and upstream revisions; a repository link must not be mislabeled as available code when it contains only a README.
+[STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) is the GitHub directory for all 23 independent project repositories. Fourteen have recovered historical source or pinned original public code, CutOut has a related algorithm prototype with its Android app still missing, three have documents without verified app source, and four have introductory READMEs. GrayOwl retains project information and public resource links after its source code and updated notebook were withdrawn. The homepage links every repository and adds verified original project pages, source, reports, posters and demos. The JSON index records explicit source statuses and upstream revisions; a repository link must not be mislabeled as available code when it contains only a README.
 
-Project READMEs document historical build entrypoints, missing SDKs and untested runtime status. Private source recovery excludes credentials, signing material, proprietary SDK components, personal identifiers and raw submission archives. Two QRoom DB configuration files use environment-variable lookups. The latest GrayOwl imports remove historical credentials, private endpoints, identifiers and paths; one Mobile Point Fusion comment path is also redacted. Per-repository manifests identify unchanged originals and sanitized files. No blanket license is applied to student or third-party code. Public originals are pinned as submodules rather than silently relabeled.
+Project READMEs document historical build entrypoints, missing SDKs and untested runtime status. Private source recovery excludes credentials, signing material, proprietary SDK components, personal identifiers and raw submission archives. Two QRoom DB configuration files use environment-variable lookups. One Mobile Point Fusion comment path is also redacted. GrayOwl source and updated code are no longer published. Per-repository manifests identify unchanged originals and sanitized files. No blanket license is applied to student or third-party code. Public originals are pinned as submodules rather than silently relabeled.
 
 A follow-up audit removed a database screenshot containing application login details from slide 7 of the multi-view iPhone presentation. Its current public PDF retains all 16 slides; historical Git copies still contain the original screenshot. The QRoom README records confirmed backend vulnerabilities and prohibits deployment of the archived PHP application. Pinned upstream source also needs its own credential and vendor-license review before reuse.
 
