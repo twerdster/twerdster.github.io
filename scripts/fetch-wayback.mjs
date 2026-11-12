@@ -67,16 +67,58 @@ function archiveUrl(record) {
   return `https://web.archive.org/web/${record.timestamp}id_/${record.original}`;
 }
 
-function isInternalUrl(value) {
+export function isInternalUrl(value) {
   try {
     const url = new URL(value);
-    return internalHosts.has(url.hostname) && url.pathname.startsWith("/~twerd");
+    return internalHosts.has(url.hostname) && url.pathname.startsWith("/~twerd/");
   } catch {
     return value.startsWith("/~twerd/");
   }
 }
 
-function localPathFromUrl(value) {
+export function localOutputPath(relativePath, baseDir = repoRoot) {
+  if (
+    typeof relativePath !== "string" ||
+    /[\\\u0000-\u001f\u007f]/.test(relativePath) ||
+    path.isAbsolute(relativePath) ||
+    /^[a-z]:/i.test(relativePath) ||
+    relativePath.split("/").some((part) => part === ".." || part.toLowerCase() === ".git")
+  ) {
+    throw new Error("Unsafe archive output path");
+  }
+
+  const outputPath = path.resolve(baseDir, relativePath);
+  const withinRoot = path.relative(baseDir, outputPath);
+  if (!withinRoot || withinRoot === ".." || withinRoot.startsWith(`..${path.sep}`) || path.isAbsolute(withinRoot)) {
+    throw new Error("Archive output path must stay inside the repository");
+  }
+  return outputPath;
+}
+
+export async function checkedOutputPath(relativePath, baseDir = repoRoot) {
+  const outputPath = localOutputPath(relativePath, baseDir);
+  let current = path.resolve(baseDir);
+  const rootStats = await fs.lstat(current);
+  if (rootStats.isSymbolicLink() || !rootStats.isDirectory()) {
+    throw new Error("Archive output root must be a real directory");
+  }
+  for (const component of path.relative(current, outputPath).split(path.sep)) {
+    current = path.join(current, component);
+    try {
+      const stats = await fs.lstat(current);
+      if (stats.isSymbolicLink()) throw new Error("Archive output paths cannot use symbolic links");
+    } catch (error) {
+      if (error.code === "ENOENT") break;
+      throw error;
+    }
+  }
+  return outputPath;
+}
+
+export function localPathFromUrl(value) {
+  if (!isInternalUrl(value)) {
+    throw new Error("Cannot map URL outside the archived website");
+  }
   const url = value.startsWith("/~twerd/")
     ? new URL(`https://www.cs.technion.ac.il${value}`)
     : new URL(value);
@@ -94,6 +136,7 @@ function localPathFromUrl(value) {
     relativePath = `${relativePath}index.html`;
   }
 
+  localOutputPath(relativePath);
   return relativePath;
 }
 
@@ -202,7 +245,7 @@ async function getCdxRecords() {
 
 async function downloadRecord(record) {
   const url = archiveUrl(record);
-  const outputPath = path.join(repoRoot, record.target);
+  const outputPath = await checkedOutputPath(record.target);
 
   if (!forceDownload && (await fileExists(outputPath))) {
     const stats = await fs.stat(outputPath);
@@ -219,6 +262,7 @@ async function downloadRecord(record) {
   const bytes = Buffer.from(await response.arrayBuffer());
 
   await fs.mkdir(path.dirname(outputPath), { recursive: true });
+  await checkedOutputPath(record.target);
   await fs.writeFile(outputPath, bytes);
 
   return {
@@ -232,9 +276,10 @@ async function writeSupplementalFiles() {
   const writtenFiles = [];
 
   for (const file of supplementalFiles) {
-    const outputPath = path.join(repoRoot, file.target);
+    const outputPath = await checkedOutputPath(file.target);
 
     await fs.mkdir(path.dirname(outputPath), { recursive: true });
+    await checkedOutputPath(file.target);
     await fs.writeFile(outputPath, file.contents);
 
     writtenFiles.push({
@@ -252,8 +297,9 @@ async function rewriteDownloadedHtml(downloads) {
   const htmlFiles = downloads.filter((download) => download.target.endsWith(".html"));
 
   for (const file of htmlFiles) {
-    const outputPath = path.join(repoRoot, file.target);
+    const outputPath = await checkedOutputPath(file.target);
     const html = await fs.readFile(outputPath, "utf8");
+    await checkedOutputPath(file.target);
     await fs.writeFile(outputPath, rewriteHtml(html, file.target));
   }
 }
@@ -295,7 +341,7 @@ async function findMissingLocalReferences(downloads) {
       const target = path.posix.normalize(
         path.posix.join(path.posix.dirname(file.target), withoutHash.endsWith("/") ? `${withoutHash}index.html` : withoutHash),
       );
-      const exists = await fileExists(path.join(repoRoot, target));
+      const exists = await fileExists(await checkedOutputPath(target));
 
       if (!exists) {
         missing.push({ from: file.target, reference: value, resolvedTarget: target });
@@ -350,7 +396,7 @@ async function main() {
   };
 
   await fs.writeFile(
-    path.join(repoRoot, "archive-manifest.json"),
+    await checkedOutputPath("archive-manifest.json"),
     `${JSON.stringify(manifest, null, 2)}\n`,
   );
 
@@ -362,7 +408,9 @@ async function main() {
   }
 }
 
-main().catch((error) => {
-  console.error(error);
-  process.exitCode = 1;
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+  main().catch((error) => {
+    console.error(error);
+    process.exitCode = 1;
+  });
+}

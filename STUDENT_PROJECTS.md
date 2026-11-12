@@ -36,4 +36,6 @@ Public original code is pinned as a Git submodule in OpenFusion, HeartBeat, Free
 
 Privately recovered SDK binaries, signing material, private deployment values, personal records and raw submission archives are not published. Two QRoom database configuration files were sanitized to use environment variables. All other imported private-source files retain their original bytes. Reports and slides are linked separately from source availability.
 
+The current multi-view iPhone slides have a database screenshot removed from slide 7 to protect application login details; the original remains in historical Git copies. QRoom's archived PHP backend has confirmed security vulnerabilities and must not be deployed. Pinned public upstreams require separate credential and vendor-license review before reuse.
+
 The [homepage](https://twerdster.github.io/#projects) links project-specific code, reports, posters, demonstrations and original laboratory pages where available. The machine-readable [site index](data/site-content.json) records `repository`, `source_status`, `resources`, and pinned upstream revisions where applicable.

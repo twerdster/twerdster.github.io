@@ -26,6 +26,8 @@ Eight entries use source figures in `assets/publications/`, displayed in the sam
 
 Project READMEs document historical build entrypoints, missing SDKs and untested runtime status. Private source recovery excludes credentials, signing material, proprietary SDK components, personal identifiers and raw submission archives. Only the two QRoom DB configuration files were modified, replacing private deployment values with environment-variable lookups. No blanket license is applied to student or third-party code. Public originals are pinned as submodules rather than silently relabeled.
 
+A follow-up audit removed a database screenshot containing application login details from slide 7 of the multi-view iPhone presentation. Its current public PDF retains all 16 slides; historical Git copies still contain the original screenshot. The QRoom README records confirmed backend vulnerabilities and prohibits deployment of the archived PHP application. Pinned upstream source also needs its own credential and vendor-license review before reuse.
+
 The PhD thesis, *Topics in Computational Geometric Vision* (Technion, August 2017; advisor Ron Kimmel), is hosted as `Wetzler-PhD-2017.pdf`. This is the unchanged 151-page PDF recovered from Aaron's personal Google Drive, alongside the existing 2005 undergraduate thesis. No analytics or tracking script has been added.
 
 ## Run locally
@@ -37,6 +39,8 @@ npm run dev
 Open <http://127.0.0.1:4173/>.
 
 No package installation or build is required to serve the site on GitHub Pages. The HandNet viewer includes its browser dependencies locally.
+
+The historical archive-recovery command is `npm run fetch:archive`; it performs network downloads and is not needed to serve or publish the site. Its path-containment regression checks run offline with `node --test scripts/fetch-wayback.test.mjs`. The importer rejects unsafe decoded paths, Git metadata targets and existing symlinks before filesystem access.
 
 ## Published site
 
