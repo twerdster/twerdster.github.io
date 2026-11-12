@@ -62,3 +62,5 @@ The second recovery pass adds Mobile Point Fusion v2.3 (January 2015 snapshot), 
 Code & Data links all 12 public software/data repositories, including the Beltrami implementations and Blender Neural Composer, with historical tools and forks identified as such. The student-project directory remains separate.
 
 Android 3D Scanner credits students Arkadi Godlin and Alex Kligman and separately identifies lab engineer Alon Zvirin, correcting the historical spelling Alon Zivrin while retaining it in metadata.
+
+Five separately labeled updated Python components have 86 passing unit tests and executed Jupyter notebooks on macOS/Python 3.14: HeartBeat signal processing (20), Volume Carving geometry/occupancy (16), Face Depth difference features (18), GrayOwl curve geometry (16), and CutOut Fast Marching (16). Each project row links its notebook and Colab. These are scoped demonstrations, not restored complete mobile/vision/flight applications. Original-source availability and updated-component validation are separate fields in the machine-readable index.

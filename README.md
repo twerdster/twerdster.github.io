@@ -29,6 +29,22 @@ fork and DirtyDataSharing. Forks, hardware requirements and historical experimen
 are identified explicitly. Student repositories remain in their dedicated section.
 Repository About links point back to the relevant website section.
 
+## Tested component notebooks
+
+Five student repositories now include separately labeled Python updates and
+Jupyter notebooks: HeartBeat signal processing, iPhone Volume Carving occupancy
+and silhouettes, Face Depth difference features, GrayOwl curve geometry, and a
+new CutOut Fast Marching/scribble example. Their 86 unit tests and all five
+notebooks passed on macOS/Python 3.14. Original-code comparison harnesses cover
+the supported HeartBeat/voxel components and CutOut numerical stencil; MATLAB
+runtime comparisons were unavailable for the Face Depth and GrayOwl helpers.
+
+The project rows link directly to each notebook and Colab. These are small
+component demonstrations, not complete modern versions of the legacy mobile,
+vision or aircraft applications. Historical source remains separate under
+source/ or source/original/; updates live under updated/. Existing HandNet
+viewers and the Beltrami/Blender repositories have their own runtime scope.
+
 ## Student project repositories
 
 [STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) is the GitHub directory for all 23 independent project repositories. Fifteen have recovered historical source or pinned original public code, CutOut has a related algorithm prototype with its Android app still missing, three have documents without verified app source, and four have introductory READMEs. The homepage links every repository and adds verified original project pages, source, reports, posters and demos. The JSON index records explicit source statuses and upstream revisions; a repository link must not be mislabeled as available code when it contains only a README.

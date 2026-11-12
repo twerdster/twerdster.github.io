@@ -10,6 +10,45 @@ All publication, student-project and undergraduate-thesis thumbnail frames are 1
 
 ## Student project recovery (2026-11-12)
 
+Five updated Python components are now published separately from archival source:
+HeartBeat signal processing (20 tests), Volume Carving geometry/occupancy (16),
+Face Depth difference features (18), GrayOwl curve geometry (16), and a newly
+composed CutOut Fast Marching/scribble example (16). All 86 tests and five actual
+Jupyter notebook executions pass on this Mac with Python 3.14. Original-code
+harness comparisons cover HeartBeat's supported algorithm, original C++ carving
+occupancy/mask changes and 1,005 CutOut local-stencil comparisons (maximum absolute
+difference 7.11e-15). Face/Gray validation uses synthetic mathematical invariants;
+MATLAB/Octave was not available. These are components, not rebuilt full iOS,
+Android, aircraft or recognition systems. The website project rows and JSON now
+link each notebook and Colab; updated_component records scope and validation
+separately from historical source_status. Checked-in notebooks have cleared outputs.
+The private Jupyter environment is
+/Users/aaron/repos/student-projects/.notebook-venv; raw or executed private evidence
+remains outside the repositories. No training jobs or new hosted Spaces started. The five public notebook files resolve and retain cleared outputs; the follow-up website checks again pass all four screen widths, image decoding, original thumbnail dimensions, no horizontal overflow/browser errors and no-JavaScript links. Both context files were reviewed and synchronized for this notebook-link publication.
+
+All 35 project/software repositories now have representative top README figures
+and three factual badges; original images are retained and new schematics are
+explicitly labeled. Claude Code completed the initial 18 student presentation
+updates and drafted further work before its five-hour usage limit. Codex reviewed,
+completed and published the remaining work; CutOut's new solver/demo is explicitly
+Codex-authored after the actual Claude call was quota-blocked. No quota, account,
+model or payment changes were made. Original source, student credits, legal terms
+and confirmed security disclosures are preserved. Original-code and updated-code
+sections document the difference. Mobile and Stereo Xcode project listing works;
+unsigned arm64 builds fail at concrete omitted/missing assets/legacy dependencies.
+All other legacy build/hardware limits are recorded in the private per-project
+matrix. Runtime success for these five components is not a full-app build claim.
+
+Student outreach is private: 23 verified unsent Gmail drafts cover 45 students.
+Three current public professional addresses are verified; 42 remain dated
+historical correspondence addresses with present use unverified. Ten LinkedIn
+identities are corroborated. Alon Zvirin is separately credited as lab engineer.
+The private review sheet/drafts are under
+/Users/aaron/.codex/website-student-outreach-2026-11-12. No mail was sent or contact
+data published. GitHub avatar and separate profile website field are still
+pending browser SMS verification; README and repository About links already work.
+
+
 The second source search rechecked Gmail, live Dropbox, migrated Dropbox archives
 and connected Google Drive. Five source imports are now published: Mobile Point
 Fusion v2.3 (28 project files, 17 source; January 2015 snapshot), original iPhone
@@ -47,7 +86,7 @@ GitHub's wrapper submodule tree URL returns 404. SUMMARY.md and SKILL.md were bo
 reviewed and updated before this commit.
 
 
-All 23 student projects have separate public GitHub repositories under twerdster and direct homepage repository links. STUDENT_PROJECTS.md is the public GitHub menu. Fifteen repositories have reviewed historical source or pinned original public code. CutOut has a related algorithm prototype whose Android app remains missing. Three repositories have documents without verified app source, and four have introductory READMEs. Original public source is pinned for OpenFusion, HeartBeat, Alex Fish's Freehand Voxel Carving and the preserved Predator iOS implementation. Recovered private source comprises nine Hand Tracking files, 21 iPhone Volume Carving files, and 225 source files across QRoom, AR Posters, Marker Tracking, Android 3D Scanner and the Oculus War-Room. Of these 255 private-source files, 253 retain original bytes and two QRoom database configurations were sanitized. Original SDKs/binaries, private data and licensing-uncertain dependencies are excluded; several snapshots are intentionally partial. No modern build/runtime success is claimed. OpenFusion's configuration was attempted locally and fails at its obsolete CMake minimum; MATLAB/PMD and legacy mobile/Windows/Unity setups were unavailable.
+All 23 student projects have separate public GitHub repositories under twerdster and direct homepage repository links. STUDENT_PROJECTS.md is the public GitHub menu. Fifteen repositories have reviewed historical source or pinned original public code. CutOut has a related algorithm prototype whose Android app remains missing. Three repositories have documents without verified app source, and four have introductory READMEs. Original public source is pinned for OpenFusion, HeartBeat, Alex Fish's Freehand Voxel Carving and the preserved Predator iOS implementation. Recovered private source comprises nine Hand Tracking files, 21 iPhone Volume Carving files, and 225 source files across QRoom, AR Posters, Marker Tracking, Android 3D Scanner and the Oculus War-Room. Of these 255 private-source files, 253 retain original bytes and two QRoom database configurations were sanitized. Original SDKs/binaries, private data and licensing-uncertain dependencies are excluded; several snapshots are intentionally partial. The initial archive restoration did not establish modern application builds. OpenFusion's configuration fails at its obsolete CMake minimum; MATLAB/PMD and legacy mobile/Windows/Unity setups were unavailable. The later, separately labeled component ports below have their own executed tests and notebooks.
 
 Nine recovered PDFs across eight project repositories provide reports, slides, summaries and a CutOut poster. The main page adds verified original lab pages, student GitHub code, demos, GrayOwl team/report/poster material, and Elad Richardson's CutOut portfolio. Private or broken links were not promoted as public resources. The intro removes currently; HeartBeat's summary avoids the old incorrect red-channel-specific claim. Existing section counts, original student credits, publications, patents, theses, HandNet data and viewer files remain intact. No analytics were added.
 
