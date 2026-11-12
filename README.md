@@ -20,11 +20,20 @@ The homepage has 19 publications, 23 student projects, two theses, six research 
 
 Eight entries use source figures in `assets/publications/`, displayed in the same 184-by-115-pixel frames as older figures. CoBe now uses the original car photograph without its black frame; Deep Stereo uses two matched original panels with a common horizontal alignment. Both come from the source PDFs without redrawing or changing scientific values. The burger, horse and mobile-project figures use display-only CSS fitting; the voxel figure also uses a brightness filter. The eight previously approved WebP files remain unchanged. Image paths, original sources and figure references are recorded in `data/site-content.json`. The NeurIPS workshop paper now links directly to its verified OpenReview forum/PDF, but remains text-only until the requested first image of Figure 1 is available.
 
+## Code and data directory
+
+Code & Data now links all 12 public software/data repositories: HandNet, Tea,
+Beltrami Denoising, Deep Patch-Beltrami, Blender Neural Composer, iPTAM, Servo
+Tests, Feetech Servo SDK, Simulink-Caffe-Builder, Caffe-GUI-Tool, the Caffe research
+fork and DirtyDataSharing. Forks, hardware requirements and historical experiments
+are identified explicitly. Student repositories remain in their dedicated section.
+Repository About links point back to the relevant website section.
+
 ## Student project repositories
 
-[STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) is the GitHub directory for all 23 independent project repositories. Eleven have recovered source or pinned original public code, four have recovered documents without verified app source, and eight have introductory "Coming soon" READMEs. The homepage links every repository and adds verified original project pages, source, reports, posters and demos. The JSON index records explicit source statuses and upstream revisions; a repository link must not be mislabeled as available code when it contains only a README.
+[STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) is the GitHub directory for all 23 independent project repositories. Fifteen have recovered historical source or pinned original public code, CutOut has a related algorithm prototype with its Android app still missing, three have documents without verified app source, and four have introductory READMEs. The homepage links every repository and adds verified original project pages, source, reports, posters and demos. The JSON index records explicit source statuses and upstream revisions; a repository link must not be mislabeled as available code when it contains only a README.
 
-Project READMEs document historical build entrypoints, missing SDKs and untested runtime status. Private source recovery excludes credentials, signing material, proprietary SDK components, personal identifiers and raw submission archives. Only the two QRoom DB configuration files were modified, replacing private deployment values with environment-variable lookups. No blanket license is applied to student or third-party code. Public originals are pinned as submodules rather than silently relabeled.
+Project READMEs document historical build entrypoints, missing SDKs and untested runtime status. Private source recovery excludes credentials, signing material, proprietary SDK components, personal identifiers and raw submission archives. Two QRoom DB configuration files use environment-variable lookups. The latest GrayOwl imports remove historical credentials, private endpoints, identifiers and paths; one Mobile Point Fusion comment path is also redacted. Per-repository manifests identify unchanged originals and sanitized files. No blanket license is applied to student or third-party code. Public originals are pinned as submodules rather than silently relabeled.
 
 A follow-up audit removed a database screenshot containing application login details from slide 7 of the multi-view iPhone presentation. Its current public PDF retains all 16 slides; historical Git copies still contain the original screenshot. The QRoom README records confirmed backend vulnerabilities and prohibits deployment of the archived PHP application. Pinned upstream source also needs its own credential and vendor-license review before reuse.
 

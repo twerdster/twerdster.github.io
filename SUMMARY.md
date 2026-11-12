@@ -10,7 +10,44 @@ All publication, student-project and undergraduate-thesis thumbnail frames are 1
 
 ## Student project recovery (2026-11-12)
 
-All 23 student projects have separate public GitHub repositories under twerdster and direct homepage repository links. STUDENT_PROJECTS.md is the public GitHub menu. Eleven repositories have reviewed source or pinned original public code, four have documents without verified app source, and eight have introductory Coming soon READMEs. Original public source is pinned for OpenFusion, HeartBeat, Alex Fish's Freehand Voxel Carving and the preserved Predator iOS implementation. Recovered private source comprises nine Hand Tracking files, 21 iPhone Volume Carving files, and 225 source files across QRoom, AR Posters, Marker Tracking, Android 3D Scanner and the Oculus War-Room. Of these 255 private-source files, 253 retain original bytes and two QRoom database configurations were sanitized. Original SDKs/binaries, private data and licensing-uncertain dependencies are excluded; several snapshots are intentionally partial. No modern build/runtime success is claimed. OpenFusion's configuration was attempted locally and fails at its obsolete CMake minimum; MATLAB/PMD and legacy mobile/Windows/Unity setups were unavailable.
+The second source search rechecked Gmail, live Dropbox, migrated Dropbox archives
+and connected Google Drive. Five source imports are now published: Mobile Point
+Fusion v2.3 (28 project files, 17 source; January 2015 snapshot), original iPhone
+stereo source pinned at 69a76767b2ce74f7b580ddb7b81a43fbb1dd346b, three Face Depth
+MATLAB fragments, 51 GrayOwl MATLAB/Python/C#/web files, and three project-specific
+CutOut prototype files. The latter is strongly related to the archived result
+materials; authorship is unverified and it is not the Android application. Of 85
+newly imported files, 73 retain original bytes and 12 have privacy/security edits.
+Credentials, private endpoints/identifiers and paths are removed from GrayOwl;
+one Mobile comment path is redacted. Per-repo provenance manifests record this.
+Raw originals remain private at
+/Volumes/AgentSSD/agent-work/website-student-recheck-2026-11-12; search evidence is
+/Users/aaron/.codex/website-source-recheck-2026-11-12. No full modern app build is
+implied. Separately labeled updated/ work is being tested and is documented in
+the project repositories; original/ snapshots and upstream pins are preserved.
+
+Code & Data now links all 12 public software/data repositories, adding Beltrami
+Denoising, Deep Patch-Beltrami, Blender Neural Composer, iPTAM, servo tools and
+historical Caffe/network tools and shared-memory code. Forks and hardware or
+legacy requirements are described explicitly. The 12 repository About links now
+point back to the appropriate website resource/section. The public profile README
+already links the homepage. Avatar/profile website-field changes are awaiting
+GitHub two-factor verification in the browser. New commits use Aaron Wetzler's
+canonical GitHub-linked noreply identity; the old global Pete identity was fixed.
+No historical authors or commit IDs were rewritten. A .mailmap normalizes the former Pete default identity in Git author summaries. The Android scanner credit now distinguishes its two students from lab engineer Alon Zvirin, matching the recovered final report and current Technion staff listings; the historical spelling is retained in metadata.
+
+Before publication, local browser checks passed at 320, 390, 768 and 1440 pixels:
+23 projects, nine Code & Data rows covering 12 software/data repositories, all
+images decoded, unchanged 184-by-115 thumbnail frames, no horizontal overflow or
+browser errors, and the new links available without JavaScript. Desktop/mobile
+light/dark screenshots were reviewed. Independent primary-repository checks
+confirmed the software descriptions, native iOS paths, Blender release and all
+student source paths. The stereo code link targets the pinned public upstream;
+GitHub's wrapper submodule tree URL returns 404. SUMMARY.md and SKILL.md were both
+reviewed and updated before this commit.
+
+
+All 23 student projects have separate public GitHub repositories under twerdster and direct homepage repository links. STUDENT_PROJECTS.md is the public GitHub menu. Fifteen repositories have reviewed historical source or pinned original public code. CutOut has a related algorithm prototype whose Android app remains missing. Three repositories have documents without verified app source, and four have introductory READMEs. Original public source is pinned for OpenFusion, HeartBeat, Alex Fish's Freehand Voxel Carving and the preserved Predator iOS implementation. Recovered private source comprises nine Hand Tracking files, 21 iPhone Volume Carving files, and 225 source files across QRoom, AR Posters, Marker Tracking, Android 3D Scanner and the Oculus War-Room. Of these 255 private-source files, 253 retain original bytes and two QRoom database configurations were sanitized. Original SDKs/binaries, private data and licensing-uncertain dependencies are excluded; several snapshots are intentionally partial. No modern build/runtime success is claimed. OpenFusion's configuration was attempted locally and fails at its obsolete CMake minimum; MATLAB/PMD and legacy mobile/Windows/Unity setups were unavailable.
 
 Nine recovered PDFs across eight project repositories provide reports, slides, summaries and a CutOut poster. The main page adds verified original lab pages, student GitHub code, demos, GrayOwl team/report/poster material, and Elad Richardson's CutOut portfolio. Private or broken links were not promoted as public resources. The intro removes currently; HeartBeat's summary avoids the old incorrect red-channel-specific claim. Existing section counts, original student credits, publications, patents, theses, HandNet data and viewer files remain intact. No analytics were added.
 
