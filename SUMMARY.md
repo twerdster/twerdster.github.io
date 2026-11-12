@@ -45,8 +45,11 @@ historical correspondence addresses with present use unverified. Ten LinkedIn
 identities are corroborated. Alon Zvirin is separately credited as lab engineer.
 The private review sheet/drafts are under
 /Users/aaron/.codex/website-student-outreach-2026-11-12. No mail was sent or contact
-data published. GitHub avatar and separate profile website field are still
-pending browser SMS verification; README and repository About links already work.
+data published. The separate GitHub profile website field is now set to
+https://twerdster.github.io/ through user-approved CLI profile access and verified
+with the public user API. The avatar was updated from the website profile.jpg;
+GitHub Settings confirmed the upload and the public profile displays the portrait.
+README and repository About links also work.
 
 
 The second source search rechecked Gmail, live Dropbox, migrated Dropbox archives
@@ -70,8 +73,10 @@ Denoising, Deep Patch-Beltrami, Blender Neural Composer, iPTAM, servo tools and
 historical Caffe/network tools and shared-memory code. Forks and hardware or
 legacy requirements are described explicitly. The 12 repository About links now
 point back to the appropriate website resource/section. The public profile README
-already links the homepage. Avatar/profile website-field changes are awaiting
-GitHub two-factor verification in the browser. New commits use Aaron Wetzler's
+already links the homepage, and the separate profile website field now points to
+https://twerdster.github.io/. The avatar now uses the website profile.jpg, with
+a successful upload confirmed in GitHub Settings and visible on the public profile.
+New commits use Aaron Wetzler's
 canonical GitHub-linked noreply identity; the old global Pete identity was fixed.
 No historical authors or commit IDs were rewritten. A .mailmap normalizes the former Pete default identity in Git author summaries. The Android scanner credit now distinguishes its two students from lab engineer Alon Zvirin, matching the recovered final report and current Technion staff listings; the historical spelling is retained in metadata.
 
@@ -96,7 +101,7 @@ The archive-recovery maintainer script now rejects decoded path traversal, absol
 
 Raw email attachments and archives are private on the verified SSD at /Volumes/AgentSSD/agent-work/website-student-recovery (about 151 MB). Native Git working copies are /Users/aaron/repos/student-projects. Per-project .recovery-private evidence is ignored and must never be staged. Public source allowlists and hashes were checked, credential/private-key/ID/vendor-marker scans passed, and 33 XML/project files parsed across the five newly recovered projects. No original recovered code or binaries were executed. Source restoration does not assign a new blanket license.
 
-The website link is added to the public GitHub profile through the standard twerdster/twerdster profile README, containing only Aaron Wetzler's name and the personal website link. The profile's separate website field remains blank: the current CLI token lacks user/profile-edit scope and its interactive authorization expired without approval. Do not claim that field was changed. The existing website and repository remain public, with the repository's About link intact. The requested robot-paper image remains pending the exact PDF/figure, not a substitute.
+The website link is added to the public GitHub profile through the standard twerdster/twerdster profile README, containing only Aaron Wetzler's name and the personal website link. After Aaron approved the CLI device authorization, the separate profile website field was set to https://twerdster.github.io/ and verified through the public user API. The avatar was also updated from the website profile.jpg, and GitHub Settings confirmed the successful upload; the public profile displays the portrait and website link. The existing website and repository remain public, with the repository's About link intact. The requested robot-paper image remains pending the exact PDF/figure, not a substitute.
 
 archive.html now redirects old section links to the homepage; it is no longer a separate archive experience or a primary navigation item. A no-JavaScript fallback links to each consolidated section. Historical source is preserved in Git at 462ebe0; the obsolete office/email details were not promoted to current contact information. data/site-content.json separates publications, student_projects, theses and research_videos and records the canonical section anchors and compatibility redirects. README.md and llms.txt describe the unified organization. Analytics was researched for an explanation only; no tracking script, account or DNS changes were made.
 
