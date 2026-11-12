@@ -18,6 +18,7 @@ Academic homepage for Aaron Wetzler, CTO of an early-stage company. Previously I
 - HandNet data license: `https://creativecommons.org/licenses/by/4.0/`
 - Publications: `https://twerdster.github.io/#publications`
 - Student projects: `https://twerdster.github.io/#projects`
+- Student project GitHub directory: `https://github.com/twerdster/twerdster.github.io/blob/main/STUDENT_PROJECTS.md`
 - Theses: `https://twerdster.github.io/#theses`
 - PhD thesis, Topics in Computational Geometric Vision (2017): `https://twerdster.github.io/Wetzler-PhD-2017.pdf`
 - Undergraduate thesis (2005): `https://twerdster.github.io/Undergrad-2005.pdf`
@@ -32,7 +33,9 @@ The homepage has 19 publications, 23 student projects, two theses, six research 
 
 Learning Invariant Representations of Planar Curves is listed as ICLR 2017 (preprint 2016), with its OpenReview link. The 2026 NeurIPS Robot Learning Workshop paper on robot-free demonstrations and the 2020 CoBe paper on coded beacons are retained. Conference and preprint versions are combined. Source links, publication PDFs where available, BibTeX files, posters, slides, videos, patent records and dataset links are listed directly on the homepage and in `data/site-content.json`.
 
-All publication and project thumbnail frames use the same 184-by-115-pixel rectangular format. Eight entries use selected figure assets in `assets/publications/`. Their machine-readable records include local image paths, original source URLs and figure references. The NeurIPS workshop entry remains text-only; no substitute figure has been added.
+All publication and project thumbnail frames use the same 184-by-115-pixel rectangular format. CoBe uses its original car photograph without the black frame; Deep Stereo uses two matched original source panels with equal horizontal alignment. Other selected figures use display-only CSS fitting, with a brightness adjustment for the mobile voxel illustration. Machine-readable records include source URLs, figure references and both stereo image panels. The NeurIPS workshop entry links directly to `https://openreview.net/forum?id=czwjjI5kkm` and its PDF; its requested first Figure 1 image is pending an accessible original, with no substitute added.
+
+All 23 student projects have independent public GitHub repositories, linked from the homepage and STUDENT_PROJECTS.md. Eleven include recovered source or pinned original upstream code, four have recovered documents without verified app source, and eight have introductory Coming soon READMEs. The JSON records expose repository, source_status, resources and upstream revisions where applicable. Do not interpret a repository link as proof of available or runnable code. Original source/setup notes and missing dependencies are documented in each README; no modern build/runtime success is claimed. Existing third-party terms and student attribution are retained, with no blanket relicensing.
 
 The PhD thesis is Topics in Computational Geometric Vision, by Aaron Wetzler, submitted to the Technion in August 2017 under Prof. Ron Kimmel's supervision. The full original 151-page PDF is hosted directly on the website. The undergraduate thesis is Low Cost 3D Laser Scanning Unit with Application to Face Recognition, University of Cape Town, 2005. Both are separate from Publications.
 
