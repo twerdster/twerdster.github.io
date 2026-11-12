@@ -1,10 +1,10 @@
 # Aaron Wetzler academic website
 
-A static academic homepage built from the recovered Technion website. The public page is intentionally simple: biography, code and data, publications, thesis, project supervision, education, and patents.
+A static academic homepage built from the recovered Technion website. The main page contains the biography, publications, student projects, theses, code and data, experience and education, research videos, and patents.
 
-The layout is inspired by Ariel Ephrat's academic homepage: a sticky section navigation, circular profile photo, serif headings, numbered sections, illustrated research highlights, and compact publication rows. Publications can be filtered by research area, and existing BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. Core academic content and original citation links remain available without JavaScript; the interactive HandNet viewer requires JavaScript.
+The layout uses the former academic archive's straightforward section structure, with a sticky section navigation, circular profile photo, serif headings, numbered sections and compact illustrated rows. All publication, project and undergraduate-thesis thumbnail frames are 184 by 115 pixels on desktop and mobile. Publications can be filtered by research area; publication and project BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. Core academic content and original citation links remain available without JavaScript; the interactive HandNet viewer requires JavaScript.
 
-The homepage, academic archive and HandNet project page share `styles.css` and `site.js`, including navigation, fonts, light/dark preference, citation previews, and responsive layout. HandNet includes a self-contained 20-sample viewer and direct links to the public dataset. The academic archive retains its 12 publications, 21 student projects, undergraduate thesis, six videos, and legacy section anchors, including `archive.html#Projects`. PDFs, slides, ZIPs, and external websites retain their native formats.
+The homepage and HandNet project page share `styles.css` and `site.js`, including navigation, fonts, light/dark preference, citation previews, and responsive layout. The archive's 21 student projects and six demonstration videos are now on the homepage. Mobile Point Fusion and Freehand Voxel Carving Scanning on a Mobile Device appear in Student Projects, not Publications. `archive.html` is only a compatibility redirect: old section links, including `archive.html#Projects`, point to the corresponding homepage section. Without JavaScript, the compatibility page provides direct section links. The historical source remains in Git history at commit `462ebe0`. PDFs, slides, ZIPs, and external websites retain their native formats.
 
 ## HandNet data and viewer
 
@@ -16,9 +16,11 @@ The [extended research Space](https://huggingface.co/spaces/twerdster/HandNet-Ex
 
 ## Publication index
 
-The homepage's 21 research entries were reconciled with Aaron's full Google Scholar profile on November 10, 2026. They include conference and workshop papers, journal articles, a book chapter, a preprint, and two entries explicitly labeled as projects. Conference and preprint versions are combined rather than duplicated; the undergraduate thesis remains in the Thesis section. Learning Invariant Representations of Planar Curves uses its ICLR 2017 publication year rather than the 2016 preprint year. Eighteen entries have downloadable BibTeX files. The nine patent lines group related grant and application publications, including the four application records added during this reconciliation. Keep `index.html`, `data/site-content.json`, and `llms.txt` synchronized when updating these lists; the 2019 archive is a historical snapshot, not the current publication list.
+The homepage has 19 publications, 23 student projects, two theses, six research videos and nine patent lines. The publication records were reconciled with Aaron's full Google Scholar profile on November 10, 2026; the two project records were subsequently moved to Student Projects at Aaron's request. Conference and preprint versions are combined rather than duplicated. Learning Invariant Representations of Planar Curves uses its ICLR 2017 publication year rather than the 2016 preprint year. Sixteen publications and two projects have downloadable BibTeX files. Patent lines group related grant and application publications. Keep `index.html`, `data/site-content.json`, and `llms.txt` synchronized when updating these lists.
 
-Eight additional entries have Aaron's selected square thumbnails in `assets/publications/`. These are lossless WebP copies of the approved 512-pixel crops, lazy-loaded with explicit dimensions. Their image paths, original sources and figure references are recorded in `data/site-content.json`. The NeurIPS workshop entry remains text-only until a source figure is available.
+Eight entries use Aaron's selected figures in `assets/publications/`. These are lossless WebP copies of the approved 512-pixel crops, displayed inside the same rectangular frames as the older figures. CoBe's white review-canvas padding is compensated for in CSS; the underlying image is unchanged. Image paths, original sources and figure references are recorded in `data/site-content.json`. The NeurIPS workshop entry remains text-only until a source figure is available.
+
+The PhD thesis, *Topics in Computational Geometric Vision* (Technion, August 2017; advisor Ron Kimmel), is hosted as `Wetzler-PhD-2017.pdf`. This is the unchanged 151-page PDF recovered from Aaron's personal Google Drive, alongside the existing 2005 undergraduate thesis. No analytics or tracking script has been added.
 
 ## Run locally
 
@@ -52,12 +54,13 @@ The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.pl
 - `styles.css`: responsive academic-page styling.
 - `site.js`: shared progressive enhancements for themes, optional publication filters, inline citations, and active navigation. Cross-page navigation links are not treated as local section links.
 - `assets/fonts/` and `assets/icons/`: self-hosted Google Fonts and Lucide SVG icons, with their licenses. Fonts and icons do not require external services at runtime.
-- `data/site-content.json`: machine-readable publication, patent, and resource index.
+- `data/site-content.json`: machine-readable publications, student projects, theses, videos, patents, resources and legacy redirects.
 - `llms.txt`: compact index for agents and crawlers.
 - `robots.txt` and `sitemap.xml`: search-engine discovery files.
 - `HandNet/index.html`: academic dataset overview, embedded 20-sample viewer, public Hugging Face downloads, citation and CC BY 4.0 data terms.
 - `HandNet/explorer/`: standalone viewer with locally vendored dependencies and 20 real sample assets; paths are relative so the app can be embedded or opened directly over HTTP.
-- `archive.html`: recovered 2019 academic content presented in the shared design.
+- `archive.html`: compatibility redirect from old archive URLs to the unified homepage sections.
+- `Wetzler-PhD-2017.pdf`: original, complete PhD thesis PDF.
 - `site.css` and `HandNet/style/`: retained legacy assets, unused by the current HTML pages.
 - `ARCHIVE_RECOVERY_NOTES.md`: Wayback recovery notes.
 

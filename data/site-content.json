@@ -100,8 +100,6 @@
     { "year": 2015, "title": "Freehand Laser Scanning Using a Mobile Phone", "venue": "BMVC", "paper": "SlossbergWetzlerKimmelBMVC15.pdf", "bibtex": "SlossbergWetzlerKimmelBMVC15.bib" },
     { "year": 2015, "title": "RGBD-Fusion: Real-Time High Precision Depth Recovery", "venue": "CVPR", "paper": "Or-elRosmanWetzlerKimmelBruckstein.pdf", "bibtex": "Or-elRosmanWetzlerKimmelBruckstein.bib" },
     { "year": 2015, "title": "Improving 3D Facial Action Unit Detection with Intrinsic Normalization", "type": "workshop", "venue": "DIFF-CV Workshop at BMVC", "authors": ["Eric Yudin", "Aaron Wetzler", "Matan Sela", "Ron Kimmel"], "paper": "https://www.bmva-archive.org.uk/bmvc/2015/diffcv/papers/paper005/paper005.pdf", "doi": "https://doi.org/10.5244/C.29.DIFFCV.5", "bibtex": "YudinWetzlerSelaKimmel-DIFFCV-2015.bib", "image": "assets/publications/facial-action-normalization.webp", "image_source": "https://www.bmva-archive.org.uk/bmvc/2015/diffcv/papers/paper005/paper005.pdf#page=5", "image_figure": "Figure 2" },
-    { "year": 2015, "title": "Mobile Point Fusion", "type": "project", "venue": "Project", "authors": ["D. Ben-Hoda", "G. Kamar", "Aaron Wetzler", "Y. Honen", "Ron Kimmel"], "google_scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oSGdRWoAAAAJ&citation_for_view=oSGdRWoAAAAJ:YOwf2qJgpHMC", "bibtex": "BenHodaEtAl-MobilePointFusion-2015.bib", "image": "assets/publications/mobile-point-fusion.webp", "image_source": "https://gip.cs.technion.ac.il/last-projects-2016-2.html", "image_figure": "Original lab project photo, tablet display crop" },
-    { "year": 2015, "title": "Freehand Voxel Carving Scanning on a Mobile Device", "type": "project", "venue": "Project, Technion", "authors": ["Alex Fish", "Aaron Wetzler", "Y. Honen", "Ron Kimmel"], "project_page": "https://gip.cs.technion.ac.il/last-projects-2015-7.html", "bibtex": "FishWetzlerHonenKimmel-2015.bib", "image": "assets/publications/freehand-voxel-carving.webp", "image_source": "https://gip.cs.technion.ac.il/last-projects-2015-7.html", "image_figure": "Original project illustration, reconstructed geometry crop" },
     { "year": 2014, "title": "Near Field Photometric Stereo with Point Light Sources", "venue": "SIAM Journal on Imaging Sciences", "paper": "MeccaWetzlerKimmelBruckstein-SIAM14.pdf", "bibtex": "MeccaWetzlerKimmelBruckstein-SIAM14.bib" },
     { "year": 2014, "title": "What Can You Do with a Beam and a Reflecting Prism?", "venue": "ECCV Demo", "poster": "WetzlerHerskovitzCarmeliKimmel-ECCVDemo-2014.pdf" },
     { "year": 2014, "title": "Close Range Photometric Stereo with Point Light Sources", "venue": "3DV", "paper": "WetzlerMeccaKimmelBruckstein-3DV-2014.pdf", "bibtex": "WetzlerMeccaKimmelBruckstein-3DV-2014.bib" },
@@ -112,8 +110,42 @@
     { "year": 2012, "title": "Patch-Space Beltrami Denoising of 3D Point Clouds", "venue": "IEEEI", "paper": "WetzlerRosmanKimmel-IEEEI-2012.pdf", "bibtex": "WetzlerRosmanKimmel-IEEEI-2012.bib" },
     { "year": 2011, "title": "Efficient Beltrami Flow Denoising in Patch-Space", "venue": "SSVM", "paper": "WetzlerKimmel-SSVM-2011.pdf", "bibtex": "WetzlerKimmel-SSVM-2011.bib" }
   ],
+  "student_projects": [
+    { "year": 2015, "title": "Mobile Point Fusion", "type": "project", "venue": "Project", "authors": ["D. Ben-Hoda", "G. Kamar", "Aaron Wetzler", "Y. Honen", "Ron Kimmel"], "google_scholar": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=oSGdRWoAAAAJ&citation_for_view=oSGdRWoAAAAJ:YOwf2qJgpHMC", "bibtex": "BenHodaEtAl-MobilePointFusion-2015.bib", "image": "assets/publications/mobile-point-fusion.webp", "image_source": "https://gip.cs.technion.ac.il/last-projects-2016-2.html", "image_figure": "Original lab project photo, tablet display crop", "url": "#mobile-point-fusion", "description": "Mobile 3D reconstruction and point-cloud fusion." },
+    { "year": 2015, "title": "Freehand Voxel Carving Scanning on a Mobile Device", "type": "project", "venue": "Project, Technion", "authors": ["Alex Fish", "Aaron Wetzler", "Y. Honen", "Ron Kimmel"], "project_page": "https://gip.cs.technion.ac.il/last-projects-2015-7.html", "bibtex": "FishWetzlerHonenKimmel-2015.bib", "image": "assets/publications/freehand-voxel-carving.webp", "image_source": "https://gip.cs.technion.ac.il/last-projects-2015-7.html", "image_figure": "Original project illustration, reconstructed geometry crop", "url": "#freehand-voxel-carving-scanning-on-a-mobile-device", "description": "Freehand 3D scanning on a mobile device using voxel carving." },
+    { "title": "AR / 3D Skype to Android", "students": ["Raafat Francis", "Hashem Naara"], "description": "Real-time Kinect depth streaming to an Android tablet, with Vuforia marker tracking to place the reconstructed scene in augmented reality.", "image": "Projects/FrancisNaara/projImg.jpg", "url": "#ar-3d-skype-to-android" },
+    { "title": "Augmented Reality Posters", "students": ["Michael Weiss", "Myr Hagay"], "description": "An Android application that uses a poster as an augmented-reality marker to display associated virtual content.", "image": "Projects/WeissHagay/projImg.jpg", "url": "#augmented-reality-posters" },
+    { "title": "QR code applications on Android", "students": ["Tamir Buchris", "Vitaly Kleynik"], "description": "A campus information system with automatically generated QR codes for lecture rooms, schedules and lecturer information.", "image": "Projects/BuchrisKleynik/projImg.jpg", "url": "#qr-code-applications-on-android" },
+    { "title": "Smartphone Game", "students": ["Liav Sitruk", "Idan Banani"], "description": "A smartphone game developed using the Box2D physics engine and Cocos2D framework.", "image": "Projects/SitrukBanani/projImg.jpg", "url": "#smartphone-game" },
+    { "title": "Hebrew Speech Recognition on iPad", "students": ["Nadav Merlis", "Liora Neeman"], "description": "An iPad dictation application for recognizing and transcribing spoken Hebrew letters, based on research by Prof. Koby Kramer.", "image": "Projects/MerlisNeeman/projImg.jpg", "url": "#hebrew-speech-recognition-on-ipad" },
+    { "title": "3D Stereo Reconstruction using iPhones", "students": ["Ron Slossberg", "Omer Shaked"], "description": "Block-matching stereo reconstruction using two iPhones mounted together, with video streams synchronized over Bluetooth.", "image": "Projects/SlossbergShaked/projImg.jpg", "url": "#3d-stereo-reconstruction-using-iphones" },
+    { "title": "Marker tracking", "students": ["Alex Kemarsky"], "description": "Real-time marker detection and pose estimation using FAST features and a decision-tree classifier.", "image": "Projects/Kemarsky/projImg.jpg", "url": "#marker-tracking" },
+    { "title": "Predator TLD on iOS", "students": ["Mariaan Mansour", "Majd Srour"], "description": "An implementation of Zdenek Kalal's Tracking-Learning-Detection algorithm for near-real-time tracking on an iPad.", "image": "Projects/MansourSrour/projImg.jpg", "url": "#predator-tld-on-ios" },
+    { "title": "3D Volume Carving on iPhone", "students": ["Sergey Kucher", "Alex Povichuk"], "description": "An iPhone scanning application using Vuforia camera poses, a green base and marker, voxel carving and marching cubes to reconstruct an object's visual hull.", "image": "Projects/KucherPovichuk/projImg.jpg", "url": "#3d-volume-carving-on-iphone" },
+    { "title": "Hand tracking", "students": ["Sa'ar Zehavi"], "description": "Depth-based hand tracking adapted for a close-range PMD nano camera.", "image": "Projects/Zehavi/projImg.jpg", "url": "#hand-tracking" },
+    { "title": "OpenFusion", "students": ["Nurit Schwabsky", "Vered Cohen"], "description": "A camera-agnostic implementation of KinectFusion using CUDA and OpenCV, with an abstract camera interface.", "image": "Projects/SchwabskyCohen/projImg.jpg", "url": "#openfusion" },
+    { "title": "CamPong", "students": ["Rom Herschkovitz", "Nofar Carmeli"], "description": "A projected Pong game using a prism and Samsung Galaxy Beam to track a player's hand and display the game on a flat surface.", "image": "Projects/HerschkovitzCarmeli/projImg.jpg", "url": "#campong" },
+    { "title": "Face Depth Estimation from a Single Color Image", "students": ["Tova Krakauer"], "description": "A random decision forest trained on paired color and depth images of a painted mannequin face to recognize facial regions.", "image": "Projects/Krakauer/projImg.jpg", "url": "#face-depth-estimation-from-a-single-color-image" },
+    { "title": "HeartBeat for iOS", "students": ["Or Mayaan", "Michael Leybovich"], "description": "Heart-rate measurement using an iPhone camera and flash to record changes in the red-channel reflectance of illuminated skin.", "image": "Projects/MayaanLeybovich/projImg.jpg", "url": "#heartbeat-for-ios" },
+    { "title": "3D Scanner on Android", "students": ["Arkadi Godlin", "Alex Kligman", "Alon Zivrin"], "description": "Structured-light 3D reconstruction using a Samsung Galaxy Beam and a prism to align its projector with the camera's field of view.", "image": "Projects/GodlinKligman/projImg.jpg", "url": "#3d-scanner-on-android" },
+    { "title": "Multi-View 3D reconstruction application for iPhone", "students": ["Mohamad Jabareen", "Mostafa Agbariah"], "description": "An iPhone capture application with a server-side PMVS2 pipeline for multi-view 3D reconstruction.", "image": "Projects/JabareenAgbariah/projImg.jpg", "url": "#multi-view-3d-reconstruction-application-for-iphone" },
+    { "title": "Multi-user virtual war-room for Oculus Rift", "students": ["Noam Peretz", "Mor Furshpan"], "description": "A shared virtual planning environment for Oculus Rift, with voice communication and synchronized avatar motion.", "url": "#multi-user-virtual-war-room-for-oculus-rift" },
+    { "title": "Full positional tracking for Oculus Rift", "students": ["Dor Goldbaum", "Vlady Ostrovski"], "description": "An investigation of two methods for adding positional tracking to the Oculus Rift.", "image": "Projects/GoldbaumOstrovski/projImg.jpg", "url": "#full-positional-tracking-for-oculus-rift" },
+    { "title": "AUVSI Seafarer 2014 GrayOwl Image Processing team", "students": ["Li-tal Kupperman", "Eli Hayoon", "Nadav Ofir", "Ziv Nachum", "Itay Guy", "Liat Katz"], "description": "Ground-control and onboard vision systems for detecting and identifying targets from a student-built autonomous GrayOwl drone in the 2014 AUVSI Seafarer competition.", "image": "Projects/KuppermanHayoonOfirNachumGuyKatz/projImg.jpg", "url": "#auvsi-seafarer-2014-grayowl-image-processing-team" },
+    { "title": "CutOut for Android", "students": ["Elad Richardson"], "description": "An Android application for object segmentation from user-provided scribbles.", "image": "Projects/Richardson/projImg.jpg", "url": "#cutout-for-android" },
+    { "title": "RobotRun game", "students": ["Hadar Reuveny", "Amit Bekerman"], "description": "A Unity3D game controlled by hand position measured with an Intel Creative 3D camera, with procedurally generated scenery and obstacles.", "image": "Projects/ReuveniBekkerman/projImg.jpg", "url": "#robotrun-game" }
+  ],
   "theses": [
+    { "year": 2017, "title": "Topics in Computational Geometric Vision", "type": "phd", "author": "Aaron Wetzler", "institution": "Technion - Israel Institute of Technology", "advisor": "Ron Kimmel", "date": "2017-08", "pages": 151, "file": "Wetzler-PhD-2017.pdf" },
     { "year": 2005, "title": "Low Cost 3D Laser Scanning Unit with Application to Face Recognition", "institution": "University of Cape Town", "file": "Undergrad-2005.pdf" }
+  ],
+  "research_videos": [
+    { "title": "Full hand and fingertip identity detection and tracking", "url": "https://www.youtube.com/watch?v=D99wyKbYGHI" },
+    { "title": "Pizza worm", "url": "https://www.youtube.com/watch?v=mxTDHY5ciLU" },
+    { "title": "Fingertip detection", "url": "https://www.youtube.com/watch?v=5LCsgZQj56w" },
+    { "title": "Grasping using a PMD nano", "url": "https://www.youtube.com/watch?v=09AtnKS3evQ" },
+    { "title": "Joint detection using a Kinect", "url": "https://www.youtube.com/watch?v=oTYEWWDxXNw" },
+    { "title": "Fingertip detection for multitouch simulation", "url": "https://www.youtube.com/watch?v=5iJ7h0OMrc8" }
   ],
   "patents": [
     { "year": 2026, "title": "Three-Dimensional Reconstruction Across Various Image Capture Modalities", "number": "US 12,608,769", "url": "https://patents.google.com/patent/US12608769B1/en" },
@@ -126,5 +158,20 @@
     { "year": 2018, "title": "3D Reconstruction from Photometric Stereo with Shadows", "number": "US 10,062,171", "url": "https://patents.google.com/patent/US10062171B2/en" },
     { "year": 2016, "title": "Training Ensembles of Randomized Decision Trees", "number": "US 9,324,040", "url": "https://patents.google.com/patent/US9324040B2/en" }
   ],
-  "archive": "archive.html"
+  "sections": {
+    "publications": "#publications",
+    "student_projects": "#projects",
+    "theses": "#theses",
+    "software_and_data": "#software",
+    "experience": "#experience",
+    "videos": "#videos",
+    "patents": "#patents"
+  },
+  "legacy_redirects": {
+    "archive.html": "#about",
+    "archive.html#Publications": "#publications",
+    "archive.html#Projects": "#projects",
+    "archive.html#Theses": "#theses",
+    "archive.html#Videos": "#videos"
+  }
 }

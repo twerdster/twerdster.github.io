@@ -17,20 +17,27 @@ Academic homepage for Aaron Wetzler, CTO of an early-stage company. Previously I
 - HandNet derived 96-row Parquet preview: `https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet`
 - HandNet data license: `https://creativecommons.org/licenses/by/4.0/`
 - Publications: `https://twerdster.github.io/#publications`
+- Student projects: `https://twerdster.github.io/#projects`
+- Theses: `https://twerdster.github.io/#theses`
+- PhD thesis, Topics in Computational Geometric Vision (2017): `https://twerdster.github.io/Wetzler-PhD-2017.pdf`
+- Undergraduate thesis (2005): `https://twerdster.github.io/Undergrad-2005.pdf`
+- Research videos: `https://twerdster.github.io/#videos`
 - Google Scholar: `https://scholar.google.com/citations?user=oSGdRWoAAAAJ&hl=en`
 - Experience and education: `https://twerdster.github.io/#experience`
 - Patents: `https://twerdster.github.io/#patents`
 - LinkedIn: `https://www.linkedin.com/in/aaron-wetzler/`
 - Twitter: `https://x.com/aaronwetzler`
-- Recovered 2019 website: `https://twerdster.github.io/archive.html`
-- Archived student projects: `https://twerdster.github.io/archive.html#Projects`
 
-The publication list contains 21 research entries, reconciled with Aaron's Google Scholar profile on November 10, 2026. It includes conference and workshop papers, journal articles, a book chapter, a preprint, and two entries explicitly labeled as projects. Learning Invariant Representations of Planar Curves is listed as ICLR 2017 (preprint 2016), with its OpenReview link. The 2026 NeurIPS Robot Learning Workshop paper on robot-free demonstrations and the 2020 CoBe paper on coded beacons are retained. Conference and preprint versions are combined; the undergraduate thesis is listed separately. Eighteen entries have BibTeX files. The nine patent lines group related grant and application publications. Source links, publication PDFs where available, BibTeX files, posters, slides, videos, patent records, and dataset links are listed directly on the homepage and in `data/site-content.json`.
+The homepage has 19 publications, 23 student projects, two theses, six research videos and nine patent lines. It consolidates the academic content previously split between the homepage and archive. Publications include conference and workshop papers, journal articles, a book chapter and a preprint. Mobile Point Fusion and Freehand Voxel Carving Scanning on a Mobile Device are student projects, not publications; their source links and citations remain available. The ECCV Beam/prism demonstration remains in Publications. Sixteen publications and two projects have BibTeX files.
 
-Eight newly illustrated publication and project entries use selected square thumbnails in `assets/publications/`. The machine-readable publication records include their local image paths, original source URLs and figure references. The NeurIPS workshop entry remains text-only; no substitute figure has been added.
+Learning Invariant Representations of Planar Curves is listed as ICLR 2017 (preprint 2016), with its OpenReview link. The 2026 NeurIPS Robot Learning Workshop paper on robot-free demonstrations and the 2020 CoBe paper on coded beacons are retained. Conference and preprint versions are combined. Source links, publication PDFs where available, BibTeX files, posters, slides, videos, patent records and dataset links are listed directly on the homepage and in `data/site-content.json`.
+
+All publication and project thumbnail frames use the same 184-by-115-pixel rectangular format. Eight entries use selected figure assets in `assets/publications/`. Their machine-readable records include local image paths, original source URLs and figure references. The NeurIPS workshop entry remains text-only; no substitute figure has been added.
+
+The PhD thesis is Topics in Computational Geometric Vision, by Aaron Wetzler, submitted to the Technion in August 2017 under Prof. Ron Kimmel's supervision. The full original 151-page PDF is hosted directly on the website. The undergraduate thesis is Low Cost 3D Laser Scanning Unit with Application to Face Recognition, University of Cape Town, 2005. Both are separate from Publications.
 
 HandNet is publicly available without a gate on Hugging Face. The complete release contains 214,971 original frames (202,198 train, 10,000 test, 2,773 validation) and seven unchanged distribution archives, totaling 25,475,576,842 bytes. Transformed variants reuse original examples. The data is licensed under CC BY 4.0, permitting academic and commercial reuse with attribution, a license link and an indication of changes. Credit Aaron Wetzler, Ron Slossberg and Ron Kimmel and cite their BMVC 2015 paper. The historical MATLAB repository retains its separate original terms.
 
 The HandNet project page embeds a self-contained 20-sample viewer served by this GitHub Pages repository. Its scripts, vendored dependencies and sample assets use relative URLs; it does not depend on a Hugging Face iframe or CDN. The separate Hugging Face research Space and Parquet preview contain 96 derived visualization rows, not the full dataset. Display images and calibrated point clouds illustrate measured annotations; they do not constitute learned detector inference or a full anatomical hand-joint skeleton.
 
-The HandNet page also retains the paper, poster, presentation, supplementary archive and citation links. The academic archive retains 12 publications, 21 student projects, the undergraduate thesis, and six demonstration video links. The homepage, archive and HandNet project page share typography, navigation and theme.
+The HandNet page also retains the paper, poster, presentation, supplementary archive and citation links. The homepage includes all 21 former archive student projects and all six demonstration video links. archive.html is now only a compatibility redirect; old Publications, Projects, Theses and Videos anchors resolve to the corresponding homepage sections, with direct section links available without JavaScript. The homepage and HandNet project page share typography, navigation and theme. No visitor analytics or tracking script is installed.

@@ -63,7 +63,7 @@
     if (!copied) throw new Error('Copy unavailable');
   }
 
-  document.querySelectorAll('.publication .item-links a[href$=".bib"]').forEach((link, index) => {
+  document.querySelectorAll('.publication .item-links a[href$=".bib"], .project .item-links a[href$=".bib"]').forEach((link, index) => {
     const url = link.getAttribute('href');
     const drawer = document.createElement('div');
     drawer.id = `citation-${index + 1}`;
@@ -105,7 +105,7 @@
     chevron.setAttribute('aria-hidden', 'true');
     toggle.append(chevron);
     link.replaceWith(toggle);
-    toggle.closest('.publication > div').append(drawer);
+    toggle.closest('.item-links').parentElement.append(drawer);
 
     let loading = false;
     toggle.addEventListener('click', async () => {
