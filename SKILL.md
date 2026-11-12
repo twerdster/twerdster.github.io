@@ -1,35 +1,78 @@
-# Website and embedded HandNet maintenance
+# Maintain the academic website
 
-Read SUMMARY.md then this file, followed by AGENTS.md/README.md and the site content index before editing.
+Read SUMMARY.md first, then this file, AGENTS.md/README.md and the relevant HTML, content
+index, source/provenance and validation records. Keep SUMMARY.md and this file
+accurate before every commit. New commits use Aaron Wetzler with
+409920+twerdster@users.noreply.github.com; preserve historical authors/revisions.
 
-Use the current academic design and factual tone. Keep HandNet/index.html, root index.html resource links, data/site-content.json and llms.txt consistent when data resources or licensing change. Preserve original paper/poster/slides/supplement links and unrelated homepage/archive content.
+## Content and documentation
 
-Keep the generic current-role description synchronized across the profile, biography, experience, content index, README.md and llms.txt.
+Use direct academic/technical prose. Explain inputs, operations, outputs and
+limitations; distinguish maintained content, historical recovery, source
+inspection and executed validation. Label schematics, procedural data and
+untrained examples. Do not turn file/test counts into correctness or model
+performance claims. Keep essential local requirements in README, longer
+maintenance/provenance material in the linked guides, and original citations,
+credits and license boundaries intact.
 
-For publication updates, compare the full Scholar profile with the current homepage and verify venues, author lists, publication years and identifiers against primary sources. Combine preprint and conference versions of the same work, preserve distinct book chapters and label preprints accurately. Keep student projects in the Student Projects section immediately below Publications, and theses in the full-width Theses section. The ECCV Beam/prism demo stays in Publications. Add available source links and BibTeX files using the existing row design. Keep patent records at the bottom, grouping related grant and application publications by title. Synchronize the HTML, JSON index, llms.txt and README counts. Validate filters, publication/project citation previews, hosted links, no-JavaScript fallback and mobile/desktop layouts.
+Update index.html, data/site-content.json and llms.txt together when academic
+resources change. For documentation-only revisions, explicitly check that
+runtime/content/index/llms updates are unnecessary. Publications, student
+projects, theses and code/data stay separate; combine duplicate conference and
+preprint records. Preserve archive redirects, no-JavaScript links and BibTeX.
+Verify new factual publication metadata against primary sources. Keep the current role generic in profile and role metadata.
+Add Camerai/Apple material only with approved public text/media.
 
-Selected figure assets live in assets/publications/ with image, image_source and image_figure fields on their machine-readable records. The eight approved WebPs retain their original bytes. CoBe now uses a pixel-verified original PDF photograph without its black border; Deep Stereo uses two exact original panels with matching 3.312 aspect ratios in equal-width CSS rows, not a shifted or warped disparity image. Its image_panels field records both assets. All thumbnail frames remain 184 by 115 pixels on desktop and mobile. Burger, horse and mobile-project crops fill the frame using CSS; voxel brightness is a display-only filter. Do not reintroduce square/larger mobile frames or invent an unavailable figure. The NeurIPS thumbnail is Aaron's supplied Photo 1.jpg, stored unchanged as assets/publications/neurips-robot-free-demonstrations.jpg (1099 by 816). Use the standard contain fitting to show the complete glove/robot figure without cropping; retain user-supplied provenance rather than claiming PDF extraction. Verified paper URL is https://openreview.net/forum?id=czwjjI5kkm.
+## Source, data and figures
 
-Each of the 23 student projects now has a separate public twerdster repository, indexed by STUDENT_PROJECTS.md and student_projects in data/site-content.json. Fourteen contain reviewed historical source or a pinned upstream, CutOut has a related prototype, three contain documents without app source, and four have introductory READMEs. GrayOwl is source_withdrawn: retain its project description, student credits, image, repository and public team/report/poster/video links, but do not restore source, updated code, notebook/Colab links, source_files or updated_component metadata without a new user request. Keep repository, source_status, resources, source_files and upstream pin fields truthful and synchronized with the HTML and directory. README-only repositories are labeled repository, never code. Original public sources for OpenFusion, HeartBeat, Freehand Voxel Carving, Predator and iPhone Stereo Reconstruction are pinned Git submodules; preserve exact revisions and third-party notices. Recovered source belongs in each project's own source/ directory, not in the website repo. New recovery imports use source/original/; keep separately labeled modern implementations under updated/ and document actual tests, missing dependencies and differences from the historical implementation. CutOut remains a related prototype with an unrecovered Android app; do not upgrade it to a complete-source claim. Document historical setup and known missing dependencies without claiming a successful modern build. Publication of code does not imply a new license.
+Preserve the exact approved figures and provenance. All publication,
+student-project and undergraduate-thesis frames remain 184 by 115 pixels on
+phone/desktop. Keep the supplied NeurIPS JPEG in full and source-panel alignment
+for CoBe/Deep Stereo. CSS fitting/brightness is display-only, not scientific
+processing. Do not invent unavailable figures or detector output.
 
-Private recovery originals are outside this repository under /Volumes/AgentSSD/agent-work/website-student-recovery on the verified attached SSD. Small Git working copies live under /Users/aaron/repos/student-projects on APFS. Never publish raw email/archive evidence, .recovery-private, signed download URLs, credentials, signing files, unreviewed personal data or proprietary SDK material. QRoom's two constants.php files are explicitly sanitized to use QROOM_DB_* environment variables; Mobile Point Fusion imports have explicitly documented privacy/security edits. GrayOwl source and updated code have been withdrawn from publication. Use each repo's provenance manifest rather than assuming all originals are byte-identical. The second recovery originals are at /Volumes/AgentSSD/agent-work/website-student-recheck-2026-11-12, outside public Git repositories. Recheck exact allowlists/hashes and privacy scans before further source imports. The public twerdster/twerdster profile README links the website. The separate profile website field is also set to https://twerdster.github.io/, using user-approved CLI profile access and verified through the public user API. The avatar was updated from the website profile.jpg, with the successful upload confirmed in GitHub Settings and the portrait verified on the public profile. Verify the README link, profile field and avatar independently when reporting their status.
+Keep the HandNet 20-row/eight-pair local viewer distinct from the 96-row research
+preview and full archives. Preserve sensor units, source IDs, camera conventions,
+raw-table invariance during display rotation and ground-truth normalization
+labels. Local runtime needs same-origin assets, not a CDN/Hugging Face iframe.
+The parent accepts height messages only from the same origin and viewer frame;
+retain stable intrinsic sizing. Data CC BY 4.0, viewer/Three.js MIT and historical
+MATLAB terms remain separate.
 
-Before publishing recovered PDFs or presentations, render every page and inspect/OCR raster screenshots as well as extracted text, metadata and embedded objects. An image-only login table escaped the initial text scans in the iPhone multi-view slides. Its current PDF removes the complete screenshot image object on slide 7; a visual overlay is not a redaction. Preserve raw evidence only in private audit storage, verify removed objects cannot be recovered, and compare unaffected pages. A forward correction does not erase older public commits; disclose that limitation and do not claim a complete purge. Review pinned upstreams for custom SDK keys, signing material and vendor terms even when automated scanners and GitHub secret alerts are clear. Keep confirmed unsafe legacy backends clearly marked as archival and unsuitable for deployment.
+Keep student source_status, repository/source/notebook links and provenance
+truthful. Original source snapshots and public submodule pins belong in their
+project repos; reviewed ports remain separately labeled updated work.
+GrayOwl stays documentation-only: no source, updated code, notebook/Colab link
+or source-bearing history may be restored without a new explicit request.
+Do not upgrade CutOut's related prototype to a recovered Android-app claim.
 
-Archive-recovery path guards and their offline tests live in scripts/fetch-wayback.mjs and scripts/fetch-wayback.test.mjs. Run `node --test scripts/fetch-wayback.test.mjs` after changing URL mapping or filesystem operations. Preserve decoded-target containment, Git metadata rejection and existing-symlink checks at filesystem boundaries; do not run the full network recovery merely to test these helpers. Validate captured manifest mappings remain compatible. These checks are not a sandbox against hostile concurrent local processes.
+Never stage raw mail/archive evidence, private endpoints/identifiers,
+credentials, signing material, proprietary SDK binaries or unreviewed personal
+data. Scan/OCR/render recovered documents, including raster screenshots and
+embedded objects, before publication. Existing multi-view database-screenshot/history
+and QRoom deployment warnings remain. Retain per-file sanitization manifests
+and review custom SDK/vendor terms even when generic scanners pass. Source
+publication alone does not establish licensing or safe execution.
 
-The homepage is the canonical location for all academic material: 19 publications, 23 student projects, two theses and six videos after the 2026-11-12 consolidation. archive.html is a compatibility redirect with a no-JavaScript link fallback; preserve its case-insensitive mapping for Publications, Projects, Theses and Videos. Main-page legacy hash aliases are retained too. Do not restore a separate academic archive or duplicate highlight cards. Historical source can be inspected with git show 462ebe0:archive.html. The PhD PDF is the unchanged 151-page August 2017 Topics in Computational Geometric Vision thesis, verified against its title and supervision pages. Keep the 2005 undergraduate thesis separate. Analytics was discussed only; do not add tracking without a later request.
+## Verify and publish
 
-The 20-sample viewer is a self-contained static copy of the academic Hugging Face viewer using only a local data/samples.json subset. Copy only referenced subset assets, local archive metadata, locally vendored Three.js and MIT/CC BY license notices. Do not copy full dataset archives or add runtime requests to Hugging Face or CDNs.
+Serve via Python 3 / npm run dev; use a task-specific loopback port if the existing
+server is running. Do not modify installed LaunchAgent/Tailscale services for a
+documentation check; docs/MAINTENANCE.md records their historical setup.
 
-The embed flag hides duplicate publication/method/download headers while retaining scientific visualization controls, figure captions, measurements and provenance. The iframe height message is accepted only from the same origin and the exact viewer frame. Report intrinsic content height without a viewport feedback loop.
+For page/resource changes, validate desktop/phone layouts, images, filters,
+citation fetch/copy/download, theme state, no-JavaScript links and archive
+redirects. Check standalone/embedded HandNet controls with external requests
+blocked. Distinguish current checks from previous recorded results. When archive
+mapping/filesystem code changes, run its existing six offline regressions and
+check captured-manifest compatibility; no full recovery download is needed.
 
-Before each commit review/update SUMMARY.md and SKILL.md; explicitly check both. Validate desktop/mobile layout, interactions and network isolation before pushing. Push main to publish the user-authorized site changes and verify the Pages build plus real public URLs. Never force-push or rewrite existing history.
+Inspect newly staged files as well as tracked edits. Run git diff --cached
+--check, verify Markdown rendering, repository-relative links, images and source
+scope, then reread/synchronize both context files. Request real Claude editorial
+review when directed; verify factual suggestions against code/records and
+review substantial revisions again. Never claim a review/run that did not finish.
 
-HandNet data terms match the explicit 2026 CC BY 4.0 release. New viewer source is MIT; no relicensing of historical MATLAB source is implied. Preserve native archive hashes and scientific conventions.
-
-The current academic viewer and parent iframe passed the above local checks before the initial integration commit. Its data pack is exactly 20 rows/eight pairs; the full Hugging Face viewer remains 96 rows. Preserve this distinction in future content and verification. Check the actual deployed Pages URL after pushing, not only the source checkout.
-
-Code & Data catalogs all 12 public software/data repositories, with authored work, historical experiments and upstream forks identified accurately. Keep descriptions and native app/download links grounded in the public repository documentation. Student projects remain in their own section. Repository About homepages should link the matching website resource anchor. New commits use Aaron Wetzler with 409920+twerdster@users.noreply.github.com; preserve student attribution and historical commits.
-
-Four currently published updated component notebooks (HeartBeat, Volume Carving, Face Depth features and CutOut Fast Marching) have actual macOS/Python 3.14 Jupyter execution and 70 passing unit tests. Keep updated_component scope/validation separate from historical source_status. Notebook/Colab links must point to the actual checked-in cleared notebook. Preserve original source and provenance; no complete mobile/vision/flight app rebuild is implied. The local Jupyter tooling is isolated at /Users/aaron/repos/student-projects/.notebook-venv. Keep outreach contacts/drafts private and unsent unless separately authorized to send; 23 drafts already exist, so review the private manifest before creating duplicates. Claude reached its existing quota and Codex completed the remaining work; preserve accurate implementation attribution.
+Push normally to existing main; do not force-push or rewrite history. Verify
+the Pages build and actual public changed URLs, not merely the push. A static
+site build or browser check is not scientific-model or legacy-app validation.

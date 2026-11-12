@@ -1,103 +1,100 @@
 # Aaron Wetzler academic website
 
-A static academic homepage for Aaron Wetzler, CTO of an early-stage company, built from the recovered Technion website. The main page contains the biography, publications, student projects, theses, code and data, experience and education, research videos, and patents.
+This repository serves Aaron Wetzler's academic homepage and a static HandNet
+sample viewer at <https://twerdster.github.io/>. It contains HTML, CSS,
+JavaScript, publication/project metadata, citations and downloadable documents.
+It has no application backend or training service. The homepage identifies
+Aaron as CTO of an early-stage company.
 
-The layout uses the former academic archive's straightforward section structure, with a sticky section navigation, circular profile photo, serif headings, numbered sections and compact illustrated rows. All publication, project and undergraduate-thesis thumbnail frames are 184 by 115 pixels on desktop and mobile. Publications can be filtered by research area; publication and project BibTeX files open inline with copy and download controls. The theme switch saves the light/dark preference locally. Core academic content and original citation links remain available without JavaScript; the interactive HandNet viewer requires JavaScript.
+## What the site does
 
-The homepage and HandNet project page share `styles.css` and `site.js`, including navigation, fonts, light/dark preference, citation previews, and responsive layout. The archive's 21 student projects and six demonstration videos are now on the homepage. Mobile Point Fusion and Freehand Voxel Carving Scanning on a Mobile Device appear in Student Projects, not Publications. `archive.html` is only a compatibility redirect: old section links, including `archive.html#Projects`, point to the corresponding homepage section. Without JavaScript, the compatibility page provides direct section links. The historical source remains in Git history at commit `462ebe0`. PDFs, slides, ZIPs, and external websites retain their native formats.
+The homepage lists 19 publications, 23 student projects, two theses, six
+research videos and nine patent groups. Code & Data links 12
+software/data repositories. These counts describe the content index, not
+runnable applications or benchmark coverage.
 
-## HandNet data and viewer
+`index.html` contains the rendered academic records. `data/site-content.json`
+provides a machine-readable index and provenance; it is maintained alongside
+the HTML rather than rendered into it by a build step. `llms.txt` is a compact
+resource index. Keep all three consistent when academic resources change.
 
-The [HandNet page](https://twerdster.github.io/HandNet/) embeds a [20-sample viewer](https://twerdster.github.io/HandNet/#explorer), also available [standalone](https://twerdster.github.io/HandNet/explorer/). The viewer's scripts, vendored dependencies, images and calibrated point clouds are served from this repository with relative URLs. It does not embed the Hugging Face app or require a CDN. Serve the site over HTTP with the local command below; opening an HTML file directly can prevent browser fetches of sample assets.
-
-The [complete dataset](https://huggingface.co/datasets/twerdster/HandNet) is public and ungated on Hugging Face. Its [seven unchanged archives](https://huggingface.co/datasets/twerdster/HandNet/tree/main/archives) total 25,475,576,842 bytes and contain 214,971 original frames plus transformed variants. Data is available under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/), including commercial reuse with attribution, a license link and an indication of changes. Credit Aaron Wetzler, Ron Slossberg and Ron Kimmel and cite the BMVC 2015 paper. The linked historical MATLAB source keeps its own original terms.
-
-The [extended research Space](https://huggingface.co/spaces/twerdster/HandNet-Explorer) and [Parquet preview](https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet) contain 96 derived visualization rows. The local 20-sample selection and the 96-row preview do not replace the full archives. Images are rendered for display; the viewers show measured sensor annotations and geometric transformations, not new learned detector results.
-
-## Publication index
-
-The homepage has 19 publications, 23 student projects, two theses, six research videos and nine patent lines. The publication records were reconciled with Aaron's full Google Scholar profile on November 10, 2026; the two project records were subsequently moved to Student Projects at Aaron's request. Conference and preprint versions are combined rather than duplicated. Learning Invariant Representations of Planar Curves uses its ICLR 2017 publication year rather than the 2016 preprint year. Sixteen publications and two projects have downloadable BibTeX files. Patent lines group related grant and application publications. Keep `index.html`, `data/site-content.json`, and `llms.txt` synchronized when updating these lists.
-
-Selected entries use source figures in `assets/publications/`, displayed in the same 184-by-115-pixel frames as older figures. CoBe now uses the original car photograph without its black frame; Deep Stereo uses two matched original panels with a common horizontal alignment. Both come from the source PDFs without redrawing or changing scientific values. The burger, horse and mobile-project figures use display-only CSS fitting; the voxel figure also uses a brightness filter. The eight previously approved WebP files remain unchanged. Image paths, original sources and figure references are recorded in `data/site-content.json`. The NeurIPS workshop paper uses Aaron's supplied wearable-glove and matched-robot-hand figure, preserved as the original JPEG and fitted in full without cropping. Its thumbnail links to the existing OpenReview PDF.
-
-## Code and data directory
-
-Code & Data now links all 12 public software/data repositories: HandNet, Tea,
-Beltrami Denoising, Deep Patch-Beltrami, Blender Neural Composer, iPTAM, Servo
-Tests, Feetech Servo SDK, Simulink-Caffe-Builder, Caffe-GUI-Tool, the Caffe research
-fork and DirtyDataSharing. Forks, hardware requirements and historical experiments
-are identified explicitly. Student repositories remain in their dedicated section.
-Repository About links point back to the relevant website section.
-
-## Tested component notebooks
-
-Four student repositories include separately labeled Python updates and
-Jupyter notebooks: HeartBeat signal processing, iPhone Volume Carving occupancy
-and silhouettes, Face Depth difference features, and a new CutOut Fast
-Marching/scribble example. Their 70 unit tests and all four notebooks passed on
-macOS/Python 3.14. Original-code comparison harnesses cover the supported
-HeartBeat/voxel components and CutOut numerical stencil; MATLAB runtime
-comparisons were unavailable for the Face Depth helpers. GrayOwl source code
-and its updated geometry notebook have been withdrawn.
-
-The project rows link directly to each notebook and Colab. These are small
-component demonstrations, not complete modern versions of the legacy mobile,
-vision or aircraft applications. Historical source remains separate under
-source/ or source/original/; updates live under updated/. Existing HandNet
-viewers and the Beltrami/Blender repositories have their own runtime scope.
-
-## Student project repositories
-
-[STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) is the GitHub directory for all 23 independent project repositories. Fourteen have recovered historical source or pinned original public code, CutOut has a related algorithm prototype with its Android app still missing, three have documents without verified app source, and four have introductory READMEs. GrayOwl retains project information and public resource links after its source code and updated notebook were withdrawn. The homepage links every repository and adds verified original project pages, source, reports, posters and demos. The JSON index records explicit source statuses and upstream revisions; a repository link must not be mislabeled as available code when it contains only a README.
-
-Project READMEs document historical build entrypoints, missing SDKs and untested runtime status. Private source recovery excludes credentials, signing material, proprietary SDK components, personal identifiers and raw submission archives. Two QRoom DB configuration files use environment-variable lookups. One Mobile Point Fusion comment path is also redacted. GrayOwl source and updated code are no longer published. Per-repository manifests identify unchanged originals and sanitized files. No blanket license is applied to student or third-party code. Public originals are pinned as submodules rather than silently relabeled.
-
-A follow-up audit removed a database screenshot containing application login details from slide 7 of the multi-view iPhone presentation. Its current public PDF retains all 16 slides; historical Git copies still contain the original screenshot. The QRoom README records confirmed backend vulnerabilities and prohibits deployment of the archived PHP application. Pinned upstream source also needs its own credential and vendor-license review before reuse.
-
-The PhD thesis, *Topics in Computational Geometric Vision* (Technion, August 2017; advisor Ron Kimmel), is hosted as `Wetzler-PhD-2017.pdf`. This is the unchanged 151-page PDF recovered from Aaron's personal Google Drive, alongside the existing 2005 undergraduate thesis. No analytics or tracking script has been added.
+`site.js` adds publication filtering, fetched BibTeX previews/copy controls,
+active-section navigation and a locally saved theme preference. Core text and
+citation links remain usable without JavaScript. `archive.html` redirects old
+section URLs to the homepage and supplies direct links when JavaScript is off.
 
 ## Run locally
 
+Use Python 3 from the repository root:
+
 ```sh
-npm run dev
+git clone https://github.com/twerdster/twerdster.github.io.git
+cd twerdster.github.io
+python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open <http://127.0.0.1:4173/>.
+Open <http://127.0.0.1:4173/>. With npm installed, `npm run dev` starts the same
+Python command. No `npm install`, package build or dataset download is needed.
+Use HTTP: opening HTML as a local file can prevent citation and viewer fetches.
 
-No package installation or build is required to serve the site on GitHub Pages. The HandNet viewer includes its browser dependencies locally.
+## HandNet viewer and external data
 
-The historical archive-recovery command is `npm run fetch:archive`; it performs network downloads and is not needed to serve or publish the site. Its path-containment regression checks run offline with `node --test scripts/fetch-wayback.test.mjs`. The importer rejects unsafe decoded paths, Git metadata targets and existing symlinks before filesystem access.
+[HandNet/index.html](HandNet/index.html) embeds the
+[standalone viewer](HandNet/explorer/index.html). Its local JSON, PNG previews,
+little-endian float32 XYZ point files and vendored Three.js let the viewer
+display 20 precomputed rows with eight matched original/transformed pairs. Coordinates
+are in millimetres. Ground-truth derotation uses recorded palm orientation;
+the viewer does not execute a learned detector or infer a full hand skeleton.
+See the [viewer README](HandNet/explorer/README.md) for file conventions and terms.
 
-## Published site
+The [complete dataset](https://huggingface.co/datasets/twerdster/HandNet) is
+hosted separately on Hugging Face in seven distribution archives. The
+[research Space](https://huggingface.co/spaces/twerdster/HandNet-Explorer) uses the
+[Parquet preview](https://huggingface.co/datasets/twerdster/HandNet/resolve/main/preview/samples.parquet),
+which contains 96 visualization rows. Neither preview is a replacement for the native
+archives. The tracked viewer code uses same-origin assets, without a CDN,
+Hugging Face iframe or backend request.
 
-The production site is published from the `main` branch of the `twerdster/twerdster.github.io` repository:
+## Maintenance and validation
 
-<https://twerdster.github.io/>
+Read SUMMARY.md, then SKILL.md and AGENTS.md before editing. The
+[maintenance guide](docs/MAINTENANCE.md) covers file organization, content
+updates, browser checks, publication and the historical local-server setup.
+[STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) describes source availability and
+links the 23 project repositories; repository presence does not imply a full
+build. GrayOwl's repository contains project records only; its source was withdrawn.
 
-Pushing to `main` updates the GitHub Pages site. The repository includes a canonical URL, structured person data, `robots.txt`, and `sitemap.xml` so search engines and software agents can identify the public site and its main resources.
+The existing maintenance record describes browser checks for mobile/desktop
+layouts, publication filters, citation previews, image loading, no-JavaScript
+links and same-origin viewer asset loading with no external requests. Those are website checks, separate
+from the previously recorded component tests/notebook executions in the linked
+software repositories. The
+[provenance guide](docs/PROVENANCE.md) records the historical source and limits.
 
-## Tailscale access
+The archive importer has six offline path-containment regression tests. They
+require Node.js with the built-in `node:test` module:
 
-The macOS LaunchAgent in `ops/com.aaronwetzler.website.plist` keeps the local server running on `127.0.0.1:4173`. Tailscale Serve proxies that server at:
+```sh
+node --test scripts/fetch-wayback.test.mjs
+```
 
-<http://aw-mbp.tail02f936.ts.net:4173/>
+They cover accepted archive mappings, traversal/absolute paths, hostname
+restrictions, Git metadata targets and symlink destinations. They do not
+validate recovered scientific software or close filesystem race conditions.
+The importer itself performs network downloads and is not needed to serve or
+publish the site; its separate workflow is in
+[ARCHIVE_RECOVERY_NOTES.md](ARCHIVE_RECOVERY_NOTES.md).
 
-The installed LaunchAgent is `~/Library/LaunchAgents/com.aaronwetzler.website.plist` and writes logs to `/tmp/aaron-website.log` and `/tmp/aaron-website.error.log`.
+## Publication and licensing
 
-## Files
+GitHub Pages publishes the repository root from `main`. A normal push triggers
+the Pages build; verify its result and the public URLs after publication.
+There is no local production bundling step. Fonts, icons and viewer dependencies
+are served locally. No visitor analytics script is installed.
 
-- `index.html`: current academic homepage.
-- `styles.css`: responsive academic-page styling.
-- `site.js`: shared progressive enhancements for themes, optional publication filters, inline citations, and active navigation. Cross-page navigation links are not treated as local section links.
-- `assets/fonts/` and `assets/icons/`: self-hosted Google Fonts and Lucide SVG icons, with their licenses. Fonts and icons do not require external services at runtime.
-- `data/site-content.json`: machine-readable publications, student projects, theses, videos, patents, resources and legacy redirects.
-- `llms.txt`: compact index for agents and crawlers.
-- `robots.txt` and `sitemap.xml`: search-engine discovery files.
-- `HandNet/index.html`: academic dataset overview, embedded 20-sample viewer, public Hugging Face downloads, citation and CC BY 4.0 data terms.
-- `HandNet/explorer/`: standalone viewer with locally vendored dependencies and 20 real sample assets; paths are relative so the app can be embedded or opened directly over HTTP.
-- `archive.html`: compatibility redirect from old archive URLs to the unified homepage sections.
-- `Wetzler-PhD-2017.pdf`: original, complete PhD thesis PDF.
-- `site.css` and `HandNet/style/`: retained legacy assets, unused by the current HTML pages.
-- `ARCHIVE_RECOVERY_NOTES.md`: Wayback recovery notes.
-
-Dedicated Camerai and Apple project material is intentionally absent from the public page until suitable text, images, videos, and public links are supplied.
+HandNet data are [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/):
+credit Aaron Wetzler, Ron Slossberg and Ron Kimmel, link the license and indicate
+changes. Please also cite their BMVC 2015 paper. The viewer code and Three.js
+have their own MIT notices. Historical MATLAB code, papers, images and other
+external materials retain their respective terms; this README adds no blanket
+repository license. See [provenance and attribution](docs/PROVENANCE.md).
