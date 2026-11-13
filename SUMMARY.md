@@ -42,7 +42,7 @@ are a benchmark split or a full anatomical skeleton.
 ## Student code and provenance
 
 STUDENT_PROJECTS.md and JSON distinguish source availability from runnable-app
-status: fourteen source-bearing/pinned repositories, CutOut's related prototype,
+status: fifteen source-bearing/pinned repositories,
 three document repositories, three introductory repositories, Smartphone Game’s
 linked author-hosted source, and GrayOwl after
 source withdrawal. Original source/pins, student credits, vendor terms and
@@ -53,8 +53,10 @@ separate execution records; neither check validates full mobile apps.
 
 GrayOwl contains project information/links only. Do not restore source,
 updated code, notebooks, Colab links or code-availability metadata without a new
-explicit request. CutOut's Android app remains unavailable; its related prototype
-has unverified original authorship. Raw mail/archives, credentials, signing
+explicit request. CutOut's original Android Java/JNI C++ source was recovered
+from Elad Richardson on 2026-11-13; dependencies are missing and its build/runtime
+remain unverified. Its separate related prototype still has unverified original
+authorship. Raw mail/archives, credentials, signing
 material, proprietary SDK components and private recovery evidence stay outside
 this public repository. Existing sanitized-source manifests describe edits.
 
@@ -123,3 +125,26 @@ images decoded, thumbnail frames measured 184 by 115 pixels, and no overflow,
 script errors or missing assets occurred. New links remained available without
 JavaScript. External requests were blocked and none were attempted. These
 checks do not validate historical software.
+
+The later CutOut contribution updates index.html, data/site-content.json,
+llms.txt, STUDENT_PROJECTS.md and docs/PROVENANCE.md together. It adds an explicit
+Android source link and directs the separate related-prototype link to its
+actual subfolder. The source-bearing/pinned count increases from 14 to 15;
+there are still 23 student projects. The original Android snapshot, related
+prototype of unverified authorship and separately tested Python exercise remain
+distinct. No build, runtime, scientific-validation, licensing or manuscript
+approval claim follows from source recovery. README.md's setup and site
+behavior remain accurate; no README or runtime edit is required for this update.
+
+CutOut recovery checks in Chrome 157.0.8103.51 covered 390/1440-pixel layouts,
+all 44 homepage images, 42 thumbnail frames at 184 by 115 pixels, matched
+HTML/JSON resources and no-JavaScript links, without overflow, missing assets
+or script errors. Theme persistence, publication filters, citation
+fetch/copy/download, archive redirect/fallback and standalone/embedded HandNet
+controls passed. Existing measurement values stayed unchanged during display
+rotation and ground-truth normalization. All 86 unchanged served files matched
+the current Git baseline. These are site checks, not Android execution checks.
+Two Claude documentation review rounds prompted the clearer Python exercise
+notebook label, precise permission scope and Jupyter-versus-Colab execution
+wording. The final longer-label rerun also passed at both widths with nine
+links available without JavaScript.

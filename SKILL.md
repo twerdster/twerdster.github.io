@@ -44,7 +44,11 @@ truthful. Original source snapshots and public submodule pins belong in their
 project repos; reviewed ports remain separately labeled updated work.
 GrayOwl stays documentation-only: no source, updated code, notebook/Colab link
 or source-bearing history may be restored without a new explicit request.
-Do not upgrade CutOut's related prototype to a recovered Android-app claim.
+Keep CutOut's author-supplied original Android source under its explicit
+android-app link, separate from the related prototype of unverified authorship
+and the updated Python exercise. Android source recovery does not validate its
+build/runtime or extend the 16 Python component tests to the application.
+Keep missing dependencies and third-party terms documented in the project repo.
 
 Never stage raw mail/archive evidence, private endpoints/identifiers,
 credentials, signing material, proprietary SDK binaries or unreviewed personal
