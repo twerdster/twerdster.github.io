@@ -43,7 +43,8 @@ are a benchmark split or a full anatomical skeleton.
 
 STUDENT_PROJECTS.md and JSON distinguish source availability from runnable-app
 status: fifteen source-bearing/pinned repositories,
-three document repositories, three introductory repositories, Smartphone Game’s
+three document repositories, two introductory repositories, RobotRun’s
+new browser implementation without historical source, Smartphone Game’s
 linked author-hosted source, and GrayOwl after
 source withdrawal. Original source/pins, student credits, vendor terms and
 per-repo provenance must remain intact. Do not add a blanket software license.
@@ -250,3 +251,39 @@ RobotRun records Amit Bekerman's individual credited-name/website-inclusion
 approval in its repository. Vlad Ostrovski confirmed the existing RiftFusion
 video; no duplicate link or application-source claim is needed. README setup,
 site runtime, approved figures, HandNet and scientific records need no changes.
+
+## RobotRun browser resources (2026-11-13)
+
+RobotRun now links play, new browser source, setup and validation resources.
+The new TypeScript/Three.js/MediaPipe implementation runs a three-lane,
+1,000-metre course with ten points per coin and ten-second fire control reversal.
+Original Unity source remains unrecovered (original source_files stays zero);
+new browser code is not student-authored historical code or a compiled original.
+Chrome 157 production-preview checks used Hand Landmarker with its GPU delegate
+and a prerecorded Google hand test photo, spatially shifted across video frames.
+Checks cover keyboard/touch input, camera lifecycle/errors with an emulated
+stream, desktop layout and 390-pixel Chrome mobile emulation. Camera-ended and
+visibility events were synthetic.
+No live-person camera session or mobile-device runtime was tested. Keep those
+limits separate from the historical unbuilt Unity/Intel-camera interface.
+
+HTML/JSON, llms.txt, STUDENT_PROJECTS.md and provenance describe the same new
+resources. Counts remain 23 projects, 19 publications, 12 software/data rows and
+fifteen historical source-bearing/pinned repositories; the remaining categories
+are three document repositories, two introductory repositories, RobotRun’s
+new browser code without historical source, linked Smartphone Game source and withdrawn GrayOwl
+source. The archived screenshot, all other rows/figures, site runtime, HandNet
+and approved biography are unchanged. README setup was explicitly checked and
+requires no edit. This checkout starts from the sanitized main at a5a8fa3.
+The site update passed Chrome 157 checks at 390/1440 widths with JavaScript
+enabled and disabled, plus both themes: all five RobotRun links match JSON,
+all 44 homepage images decode, the original figure stays 184 by 115 pixels,
+and no overflow, missing assets, script errors or external requests occurred.
+The two changed public Markdown guides rendered at both widths. One actual
+Claude editorial review prompted clearer new-code authorship, historical
+screenshot labeling and precise inference/emulation scope; useful feedback was
+checked against the code and results. Other HTML rows and JSON records are
+unchanged. The linked browser source was published at RobotRun commit
+72b3e08de13c89e61e8db0cf2e6b8c9354157703. Verify the playable project Pages
+deployment before publishing these links, then use a normal website push and
+a separate site deployment check.

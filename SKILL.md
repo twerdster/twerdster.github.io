@@ -112,3 +112,15 @@ original bytes and draft label; it does not supersede the June report or add
 code/runtime validation. Keep individual author permissions scoped to their
 actual replies and avoid adding duplicate resources when an author confirms
 an existing link.
+
+RobotRun’s browser implementation is new work under updated/browser/, not
+recovered or compiled Unity source. Keep its play/code/setup/validation links
+synchronized across index.html, data/site-content.json, llms.txt,
+STUDENT_PROJECTS.md and docs/PROVENANCE.md. Preserve original
+source_files=0, the historical screenshot and student attribution. Do not add it
+to the fifteen historical source-bearing/pinned repositories or duplicate it
+in Code & Data. Distinguish actual MediaPipe inference from prerecorded input,
+unit tests with synthetic control inputs and live-person/device tests. The
+new implementation’s chosen 1,000-metre course, ten-point coins and ten-second
+fire reversal apply to this new implementation; no equivalence to the
+historical game is claimed.
