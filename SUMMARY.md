@@ -43,7 +43,8 @@ are a benchmark split or a full anatomical skeleton.
 
 STUDENT_PROJECTS.md and JSON distinguish source availability from runnable-app
 status: fourteen source-bearing/pinned repositories, CutOut's related prototype,
-three document repositories, four introductory repositories, and GrayOwl after
+three document repositories, three introductory repositories, Smartphone Game’s
+linked author-hosted source, and GrayOwl after
 source withdrawal. Original source/pins, student credits, vendor terms and
 per-repo provenance must remain intact. Do not add a blanket software license.
 Four updated components have previously recorded 70 unit tests in total:
@@ -102,7 +103,23 @@ blocked external requests; none were attempted. No errors, missing assets or
 overflow occurred. These are website checks, not new component/model/benchmark
 evidence. Earlier recorded checks remain in Git history and maintenance records.
 
-This pass revises documentation/context only; academic resources, runtime
-HTML/JS/CSS, figures, dataset assets and index/llms content are unchanged.
-Two rounds of Claude editorial review and verification records are stored
-separately. Review/synchronize this file and SKILL.md before every commit.
+The earlier documentation pass revised context/docs only. The later 2026-11-13
+author follow-up updates index.html, data/site-content.json, llms.txt and
+STUDENT_PROJECTS.md together: Smartphone Game links Idan Banani’s external
+source (not imported; observed 270b45c, untested), CamPong adds original
+poster/presentation/project overview plus supplied video/profile links, and
+RiftFusion adds its original presentation and supplied author profiles.
+CamPong/RiftFusion application source is still unavailable. Counts remain
+19 publications and 23 projects; all approved figures, CSS, runtime scripts,
+HandNet assets and scientific validation records are unchanged.
+The earlier documentation pass had two rounds of Claude editorial review.
+Its responses and the separate author-update review/verification records are
+stored privately. Review/synchronize this file and SKILL.md before every commit.
+
+The author-resource update was checked in Google Chrome 157.0.8103.51 at
+390- and 1440-pixel widths. The 23 project rows and 19 publication rows remained.
+The three changed resource lists and supplied profile links matched the JSON;
+images decoded, thumbnail frames measured 184 by 115 pixels, and no overflow,
+script errors or missing assets occurred. New links remained available without
+JavaScript. External requests were blocked and none were attempted. These
+checks do not validate historical software.

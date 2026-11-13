@@ -57,3 +57,13 @@ also cite Wetzler, Slossberg and Kimmel's BMVC 2015 paper. Viewer source is MIT,
 Three.js has its own MIT notice, and the historical MATLAB repository keeps
 its original source terms. No new blanket license is applied to the site,
 student code, papers or external assets.
+
+## Author-supplied project resources, 2026-11-13
+
+Smartphone Game now links [Idan Banani's source repository](https://github.com/IdanBanani/iOS-4-2D-game-for-iPad). Inspection at commit 270b45c found historical source and resources but no Xcode project/workspace; it has not been built and is not imported into this website or its archival repository.
+
+[CamPong](https://github.com/twerdster/campong) adds the original poster, project overview and 15-slide presentation (with an embedded historical recording) supplied by Nofar Carmeli. Her supplied report matches the previously archived report byte for byte. The repository records the hashes and document/media inspection scope. Nofar's supplied public video and preferred website are linked; application source is still unavailable.
+
+[Full positional tracking for Oculus Rift (RiftFusion)](https://github.com/twerdster/oculus-positional-tracking) now includes the original 13-slide presentation supplied by Dor Goldbaum and the authors' supplied public profile links. The presentation describes KinectFusion/Vicon alternatives and an API; the application source remains unavailable and no new headset/runtime test is claimed. Individual author replies do not add a blanket license or replace third-party terms. Raw correspondence and private access links remain outside the public repositories.
+
+CamPong's homepage video link now uses the public YouTube URL supplied by Nofar; its title metadata identifies the Technion Pong project, but this update did not review its contents. The earlier Dropbox video URL remains in the CamPong README and original documents. Linking the Smartphone Game source does not assign reuse terms to the application or extend the bundled libraries' licenses to other material.

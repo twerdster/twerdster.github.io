@@ -225,7 +225,32 @@
     { "title": "AR / 3D Skype to Android", "students": ["Raafat Francis", "Hashem Naara"], "description": "Real-time Kinect depth streaming to an Android tablet, with Vuforia marker tracking to place the reconstructed scene in augmented reality.", "image": "Projects/FrancisNaara/projImg.jpg", "repository": "https://github.com/twerdster/android-3d-skype", "source_status": "coming_soon", "resources": [], "url": "#ar-3d-skype-to-android" },
     {"title":"Augmented Reality Posters","students":["Michael Weiss","Myr Hagay"],"description":"An Android application that uses a poster as an augmented-reality marker to display associated virtual content.","image":"Projects/WeissHagay/projImg.jpg","repository":"https://github.com/twerdster/augmented-reality-posters","source_status":"partial_source_recovered_untested","resources":[{"label":"partial source","url":"https://github.com/twerdster/augmented-reality-posters/tree/main/source"}],"url":"#augmented-reality-posters","source_files":10},
     {"title":"QR code applications on Android","students":["Tamir Buchris","Vitaly Kleynik"],"description":"A campus information system with automatically generated QR codes for lecture rooms, schedules and lecturer information.","image":"Projects/BuchrisKleynik/projImg.jpg","repository":"https://github.com/twerdster/android-qr-applications","source_status":"partial_source_recovered_untested","resources":[{"label":"partial source","url":"https://github.com/twerdster/android-qr-applications/tree/main/source"}],"url":"#qr-code-applications-on-android","source_files":81},
-    {"title":"Smartphone Game","students":["Liav Sitruk","Idan Banani"],"description":"A smartphone game developed using the Box2D physics engine and Cocos2D framework.","image":"Projects/SitrukBanani/projImg.jpg","repository":"https://github.com/twerdster/smartphone-game","source_status":"documentation_recovered","resources":[{"label":"report","url":"https://github.com/twerdster/smartphone-game/blob/main/docs/report.pdf"}],"url":"#smartphone-game"},
+    {
+      "title": "Smartphone Game",
+      "students": [
+        "Liav Sitruk",
+        "Idan Banani"
+      ],
+      "description": "A smartphone game developed using the Box2D physics engine and Cocos2D framework.",
+      "image": "Projects/SitrukBanani/projImg.jpg",
+      "repository": "https://github.com/twerdster/smartphone-game",
+      "source_status": "author_source_linked_untested",
+      "resources": [
+        {
+          "label": "original source",
+          "url": "https://github.com/IdanBanani/iOS-4-2D-game-for-iPad"
+        },
+        {
+          "label": "report",
+          "url": "https://github.com/twerdster/smartphone-game/blob/main/docs/report.pdf"
+        }
+      ],
+      "url": "#smartphone-game",
+      "source_repository": "https://github.com/IdanBanani/iOS-4-2D-game-for-iPad",
+      "source_observed_revision": "270b45ce6a1e149209e1d595e492766ede3b7747",
+      "source_imported": false,
+      "source_note": "Inspected source files lack an Xcode project/workspace; no current build is verified. The source link follows Idan Banani's repository, not an imported snapshot."
+    },
     { "title": "Hebrew Speech Recognition on iPad", "students": ["Nadav Merlis", "Liora Neeman"], "description": "An iPad dictation application for recognizing and transcribing spoken Hebrew letters, based on research by Prof. Koby Kramer.", "image": "Projects/MerlisNeeman/projImg.jpg", "repository": "https://github.com/twerdster/hebrew-speech-ipad", "source_status": "coming_soon", "resources": [], "url": "#hebrew-speech-recognition-on-ipad" },
     {"title":"3D Stereo Reconstruction using iPhones","students":["Ron Slossberg","Omer Shaked"],"description":"Block-matching stereo reconstruction using two iPhones mounted together, with video streams synchronized over Bluetooth.","image":"Projects/SlossbergShaked/projImg.jpg","repository":"https://github.com/twerdster/iphone-stereo-reconstruction","source_status":"upstream_source_pinned_untested","resources":[{"label":"original code","url":"https://github.com/ronslos/stereo_vision/tree/69a76767b2ce74f7b580ddb7b81a43fbb1dd346b"},{"label":"project page","url":"https://gip.cs.technion.ac.il/last-projects-2012-1.html"},{"label":"demo","url":"https://www.youtube.com/watch?v=IxVj-QZ1w6k"}],"url":"#3d-stereo-reconstruction-using-iphones","source_files":33,"source_repository":"https://github.com/ronslos/stereo_vision","source_revision":"69a76767b2ce74f7b580ddb7b81a43fbb1dd346b"},
     {"title":"Marker tracking","students":["Alex Kemarsky"],"description":"Real-time marker detection and pose estimation using FAST features and a decision-tree classifier.","image":"Projects/Kemarsky/projImg.jpg","repository":"https://github.com/twerdster/marker-tracking","source_status":"partial_source_recovered_untested","resources":[{"label":"partial source","url":"https://github.com/twerdster/marker-tracking/tree/main/source"}],"url":"#marker-tracking","source_files":83},
@@ -233,13 +258,87 @@
     {"title":"3D Volume Carving on iPhone","students":["Sergey Kucher","Alex Povichuk"],"description":"An iPhone scanning application using Vuforia camera poses, a green base and marker, voxel carving and marching cubes to reconstruct an object's visual hull.","image":"Projects/KucherPovichuk/projImg.jpg","repository":"https://github.com/twerdster/iphone-volume-carving","source_status":"partial_source_recovered_untested","resources":[{"label":"partial source","url":"https://github.com/twerdster/iphone-volume-carving/tree/main/source"},{"label":"carving notebook","url":"https://github.com/twerdster/iphone-volume-carving/blob/main/updated/notebooks/voxel_carving_demo.ipynb"},{"label":"Colab","url":"https://colab.research.google.com/github/twerdster/iphone-volume-carving/blob/main/updated/notebooks/voxel_carving_demo.ipynb"}],"url":"#3d-volume-carving-on-iphone","source_files":21,"updated_component":{"language":"Python 3","scope":"Silhouette/occupancy carving and vector geometry; no marching-cubes mesh or mobile application.","unit_tests_passed":16,"notebook":"https://github.com/twerdster/iphone-volume-carving/blob/main/updated/notebooks/voxel_carving_demo.ipynb","colab":"https://colab.research.google.com/github/twerdster/iphone-volume-carving/blob/main/updated/notebooks/voxel_carving_demo.ipynb","runtime_verified":"macOS / Python 3.14 / actual Jupyter kernel","original_application_build_verified":false}},
     {"title":"Hand tracking","students":["Sa'ar Zehavi"],"description":"Depth-based hand tracking adapted for a close-range PMD nano camera.","image":"Projects/Zehavi/projImg.jpg","repository":"https://github.com/twerdster/hand-tracking-pmd","source_status":"source_recovered_untested","resources":[{"label":"demo","url":"https://www.youtube.com/watch?v=EvEUtYNojeQ"},{"label":"code","url":"https://github.com/twerdster/hand-tracking-pmd/tree/main/source"},{"label":"report","url":"https://github.com/twerdster/hand-tracking-pmd/blob/main/docs/report.pdf"}],"url":"#hand-tracking","source_files":9},
     {"title":"OpenFusion","students":["Nurit Schwabsky","Vered Cohen"],"description":"A camera-agnostic implementation of KinectFusion using CUDA and OpenCV, with an abstract camera interface.","image":"Projects/SchwabskyCohen/projImg.jpg","repository":"https://github.com/twerdster/openfusion","source_status":"upstream_source_pinned_untested","resources":[{"label":"project page","url":"https://gip.cs.technion.ac.il/last-projects-2012-2.html"},{"label":"code","url":"https://github.com/gilbs10/OpenFusion"},{"label":"report","url":"https://github.com/twerdster/openfusion/blob/main/docs/report.pdf"}],"url":"#openfusion","source_repository":"https://github.com/gilbs10/OpenFusion","source_revision":"8d435bfff054543c7e57274b773503b1370f90b4"},
-    { "title": "CamPong", "students": ["Rom Herschkovitz", "Nofar Carmeli"], "description": "A projected Pong game using a prism and Samsung Galaxy Beam to track a player's hand and display the game on a flat surface.", "image": "Projects/HerschkovitzCarmeli/projImg.jpg", "repository": "https://github.com/twerdster/campong", "source_status": "documentation_recovered", "resources": [{"label":"project page","url":"https://gip.cs.technion.ac.il/last-projects-2013-1.html"},{"label":"demo","url":"https://www.dropbox.com/s/i8cxxujm43ah5kh/Pong.mov"},{"label":"report","url":"https://github.com/twerdster/campong/blob/main/docs/report.pdf"}], "url": "#campong" },
+    {
+      "title": "CamPong",
+      "students": [
+        "Rom Herschkovitz",
+        "Nofar Carmeli"
+      ],
+      "description": "A projected Pong game using a prism and Samsung Galaxy Beam to track a player's hand and display the game on a flat surface.",
+      "image": "Projects/HerschkovitzCarmeli/projImg.jpg",
+      "repository": "https://github.com/twerdster/campong",
+      "source_status": "documentation_recovered",
+      "resources": [
+        {
+          "label": "project page",
+          "url": "https://gip.cs.technion.ac.il/last-projects-2013-1.html"
+        },
+        {
+          "label": "author-supplied video",
+          "url": "https://www.youtube.com/watch?v=msWkridhFyQ"
+        },
+        {
+          "label": "report",
+          "url": "https://github.com/twerdster/campong/blob/main/docs/report.pdf"
+        },
+        {
+          "label": "poster",
+          "url": "https://github.com/twerdster/campong/blob/main/original/CamPong-Poster.pptx"
+        },
+        {
+          "label": "slides",
+          "url": "https://github.com/twerdster/campong/blob/main/original/CamPong-Presentation.pptx"
+        },
+        {
+          "label": "project overview",
+          "url": "https://github.com/twerdster/campong/blob/main/original/CamPong-IMVC.docx"
+        }
+      ],
+      "url": "#campong",
+      "student_profiles": [
+        {
+          "name": "Nofar Carmeli",
+          "url": "https://nofar.carme.li/"
+        }
+      ]
+    },
     {"title":"Face Depth Estimation from a Single Color Image","students":["Tova Krakauer"],"description":"A random decision forest trained on paired color and depth images of a painted mannequin face to recognize facial regions.","image":"Projects/Krakauer/projImg.jpg","repository":"https://github.com/twerdster/face-depth-estimation-from-a-single-color-image","source_status":"partial_source_recovered_untested","resources":[{"label":"partial source","url":"https://github.com/twerdster/face-depth-estimation-from-a-single-color-image/tree/main/source/original"},{"label":"feature notebook","url":"https://github.com/twerdster/face-depth-estimation-from-a-single-color-image/blob/main/updated/notebooks/depth-features.ipynb"},{"label":"Colab","url":"https://colab.research.google.com/github/twerdster/face-depth-estimation-from-a-single-color-image/blob/main/updated/notebooks/depth-features.ipynb"}],"url":"#face-depth-estimation-from-a-single-color-image","source_files":3,"updated_component":{"language":"Python 3","scope":"Depth-difference feature assembly; no trained color-to-depth model.","unit_tests_passed":18,"notebook":"https://github.com/twerdster/face-depth-estimation-from-a-single-color-image/blob/main/updated/notebooks/depth-features.ipynb","colab":"https://colab.research.google.com/github/twerdster/face-depth-estimation-from-a-single-color-image/blob/main/updated/notebooks/depth-features.ipynb","runtime_verified":"macOS / Python 3.14 / actual Jupyter kernel","original_application_build_verified":false}},
     {"title":"HeartBeat for iOS","students":["Or Mayaan","Michael Leybovich"],"description":"Heart-rate measurement using an iPhone camera and flash to record optical changes in illuminated skin.","image":"Projects/MayaanLeybovich/projImg.jpg","repository":"https://github.com/twerdster/heartbeat-ios","source_status":"upstream_source_pinned_untested","resources":[{"label":"code","url":"https://github.com/mishana/Heartbeat"},{"label":"demo","url":"https://www.youtube.com/watch?v=dHomdiuAAFw"},{"label":"report","url":"https://github.com/twerdster/heartbeat-ios/blob/main/docs/report.pdf"},{"label":"signal notebook","url":"https://github.com/twerdster/heartbeat-ios/blob/main/updated/notebooks/heartbeat_port_demo.ipynb"},{"label":"Colab","url":"https://colab.research.google.com/github/twerdster/heartbeat-ios/blob/main/updated/notebooks/heartbeat_port_demo.ipynb"}],"url":"#heartbeat-for-ios","source_repository":"https://github.com/mishana/Heartbeat","source_revision":"d5179096b96941bc0ff6aa8f0bacd88958dd37dd","updated_component":{"language":"Python 3","scope":"Camera-signal processing component; not the full iOS camera application.","unit_tests_passed":20,"notebook":"https://github.com/twerdster/heartbeat-ios/blob/main/updated/notebooks/heartbeat_port_demo.ipynb","colab":"https://colab.research.google.com/github/twerdster/heartbeat-ios/blob/main/updated/notebooks/heartbeat_port_demo.ipynb","runtime_verified":"macOS / Python 3.14 / actual Jupyter kernel","original_application_build_verified":false}},
     {"title":"3D Scanner on Android","students":["Arkadi Godlin","Alex Kligman"],"description":"Structured-light 3D reconstruction using a Samsung Galaxy Beam and a prism to align its projector with the camera's field of view.","image":"Projects/GodlinKligman/projImg.jpg","repository":"https://github.com/twerdster/android-3d-scanner","source_status":"partial_source_recovered_untested","resources":[{"label":"partial source","url":"https://github.com/twerdster/android-3d-scanner/tree/main/source"}],"url":"#3d-scanner-on-android","source_files":27,"collaborators":[{"name":"Alon Zvirin","role":"Lab engineer","historical_credit":"Alon Zivrin","credit_source":"https://github.com/twerdster/android-3d-scanner#authors"}]},
     {"title":"Multi-View 3D reconstruction application for iPhone","students":["Mohamad Jabareen","Mostafa Agbariah"],"description":"An iPhone capture application with a server-side PMVS2 pipeline for multi-view 3D reconstruction.","image":"Projects/JabareenAgbariah/projImg.jpg","repository":"https://github.com/twerdster/iphone-multiview-reconstruction","source_status":"documentation_recovered","resources":[{"label":"slides","url":"https://github.com/twerdster/iphone-multiview-reconstruction/blob/main/docs/slides.pdf"}],"url":"#multi-view-3d-reconstruction-application-for-iphone"},
     {"title":"Multi-user virtual war-room for Oculus Rift","students":["Noam Peretz","Mor Furshpan"],"description":"A shared virtual planning environment for Oculus Rift, with voice communication and synchronized avatar motion.","repository":"https://github.com/twerdster/oculus-virtual-war-room","source_status":"script_snapshot_recovered_untested","resources":[{"label":"scripts","url":"https://github.com/twerdster/oculus-virtual-war-room/tree/main/source"}],"url":"#multi-user-virtual-war-room-for-oculus-rift","source_files":24},
-    { "title": "Full positional tracking for Oculus Rift", "students": ["Dor Goldbaum", "Vlady Ostrovski"], "description": "An investigation of two methods for adding positional tracking to the Oculus Rift.", "image": "Projects/GoldbaumOstrovski/projImg.jpg", "repository": "https://github.com/twerdster/oculus-positional-tracking", "source_status": "coming_soon", "resources": [{"label":"demo","url":"https://www.youtube.com/watch?v=3Y0BYmFOAVQ"}], "url": "#full-positional-tracking-for-oculus-rift" },
+    {
+      "title": "Full positional tracking for Oculus Rift",
+      "students": [
+        "Dor Goldbaum",
+        "Vlady Ostrovski"
+      ],
+      "description": "An investigation of two methods for adding positional tracking to the Oculus Rift.",
+      "image": "Projects/GoldbaumOstrovski/projImg.jpg",
+      "repository": "https://github.com/twerdster/oculus-positional-tracking",
+      "source_status": "documentation_recovered",
+      "resources": [
+        {
+          "label": "presentation",
+          "url": "https://github.com/twerdster/oculus-positional-tracking/blob/main/original/RiftFusion-Presentation.pptx"
+        },
+        {
+          "label": "demo",
+          "url": "https://www.youtube.com/watch?v=3Y0BYmFOAVQ"
+        }
+      ],
+      "url": "#full-positional-tracking-for-oculus-rift",
+      "student_profiles": [
+        {
+          "name": "Dor Goldbaum",
+          "url": "https://www.linkedin.com/in/dorgold/"
+        },
+        {
+          "name": "Vlady Ostrovski",
+          "url": "https://www.linkedin.com/in/vladislav-ostrovski-b99619121/"
+        }
+      ]
+    },
     {"title":"AUVSI Seafarer 2014 GrayOwl Image Processing team","students":["Li-tal Kupperman","Eli Hayoon","Nadav Ofir","Ziv Nachum","Itay Guy","Liat Katz"],"description":"Ground-control and onboard vision systems for detecting and identifying targets from a student-built autonomous GrayOwl drone in the 2014 AUVSI Seafarer competition.","image":"Projects/KuppermanHayoonOfirNachumGuyKatz/projImg.jpg","repository":"https://github.com/twerdster/grayowl-auvsi-2014","source_status":"source_withdrawn","resources":[{"label":"team page","url":"https://aerospace.technion.ac.il/projects/auvsi/"},{"label":"team report","url":"https://aerospace.technion.ac.il/wp-content/uploads/2014/09/AUVSI-Journal-Paper.pdf"},{"label":"poster","url":"https://www.dror-aero.com/ac/posterfinal.pdf"},{"label":"team video","url":"https://www.youtube.com/watch?v=DFLy9aDjSd8"}],"url":"#auvsi-seafarer-2014-grayowl-image-processing-team","source_note":"Source code and the updated geometry notebook have been withdrawn; this repository retains project information and public resource links."},
     {"title":"CutOut for Android","students":["Elad Richardson"],"description":"An Android application for object segmentation from user-provided scribbles.","image":"Projects/Richardson/projImg.jpg","repository":"https://github.com/twerdster/cutout-android","source_status":"related_prototype_recovered_untested","resources":[{"label":"related prototype","url":"https://github.com/twerdster/cutout-android/tree/main/source/original"},{"label":"project page","url":"https://gip.cs.technion.ac.il/last-projects-2015-1.html"},{"label":"author page","url":"https://eladrich.github.io/"},{"label":"summary","url":"https://github.com/twerdster/cutout-android/blob/main/docs/summary.pdf"},{"label":"poster","url":"https://github.com/twerdster/cutout-android/blob/main/docs/poster.pdf"},{"label":"prototype notebook","url":"https://github.com/twerdster/cutout-android/blob/main/updated/notebooks/fmm_scribbles.ipynb"},{"label":"Colab","url":"https://colab.research.google.com/github/twerdster/cutout-android/blob/main/updated/notebooks/fmm_scribbles.ipynb"}],"url":"#cutout-for-android","source_files":3,"source_note":"Related MATLAB/C++ segmentation prototype; authorship unverified; final Android application not recovered.","updated_component":{"language":"Python 3","scope":"Updated Fast Marching solver with a new educational scribble demo; not the Android application.","unit_tests_passed":16,"notebook":"https://github.com/twerdster/cutout-android/blob/main/updated/notebooks/fmm_scribbles.ipynb","colab":"https://colab.research.google.com/github/twerdster/cutout-android/blob/main/updated/notebooks/fmm_scribbles.ipynb","runtime_verified":"macOS / Python 3.14 / actual Jupyter kernel","original_application_build_verified":false}},
     { "title": "RobotRun game", "students": ["Hadar Reuveny", "Amit Bekerman"], "description": "A Unity3D game controlled by hand position measured with an Intel Creative 3D camera, with procedurally generated scenery and obstacles.", "image": "Projects/ReuveniBekkerman/projImg.jpg", "repository": "https://github.com/twerdster/robotrun-game", "source_status": "coming_soon", "resources": [], "url": "#robotrun-game" }
