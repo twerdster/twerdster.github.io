@@ -50,9 +50,12 @@ and the updated Python exercise. The historical Eclipse interface remains
 unbuilt. Keep separately recorded updated/native, updated/desktop and
 updated/android execution distinct from original-app validation and the earlier
 16 Python tests. The updated native record is macOS-specific; the new Android
-runner was tested in an Android 14 emulator, not on a physical device. Do not
-convert scoped regressions or one photograph without reference labels into
-accuracy, Linux compatibility or historical APK equivalence claims. Keep
+runner was tested in an Android 14 emulator and on one physical Pixel 2 with
+Android 10/API 29 arm64-v8a. Keep the two 14-case segmentation records separate;
+do not infer compatibility with other phones/API combinations. Do not convert
+scoped regressions or one photograph without reference labels into accuracy,
+Linux compatibility, cross-device bitwise equivalence or historical APK
+equivalence claims. Keep
 missing dependencies and third-party terms documented in the project repo.
 
 Never stage raw mail/archive evidence, private endpoints/identifiers,

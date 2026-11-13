@@ -56,7 +56,8 @@ updated code, notebooks, Colab links or code-availability metadata without a new
 explicit request. CutOut's original Android Java/JNI C++ source was recovered
 from Elad Richardson on 2026-11-13; its historical Eclipse interface remains
 unbuilt. The separately updated C++/OpenCV port has a local drawing interface
-tested on macOS and a new Java/JNI runner tested in an Android 14 emulator.
+tested on macOS and a new Java/JNI runner tested in an Android 14 emulator
+and on one physical Pixel 2 with Android 10/API 29.
 Its separate related prototype still has unverified original
 authorship. Raw mail/archives, credentials, signing
 material, proprietary SDK components and private recovery evidence stay outside
@@ -159,8 +160,11 @@ ASan/UBSan checks, repeated with `-funsigned-char`; 25 CLI cases (15 successful,
 operator combinations on one photograph, and 10 expected errors); and six isolated original-body fail/updated-pass cases. The desktop
 record covers eight browser-to-native photo operator combinations at
 390/1440-pixel widths.
-Android 14-emulator records cover 14 segmentation runs; physical Android devices
-and Linux remain untested. These are scoped execution/regression checks, not
+Android 14-emulator records cover 14 segmentation runs. A later physical
+Pixel 2 check on Android 10/API 29 arm64-v8a repeated the 14 Activity/JNI
+segmentation cases using the same updated debug APK; these are separate
+execution records, not 28 distinct algorithm cases. Other Android device/API
+combinations and Linux remain untested. These are scoped execution/regression checks, not
 ground-truth photographic accuracy or historical APK equivalence. Keep the
 earlier 16-test Python exercise metadata unchanged and independently scoped.
 Counts stay 15 source-bearing/pinned repos, 23 projects and 322 original CutOut
@@ -179,3 +183,5 @@ remained available without JavaScript. The 86 unchanged served files matched
 b44278f, including 68 read-only fallback assets. These are website checks only.
 
 The CutOut runtime revision received actual Claude code and maintainer-documentation reviews, followed by a focused review of subsequent fixes. Review feedback was checked against source and executed results; website wording distinguishes implementation authorship, the native CLI case breakdown and the unbuilt historical interface. These editorial reviews add no runtime or photographic accuracy evidence.
+
+The physical Pixel 2 status update passed targeted Chrome 157 checks at 390/1440 widths: all 12 CutOut links and its description matched JSON, the unchanged figure decoded at 184 by 115 pixels, both themes and no-JavaScript links worked, and no overflow, script errors, missing assets or external requests occurred. Other 22 project rows and earlier Python metadata remained unchanged. Two real Claude reviews covered the source/device-record follow-up; factual and scope corrections were applied. The final APK lint count in the JSON was corrected from 25 to 32. No website runtime or figure changes were needed.
