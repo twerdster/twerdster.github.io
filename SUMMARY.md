@@ -80,6 +80,11 @@ toward a future enabled by Physical AI. Keep profile, biography, experience and
 metadata consistent with that wording. No visitor analytics is installed. Camerai/Apple project additions
 require approved public text/media before inclusion.
 
+The Experience entry uses the display label `Current`, as requested on
+2026-11-14. This label-only change adds no role or organization information;
+the existing structured role and llms.txt summary already describe the current
+position and need no content change.
+
 Wetzler-PhD-2017.pdf is the unchanged 151-page August 2017 thesis supervised by
 Ron Kimmel (previously verified SHA256
 0625f414cc8534f0cc2848b65a0a9f6af2c7b8a685e0ba71b1d2e89f971dc1e9).

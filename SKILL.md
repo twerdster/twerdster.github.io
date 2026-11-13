@@ -23,6 +23,7 @@ preprint records. Preserve archive redirects, no-JavaScript links and BibTeX.
 Verify new factual publication metadata against primary sources. The current role is CTO of an unnamed early-stage company building toward a
 future enabled by Physical AI. Preserve the approved biography opening and do
 not add an employer name or link without a new request.
+Use `Current` as the current-role label in the Experience list.
 Add Camerai/Apple material only with approved public text/media.
 
 ## Source, data and figures
