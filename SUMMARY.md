@@ -55,9 +55,8 @@ GrayOwl contains project information/links only. Do not restore source,
 updated code, notebooks, Colab links or code-availability metadata without a new
 explicit request. CutOut's original Android Java/JNI C++ source was recovered
 from Elad Richardson on 2026-11-13; its historical Eclipse interface remains
-unbuilt. The separately updated C++/OpenCV port has a local drawing interface
-tested on macOS and a new Java/JNI runner tested in an Android 14 emulator
-and on one physical Pixel 2 with Android 10/API 29.
+unbuilt. The separately updated C++/OpenCV core has Android and iOS interfaces, a
+local drawing interface and a native CLI with recorded macOS/Linux checks.
 Its separate related prototype still has unverified original
 authorship. Raw mail/archives, credentials, signing
 material, proprietary SDK components and private recovery evidence stay outside
@@ -164,7 +163,7 @@ Android 14-emulator records cover 14 segmentation runs. A later physical
 Pixel 2 check on Android 10/API 29 arm64-v8a repeated the 14 Activity/JNI
 segmentation cases using the same updated debug APK; these are separate
 execution records, not 28 distinct algorithm cases. Other Android device/API
-combinations and Linux remain untested. These are scoped execution/regression checks, not
+combinations remain untested; later Linux and iOS records have their own scope. These are scoped execution/regression checks, not
 ground-truth photographic accuracy or historical APK equivalence. Keep the
 earlier 16-test Python exercise metadata unchanged and independently scoped.
 Counts stay 15 source-bearing/pinned repos, 23 projects and 322 original CutOut
@@ -185,3 +184,37 @@ b44278f, including 68 read-only fallback assets. These are website checks only.
 The CutOut runtime revision received actual Claude code and maintainer-documentation reviews, followed by a focused review of subsequent fixes. Review feedback was checked against source and executed results; website wording distinguishes implementation authorship, the native CLI case breakdown and the unbuilt historical interface. These editorial reviews add no runtime or photographic accuracy evidence.
 
 The physical Pixel 2 status update passed targeted Chrome 157 checks at 390/1440 widths: all 12 CutOut links and its description matched JSON, the unchanged figure decoded at 184 by 115 pixels, both themes and no-JavaScript links worked, and no overflow, script errors, missing assets or external requests occurred. Other 22 project rows and earlier Python metadata remained unchanged. Two real Claude reviews covered the source/device-record follow-up; factual and scope corrections were applied. The final APK lint count in the JSON was corrected from 25 to 32. No website runtime or figure changes were needed.
+
+CutOut platform resources link the iOS guide and durable Linux validation record.
+The Linux record pins run 43465063049 at 0ff79f7: 31 native checks repeated with
+unsigned char, 25 CLI cases and six original-function comparisons. The iOS
+record covers 14 scripted fixture segmentations; do not infer XCTest, touch
+interaction, simulator or minimum-version coverage from those calls. Keep
+platform evidence separate, preserve original source and older Python metadata,
+and use generic build/use descriptions rather than personal-machine history.
+The site remains 23 projects and 15 source-bearing/pinned repositories, with
+322 original CutOut files and unchanged figures/runtime.
+
+The iOS/Linux resource update passed targeted Chrome 157 checks at 390/1440
+widths: 14 CutOut links and the description matched JSON, the unchanged figure
+decoded at 184 by 115 pixels, both themes and no-JavaScript links worked, and
+no overflow, script errors or missing assets occurred. All homepage images
+decoded; unchanged served assets matched 35b8756. Other 22 project rows and
+earlier Python metadata stayed unchanged. These are website checks only.
+
+The Linux metadata distinguishes tested native/CLI code from the untested Linux
+drawing interface. ASan/UBSan cover the port and bundled ANN/FIGTree/MegaWave;
+the system OpenCV package is uninstrumented. Resource links use the durable
+Linux JSON record; its originating run remains pinned in metadata. Android
+interaction evidence stays distinct from iOS fixture execution, and the
+macOS native record and accuracy/equivalence limits remain linked.
+
+The final iOS fixture record is pinned to CutOut commit 490992b (2026-11-13):
+14 saved runs, 70 PNGs and 98 files pass independent consistency checks. Six
+coffee inputs match the pinned fixture, and six hard/refined pairs preserve
+their binary masks. The current UI-test runner builds, but its execution attempt
+stopped at automation initialization before any test case started. The actual
+phone screenshot was inspected for layout; touch, picker and share interactions
+have no completed iOS UI-test result. These limits are explicit in JSON and the
+linked platform record. The final source and documentation received real Claude
+reviews; the final focused code review found no blockers.

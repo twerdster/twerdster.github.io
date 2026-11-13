@@ -48,15 +48,20 @@ Keep CutOut's author-supplied original Android source under its explicit
 android-app link, separate from the related prototype of unverified authorship
 and the updated Python exercise. The historical Eclipse interface remains
 unbuilt. Keep separately recorded updated/native, updated/desktop and
-updated/android execution distinct from original-app validation and the earlier
-16 Python tests. The updated native record is macOS-specific; the new Android
-runner was tested in an Android 14 emulator and on one physical Pixel 2 with
-Android 10/API 29 arm64-v8a. Keep the two 14-case segmentation records separate;
-do not infer compatibility with other phones/API combinations. Do not convert
-scoped regressions or one photograph without reference labels into accuracy,
-Linux compatibility, cross-device bitwise equivalence or historical APK
-equivalence claims. Keep
-missing dependencies and third-party terms documented in the project repo.
+updated/android and updated/ios execution distinct from original-app validation
+and the earlier 16 Python tests. Native macOS and Ubuntu Linux records have
+separate dependency environments. Linux checks cover the native CLI, not the
+drawing interface; external system OpenCV is not sanitizer-instrumented. Link
+the durable Linux validation JSON and retain the run URL as metadata. Keep each
+mobile 14-case fixture record
+separate from actual interface tests; generic build instructions and declared
+minimum versions are not additional runtime evidence. A UI runner that builds but stops
+before executing test cases must remain recorded as unexecuted, not as an
+interface pass. Do not infer general
+OS/device compatibility, photographic accuracy, cross-device bitwise identity
+or historical APK equivalence. Link platform guides and completed validation
+records using generic instructions; keep signing/device identifiers private.
+Retain missing dependencies and third-party terms in the project repo.
 
 Never stage raw mail/archive evidence, private endpoints/identifiers,
 credentials, signing material, proprietary SDK binaries or unreviewed personal
