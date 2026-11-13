@@ -19,7 +19,7 @@ in Publications. The ICLR planar-curves paper uses 2017 (2016 is its preprint).
 `site.js` provides publication filtering, citation fetch/copy controls, theme
 storage and active navigation. Core text/links work without JavaScript.
 `archive.html` is a compatibility redirect with fallback links; do not restore
-a second academic archive. Historical source is in Git at 462ebe0.
+a second academic archive. Historical source is in Git at 7361111.
 `styles.css`, fonts and icons are local, with their existing notices.
 
 ## HandNet
@@ -100,7 +100,7 @@ hostile concurrent filesystem changes. Do not run full recovery as a test.
 
 The 2026-11-13 documentation pass inspected source/metadata, passed all six
 existing offline tests, and smoke-checked the unchanged runtime at commit
-90b552bdbb37f093df9a8e3cde16c446430b8e69 in Google Chrome 157.0.8103.51 at
+fe1eb1968532dc5c71b655bd7ba37500460fa345 in Google Chrome 157.0.8103.51 at
 390/1440-pixel widths. Checks covered a representative publication filter and
 return to All, one citation fetch, theme toggle, image decoding, no-JavaScript
 links, 20 viewer samples and six measurement-table rows, the ground-truth
@@ -181,7 +181,7 @@ missing assets or script errors. Theme, filter, citation copy/download, archive
 redirect/fallback and standalone/embedded HandNet controls passed; recorded
 measurements stayed unchanged during display rotation. All 12 CutOut links
 remained available without JavaScript. The 86 unchanged served files matched
-b44278f, including 68 read-only fallback assets. These are website checks only.
+187f540, including 68 read-only fallback assets. These are website checks only.
 
 The CutOut runtime revision received actual Claude code and maintainer-documentation reviews, followed by a focused review of subsequent fixes. Review feedback was checked against source and executed results; website wording distinguishes implementation authorship, the native CLI case breakdown and the unbuilt historical interface. These editorial reviews add no runtime or photographic accuracy evidence.
 
@@ -201,7 +201,7 @@ The iOS/Linux resource update passed targeted Chrome 157 checks at 390/1440
 widths: 14 CutOut links and the description matched JSON, the unchanged figure
 decoded at 184 by 115 pixels, both themes and no-JavaScript links worked, and
 no overflow, script errors or missing assets occurred. All homepage images
-decoded; unchanged served assets matched 35b8756. Other 22 project rows and
+decoded; unchanged served assets matched dd590d1. Other 22 project rows and
 earlier Python metadata stayed unchanged. These are website checks only.
 
 The Linux metadata distinguishes tested native/CLI code from the untested Linux
@@ -220,3 +220,20 @@ phone screenshot was inspected for layout; touch, picker and share interactions
 have no completed iOS UI-test result. These limits are explicit in JSON and the
 linked platform record. The final source and documentation received real Claude
 reviews; the final focused code review found no blockers.
+
+## Repository history maintenance (2026-11-13)
+
+An explicitly requested cleanup replaced the previous named-employer references
+and company links throughout the website's reachable history, including one
+commit message. The 27 existing commits, their parent relationships, historical
+authors/dates and unrelated file contents were preserved. The approved current
+website tree stayed identical; this follow-up changes maintenance context and
+website commit references only. Website commit IDs above refer to rewritten
+equivalents; earlier external test records retain their original identifiers.
+Scientific results and other repositories' commit references are unchanged.
+
+Clones made before the cleanup contain the old history. Start a fresh clone,
+or rebase reviewed unpublished changes onto the new main; do not merge or push
+the earlier history back. A rewritten branch does not guarantee deletion of
+GitHub's cached old objects, deployment records or independent copies. Routine
+updates still use normal pushes; another rewrite requires an explicit request.

@@ -58,7 +58,7 @@ URLs. Do not infer deployment success solely from a successful push.
 ## Historical local-server setup
 
 The following configuration was recorded in the pre-revision README at commit
-90b552bdbb37f093df9a8e3cde16c446430b8e69 and reviewed on 2026-11-13. Its original
+fe1eb1968532dc5c71b655bd7ba37500460fa345 and reviewed on 2026-11-13. Its original
 setup date has not been established.
 
 [ops/com.aaronwetzler.website.plist](../ops/com.aaronwetzler.website.plist) is a

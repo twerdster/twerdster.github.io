@@ -92,9 +92,13 @@ scope, then reread/synchronize both context files. Request real Claude editorial
 review when directed; verify factual suggestions against code/records and
 review substantial revisions again. Never claim a review/run that did not finish.
 
-Push normally to existing main; do not force-push or rewrite history. Verify
-the Pages build and actual public changed URLs, not merely the push. A static
-site build or browser check is not scientific-model or legacy-app validation.
+Push normally to existing main. History rewrites require an explicit request;
+the 2026-11-13 cleanup was authorized separately. Use a fresh clone after that
+cleanup, or rebase reviewed unpublished changes onto the new main. Do not merge
+or push pre-cleanup history back. Preserve historical authors and dates when
+cleaning content. Verify the Pages build and actual public changed URLs, not
+merely the push. A static site build or browser check is not scientific-model
+or legacy-app validation.
 
 Author follow-ups must preserve the distinction between externally linked source
 and imported/pinned code. Smartphone Game's source is linked, not imported;
