@@ -46,9 +46,14 @@ GrayOwl stays documentation-only: no source, updated code, notebook/Colab link
 or source-bearing history may be restored without a new explicit request.
 Keep CutOut's author-supplied original Android source under its explicit
 android-app link, separate from the related prototype of unverified authorship
-and the updated Python exercise. Android source recovery does not validate its
-build/runtime or extend the 16 Python component tests to the application.
-Keep missing dependencies and third-party terms documented in the project repo.
+and the updated Python exercise. The historical Eclipse interface remains
+unbuilt. Keep separately recorded updated/native, updated/desktop and
+updated/android execution distinct from original-app validation and the earlier
+16 Python tests. The updated native record is macOS-specific; the new Android
+runner was tested in an Android 14 emulator, not on a physical device. Do not
+convert scoped regressions or one photograph without reference labels into
+accuracy, Linux compatibility or historical APK equivalence claims. Keep
+missing dependencies and third-party terms documented in the project repo.
 
 Never stage raw mail/archive evidence, private endpoints/identifiers,
 credentials, signing material, proprietary SDK binaries or unreviewed personal

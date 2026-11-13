@@ -54,8 +54,10 @@ separate execution records; neither check validates full mobile apps.
 GrayOwl contains project information/links only. Do not restore source,
 updated code, notebooks, Colab links or code-availability metadata without a new
 explicit request. CutOut's original Android Java/JNI C++ source was recovered
-from Elad Richardson on 2026-11-13; dependencies are missing and its build/runtime
-remain unverified. Its separate related prototype still has unverified original
+from Elad Richardson on 2026-11-13; its historical Eclipse interface remains
+unbuilt. The separately updated C++/OpenCV port has a local drawing interface
+tested on macOS and a new Java/JNI runner tested in an Android 14 emulator.
+Its separate related prototype still has unverified original
 authorship. Raw mail/archives, credentials, signing
 material, proprietary SDK components and private recovery evidence stay outside
 this public repository. Existing sanitized-source manifests describe edits.
@@ -148,3 +150,32 @@ Two Claude documentation review rounds prompted the clearer Python exercise
 notebook label, precise permission scope and Jupyter-versus-Colab execution
 wording. The final longer-label rerun also passed at both widths with nine
 links available without JavaScript.
+
+The later CutOut runtime update links updated/native, updated/desktop and
+updated/android guides. It adapts recovered Lab density, pixel/tree Dijkstra
+and alpha operators; the new wrappers and fixes stay separate from the
+unchanged original snapshot. The updated native record reports 31 named
+ASan/UBSan checks, repeated with `-funsigned-char`; 25 CLI cases (15 successful, including eight
+operator combinations on one photograph, and 10 expected errors); and six isolated original-body fail/updated-pass cases. The desktop
+record covers eight browser-to-native photo operator combinations at
+390/1440-pixel widths.
+Android 14-emulator records cover 14 segmentation runs; physical Android devices
+and Linux remain untested. These are scoped execution/regression checks, not
+ground-truth photographic accuracy or historical APK equivalence. Keep the
+earlier 16-test Python exercise metadata unchanged and independently scoped.
+Counts stay 15 source-bearing/pinned repos, 23 projects and 322 original CutOut
+files (319 Android + 3 related prototype). No site runtime, figure or other project
+row changes are needed. README setup remains accurate. Current review and
+website QA for this runtime-link update must be recorded separately from the
+earlier recovery checks above.
+
+The CutOut runtime-link update passed Chrome 157.0.8103.51 checks at 390/1440
+widths: 12 CutOut links and its description matched JSON, all 44 homepage images
+decoded and 42 thumbnail frames measured 184 by 115 pixels, with no overflow,
+missing assets or script errors. Theme, filter, citation copy/download, archive
+redirect/fallback and standalone/embedded HandNet controls passed; recorded
+measurements stayed unchanged during display rotation. All 12 CutOut links
+remained available without JavaScript. The 86 unchanged served files matched
+b44278f, including 68 read-only fallback assets. These are website checks only.
+
+The CutOut runtime revision received actual Claude code and maintainer-documentation reviews, followed by a focused review of subsequent fixes. Review feedback was checked against source and executed results; website wording distinguishes implementation authorship, the native CLI case breakdown and the unbuilt historical interface. These editorial reviews add no runtime or photographic accuracy evidence.
