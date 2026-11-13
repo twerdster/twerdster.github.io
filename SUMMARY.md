@@ -237,3 +237,16 @@ or rebase reviewed unpublished changes onto the new main; do not merge or push
 the earlier history back. A rewritten branch does not guarantee deletion of
 GitHub's cached old objects, deployment records or independent copies. Routine
 updates still use normal pushes; another rewrite requires an explicit request.
+
+## Later student materials and replies (2026-11-13)
+
+Hand tracking adds a link to Sa'ar Zehavi's unchanged 59-slide April 2013 draft.
+It contains unfinished illustrations and a first-order approximation step the
+author had already removed. Keep it distinct from the June report, nine
+unchanged source files and any execution evidence. HTML, JSON, llms.txt,
+STUDENT_PROJECTS.md and provenance describe the same draft resource. Counts and
+source availability are unchanged. No additional code arrived in the attachment.
+RobotRun records Amit Bekerman's individual credited-name/website-inclusion
+approval in its repository. Vlad Ostrovski confirmed the existing RiftFusion
+video; no duplicate link or application-source claim is needed. README setup,
+site runtime, approved figures, HandNet and scientific records need no changes.

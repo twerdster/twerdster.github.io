@@ -105,3 +105,10 @@ and imported/pinned code. Smartphone Game's source is linked, not imported;
 CamPong and RiftFusion documents do not imply recovered application code.
 Preserve preferred author-supplied public profiles and original document hashes.
 Keep private correspondence and shared-folder access keys outside this site.
+
+Hand tracking's newly linked April 2013 presentation is an unfinished historical
+draft, with a first-order approximation step the author had already removed. Preserve its
+original bytes and draft label; it does not supersede the June report or add
+code/runtime validation. Keep individual author permissions scoped to their
+actual replies and avoid adding duplicate resources when an author confirms
+an existing link.
