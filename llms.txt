@@ -1,6 +1,6 @@
 # Aaron Wetzler
 
-Academic homepage for Aaron Wetzler, CTO of an early-stage company. Previously Incubation and ML Lead at Apple and CTO of Camerai (acquired). Research areas include computer vision, machine learning, gesture recognition, and numerical geometry.
+Academic homepage for Aaron Wetzler, CTO of an early-stage company building toward a future enabled by Physical AI. Previously Incubation and ML Lead at Apple and CTO of Camerai (acquired). Research areas include computer vision, machine learning, gesture recognition, and numerical geometry.
 
 ## Main resources
 

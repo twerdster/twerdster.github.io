@@ -20,7 +20,9 @@ resources change. For documentation-only revisions, explicitly check that
 runtime/content/index/llms updates are unnecessary. Publications, student
 projects, theses and code/data stay separate; combine duplicate conference and
 preprint records. Preserve archive redirects, no-JavaScript links and BibTeX.
-Verify new factual publication metadata against primary sources. Keep the current role generic in profile and role metadata.
+Verify new factual publication metadata against primary sources. The current role is CTO of an unnamed early-stage company building toward a
+future enabled by Physical AI. Preserve the approved biography opening and do
+not add an employer name or link without a new request.
 Add Camerai/Apple material only with approved public text/media.
 
 ## Source, data and figures

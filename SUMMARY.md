@@ -74,7 +74,9 @@ Keep all publication, student-project and undergraduate-thesis thumbnail frames
 source metadata. CoBe uses its original car crop; Deep Stereo uses two aligned
 source panels. Existing CSS fitting/voxel brightness changes are display-only.
 The NeurIPS workshop JPEG is Aaron's supplied glove/robot figure, shown in full.
-Keep the current role generic throughout visible/profile metadata. No visitor analytics is installed. Camerai/Apple project additions
+The current role names no company: CTO of an early-stage company building
+toward a future enabled by Physical AI. Keep profile, biography, experience and
+metadata consistent with that wording. No visitor analytics is installed. Camerai/Apple project additions
 require approved public text/media before inclusion.
 
 Wetzler-PhD-2017.pdf is the unchanged 151-page August 2017 thesis supervised by

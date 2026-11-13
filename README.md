@@ -4,7 +4,8 @@ This repository serves Aaron Wetzler's academic homepage and a static HandNet
 sample viewer at <https://twerdster.github.io/>. It contains HTML, CSS,
 JavaScript, publication/project metadata, citations and downloadable documents.
 It has no application backend or training service. The homepage identifies
-Aaron as CTO of an early-stage company.
+Aaron as CTO of an early-stage company building toward a future enabled by
+Physical AI.
 
 ## What the site does
 
