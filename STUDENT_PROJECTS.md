@@ -4,31 +4,36 @@ Historical Technion student projects supervised by Aaron Wetzler. Each project h
 
 Fifteen repositories contain reviewed historical source or a pinned public upstream. Separately, Smartphone Game links source hosted on Idan Banani's GitHub account; it is not imported here and its build is unverified. GrayOwl retains project information and public resource links; its source code and updated notebook have been withdrawn. CutOut's original Android Java/JNI C++ source was recovered on 2026-11-13; its historical Eclipse interface remains unbuilt. The separately updated implementation now provides Android and iOS interfaces, a local drawing interface, and a native CLI with recorded macOS and Linux checks. Its separate related algorithm prototype still has unverified authorship. Three repositories contain documents without verified app source, two have introductory READMEs, and RobotRun has a separately implemented browser game with no recovered original Unity source. Historical snapshots may be partial and are not complete modern application releases. Four repositories also have separately labeled Python components with recorded unit tests and notebooks executed with Jupyter on macOS. Colab links open the notebooks; follow the setup instructions in each component guide before running them. These exercises do not replace the original applications. Consult each README for missing dependencies and the exact recovery status; a source link does not imply a complete, runnable application.
 
-| Project | Repository | Recovery Status |
-| --- | --- | --- |
-| Mobile Point Fusion | [mobile-point-fusion](https://github.com/twerdster/mobile-point-fusion) | Partial historical iOS source; untested |
-| Freehand Voxel Carving Scanning on a Mobile Device | [freehand-voxel-carving](https://github.com/twerdster/freehand-voxel-carving) | Original code pinned; untested |
-| AR / 3D Skype to Android | [android-3d-skype](https://github.com/twerdster/android-3d-skype) | Coming soon |
-| Augmented Reality Posters | [augmented-reality-posters](https://github.com/twerdster/augmented-reality-posters) | Partial source; untested |
-| QR code applications on Android | [android-qr-applications](https://github.com/twerdster/android-qr-applications) | Partial source; untested |
-| Smartphone Game | [smartphone-game](https://github.com/twerdster/smartphone-game) | Report and linked source files; no Xcode project in inspected snapshot; unbuilt |
-| Hebrew Speech Recognition on iPad | [hebrew-speech-ipad](https://github.com/twerdster/hebrew-speech-ipad) | Coming soon |
-| 3D Stereo Reconstruction using iPhones | [iphone-stereo-reconstruction](https://github.com/twerdster/iphone-stereo-reconstruction) | Original code pinned; untested |
-| Marker tracking | [marker-tracking](https://github.com/twerdster/marker-tracking) | Partial source; untested |
-| Predator TLD on iOS | [predator-tld-ios](https://github.com/twerdster/predator-tld-ios) | Original code pinned; untested |
-| 3D Volume Carving on iPhone | [iphone-volume-carving](https://github.com/twerdster/iphone-volume-carving) | Partial original; tested carving component and notebook |
-| Hand tracking | [hand-tracking-pmd](https://github.com/twerdster/hand-tracking-pmd) | Source, June 2013 report and unfinished April 2013 draft slides; source untested |
-| OpenFusion | [openfusion](https://github.com/twerdster/openfusion) | Original code pinned; untested |
-| CamPong | [campong](https://github.com/twerdster/campong) | Report, poster, slides and project overview; application source unavailable |
-| Face Depth Estimation from a Single Color Image | [face-depth-estimation-from-a-single-color-image](https://github.com/twerdster/face-depth-estimation-from-a-single-color-image) | Three MATLAB fragments; tested feature notebook |
-| HeartBeat for iOS | [heartbeat-ios](https://github.com/twerdster/heartbeat-ios) | Pinned original; tested signal port and notebook |
-| 3D Scanner on Android | [android-3d-scanner](https://github.com/twerdster/android-3d-scanner) | Partial source; untested |
-| Multi-View 3D reconstruction application for iPhone | [iphone-multiview-reconstruction](https://github.com/twerdster/iphone-multiview-reconstruction) | Documents; code coming soon |
-| Multi-user virtual war-room for Oculus Rift | [oculus-virtual-war-room](https://github.com/twerdster/oculus-virtual-war-room) | Scripts recovered; untested |
-| Full positional tracking for Oculus Rift | [oculus-positional-tracking](https://github.com/twerdster/oculus-positional-tracking) | Original presentation and demo link; application source unavailable |
-| AUVSI Seafarer 2014 GrayOwl Image Processing team | [grayowl-auvsi-2014](https://github.com/twerdster/grayowl-auvsi-2014) | Project information and links; source code withdrawn |
-| CutOut for Android | [cutout-android](https://github.com/twerdster/cutout-android) | Preserved original Android source; updated Android/iOS interfaces; native CLI checked on macOS and Linux; historical interface unbuilt; separate Python exercise |
-| RobotRun game | [robotrun-game](https://github.com/twerdster/robotrun-game) | [New browser game](https://twerdster.github.io/robotrun-game/); original Unity source unrecovered |
+Nine projects have a **New!** link to their separately labeled updated section.
+Each guide begins with a short account of the changes, then links setup, results
+and limitations. The historical recovery records and existing platform evidence
+remain separate from that navigation.
+
+| Project | Repository | Recovery Status | Updated section |
+| --- | --- | --- | --- |
+| Mobile Point Fusion | [mobile-point-fusion](https://github.com/twerdster/mobile-point-fusion) | Partial historical iOS source; untested | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/mobile-point-fusion/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| Freehand Voxel Carving Scanning on a Mobile Device | [freehand-voxel-carving](https://github.com/twerdster/freehand-voxel-carving) | Original code pinned; untested | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/freehand-voxel-carving/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| AR / 3D Skype to Android | [android-3d-skype](https://github.com/twerdster/android-3d-skype) | Coming soon | — |
+| Augmented Reality Posters | [augmented-reality-posters](https://github.com/twerdster/augmented-reality-posters) | Partial source; untested | — |
+| QR code applications on Android | [android-qr-applications](https://github.com/twerdster/android-qr-applications) | Partial source; untested | — |
+| Smartphone Game | [smartphone-game](https://github.com/twerdster/smartphone-game) | Report and linked source files; no Xcode project in inspected snapshot; unbuilt | — |
+| Hebrew Speech Recognition on iPad | [hebrew-speech-ipad](https://github.com/twerdster/hebrew-speech-ipad) | Coming soon | — |
+| 3D Stereo Reconstruction using iPhones | [iphone-stereo-reconstruction](https://github.com/twerdster/iphone-stereo-reconstruction) | Original code pinned; untested | — |
+| Marker tracking | [marker-tracking](https://github.com/twerdster/marker-tracking) | Partial source; untested | — |
+| Predator TLD on iOS | [predator-tld-ios](https://github.com/twerdster/predator-tld-ios) | Original code pinned; untested | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/predator-tld-ios/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| 3D Volume Carving on iPhone | [iphone-volume-carving](https://github.com/twerdster/iphone-volume-carving) | Partial original; tested carving component and notebook | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/iphone-volume-carving/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| Hand tracking | [hand-tracking-pmd](https://github.com/twerdster/hand-tracking-pmd) | Source, June 2013 report and unfinished April 2013 draft slides; source untested | — |
+| OpenFusion | [openfusion](https://github.com/twerdster/openfusion) | Original code pinned; untested | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/openfusion/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| CamPong | [campong](https://github.com/twerdster/campong) | Report, poster, slides and project overview; application source unavailable | — |
+| Face Depth Estimation from a Single Color Image | [face-depth-estimation-from-a-single-color-image](https://github.com/twerdster/face-depth-estimation-from-a-single-color-image) | Three MATLAB fragments; tested feature notebook | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/face-depth-estimation-from-a-single-color-image/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| HeartBeat for iOS | [heartbeat-ios](https://github.com/twerdster/heartbeat-ios) | Pinned original; tested signal port and notebook | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/heartbeat-ios/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| 3D Scanner on Android | [android-3d-scanner](https://github.com/twerdster/android-3d-scanner) | Partial source; untested | — |
+| Multi-View 3D reconstruction application for iPhone | [iphone-multiview-reconstruction](https://github.com/twerdster/iphone-multiview-reconstruction) | Documents; code coming soon | — |
+| Multi-user virtual war-room for Oculus Rift | [oculus-virtual-war-room](https://github.com/twerdster/oculus-virtual-war-room) | Scripts recovered; untested | — |
+| Full positional tracking for Oculus Rift | [oculus-positional-tracking](https://github.com/twerdster/oculus-positional-tracking) | Original presentation and demo link; application source unavailable | — |
+| AUVSI Seafarer 2014 GrayOwl Image Processing team | [grayowl-auvsi-2014](https://github.com/twerdster/grayowl-auvsi-2014) | Project information and links; source code withdrawn | — |
+| CutOut for Android | [cutout-android](https://github.com/twerdster/cutout-android) | Preserved original Android source; updated Android/iOS interfaces; native CLI checked on macOS and Linux; historical interface unbuilt; separate Python exercise | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/cutout-android/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
+| RobotRun game | [robotrun-game](https://github.com/twerdster/robotrun-game) | [New browser game](https://twerdster.github.io/robotrun-game/); original Unity source unrecovered | **New!** [Updated and ported for modern hardware](https://github.com/twerdster/robotrun-game/blob/main/updated/README.md#updated-and-ported-for-modern-hardware) |
 
 ## Source and Attribution
 

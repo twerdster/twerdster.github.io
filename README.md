@@ -62,6 +62,20 @@ which contains 96 visualization rows. Neither preview is a replacement for the n
 archives. The tracked viewer code uses same-origin assets, without a CDN,
 Hugging Face iframe or backend request.
 
+## Updated project guides
+
+Nine student-project entries and four software entries have a **New!** link
+labeled **Updated and ported for modern hardware**. It opens each repository's
+updated guide, where a brief account of the changes precedes setup, results and
+limitations. The historical network-tools entry links the separate Blender
+Neural Composer continuation; it does not describe the historical Caffe fork as
+ported. Existing source records and recorded validation keep their own scope.
+
+HandNet's dataset page and Code & Data entry link its
+[browser-viewer update guide](HandNet/updated/README.md). The 20-example/eight-pair
+viewer is separate from MATLAB training and learned inference. RobotRun's
+browser game is newly written code, not a compilation of recovered Unity source.
+
 ## Maintenance and validation
 
 Read SUMMARY.md, then SKILL.md and AGENTS.md before editing. The

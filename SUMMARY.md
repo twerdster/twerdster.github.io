@@ -5,6 +5,35 @@ is https://twerdster.github.io/, published by GitHub Pages from the repository
 root on main. The source is static HTML/CSS/JavaScript; no application backend,
 content-generation build, full dataset download or model inference is required.
 
+## Modern-update navigation (2026-11-14)
+
+Nine student entries, four modern software entries, HandNet's existing dataset
+page/Code & Data row and the historical Caffe-GUI-Tool continuation portal now
+carry the exact **Updated and ported for modern hardware** link with a local
+**New!** badge. There are 16 callouts to 15 guides. Brief changes and further
+setup/results/limitations remain in the linked updated sections. iPTAM and
+Caffe-GUI-Tool links use master; other project links use main. HandNet's guide
+is `HandNet/updated/README.md`; its 20 examples/eight pairs remain distinct from
+the 96-row research preview and from historical MATLAB training/inference.
+RobotRun remains new browser code without recovered Unity source; the Caffe
+portal points to separately maintained Blender Neural Composer work.
+
+This revision starts from the current sanitized main, 21c0f264, and preserves
+approved company anonymization, profile content, section ordering/controls,
+author follow-ups, all existing CutOut source/platform records and original
+source statuses. Catalog `updated_guide` fields are additive navigation only;
+existing component/runtime/resource values are unchanged. The new HandNet guide
+and shared badge styling do not change viewer or project code. Both context
+files were reread and synchronized. Static QA verifies all 16 callouts and 15
+guide headings, original HTML outside callouts/the stylesheet cache key, all
+existing JSON values, section controls/order, approved anonymous role text,
+publication figures and HandNet viewer assets. CutOut retains its original file
+count of 322, existing resource links and separate native/mobile validation metadata.
+The new badge has 4.52:1 white-text contrast. Maintenance/provenance guides were
+reviewed and remain accurate. No account tools, browser or replacement server
+were used; public HTTPS and desktop/mobile rendering remain publication checks.
+This documentation work adds no scientific or platform runtime evidence.
+
 ## Entry points and content
 
 `index.html` is the academic homepage. `data/site-content.json` is a separately
