@@ -5,49 +5,17 @@ is https://twerdster.github.io/, published by GitHub Pages from the repository
 root on main. The source is static HTML/CSS/JavaScript; no application backend,
 content-generation build, full dataset download or model inference is required.
 
-## Modern-update navigation (2026-11-14)
+## GitHub README scope correction (2026-11-14)
 
-Nine student entries, four modern software entries, HandNet's existing dataset
-page/Code & Data row and the historical Caffe-GUI-Tool continuation portal now
-carry the exact **Updated and ported for modern hardware** link with a local
-**New!** badge. There are 16 callouts to 15 guides. Brief changes and further
-setup/results/limitations remain in the linked updated sections. iPTAM and
-Caffe-GUI-Tool links use master; other project links use main. HandNet's guide
-is `HandNet/updated/README.md`; its 20 examples/eight pairs remain distinct from
-the 96-row research preview and from historical MATLAB training/inference.
-RobotRun remains new browser code without recovered Unity source; the Caffe
-portal points to separately maintained Blender Neural Composer work.
-
-This revision starts from the current sanitized main, 21c0f264, and preserves
-approved company anonymization, profile content, section ordering/controls,
-author follow-ups, all existing CutOut source/platform records and original
-source statuses. Catalog `updated_guide` fields are additive navigation only;
-existing component/runtime/resource values are unchanged. The new HandNet guide
-and shared badge styling do not change viewer or project code. Both context
-files were reread and synchronized. Static QA verifies all 16 callouts and 15
-guide headings, original HTML outside callouts/the stylesheet cache key, all
-existing JSON values, section controls/order, approved anonymous role text,
-publication figures and HandNet viewer assets. CutOut retains its original file
-count of 322, existing resource links and separate native/mobile validation metadata.
-The new badge has 4.52:1 white-text contrast. Maintenance/provenance guides were
-reviewed and remain accurate. The local static phase used no account tools,
-browser or replacement server.
-
-Website commit 54a7883808e7fba0ba7c97f2aa65274d5a75571a was published with a
-successful GitHub Pages build. Anonymous HTTP checks matched five static
-resources and the HandNet guide to their committed bytes; public HTML contains
-15 homepage callouts and one HandNet-page callout, linking 15 unique guides.
-Live in-app browser checks at 1280 by 720 pixels in light mode and 390 by 844
-pixels in light/dark modes found no horizontal overflow; all 15 homepage
-callouts stayed within the viewport. Mobile thumbnail frames remained 184 by
-115 pixels. Enter collapsed the Student Projects control, and the Projects
-navigation reopened it for the current hash. Homepage browser error/warning
-logs were empty. At 390 pixels, HandNet's callout followed the H1, had the exact
-label/destination and caused no overflow. These are publication/layout checks,
-not physical-device or model validation. HTML, CSS and runtime code are
-unchanged by this follow-up record. SKILL.md was reread and remains accurate;
-no workflow change is needed. This documentation work adds no scientific or
-platform runtime evidence.
+Aaron clarified that the **New!** badges and **Updated and ported for modern
+hardware** links belong in the individual GitHub project READMEs. Brief changes
+and detailed setup/results stay in each repository's updated section. The
+website additions for that request have been removed through a forward
+restoration. Existing website project links, HandNet viewer, approved anonymous
+role text, section order/controls, figures and source/validation records are
+preserved. All site files match the pre-navigation version at 21c0f264 apart
+from this note and the matching SKILL.md scope instruction. GitHub project
+README updates remain separate from the website.
 
 ## Entry points and content
 

@@ -142,22 +142,12 @@ new implementation’s chosen 1,000-metre course, ten-point coins and ten-second
 fire reversal apply to this new implementation; no equivalence to the
 historical game is claimed.
 
-## Modern-update navigation
+## GitHub README update scope
 
-Keep the exact link label Updated and ported for modern hardware with a local
-New! text badge immediately after the affected project title. Nine student
-entries and four modern software entries link their separately maintained
-updated/README.md#updated-and-ported-for-modern-hardware guide. iPTAM and
-Caffe-GUI-Tool use master, others main. The Caffe-GUI-Tool portal must identify
-its separate Blender Neural Composer continuation without implying that the
-historical fork was ported. HandNet's dataset page and Code & Data row link the
-site's HandNet/updated/README.md guide for its 20-row/eight-pair browser viewer;
-this does not port MATLAB training or learned inference.
-
-Keep brief changes and implementation details in the linked updated section.
-Catalog updated_guide fields add navigation; preserve existing source_status,
-resources and component/runtime metadata, especially CutOut's recovered Android
-source and separate native/desktop/Android/iOS evidence. Do not resurrect older
-missing-app claims or pre-cleanup company text/history. Preserve section
-controls/order and source/figure bytes. Archive/documentation recovery alone
-does not establish a hardware port; withdrawn GrayOwl stays unlinked.
+Aaron clarified on 2026-11-14 that New! badges and the exact Updated and ported
+for modern hardware link belong in individual GitHub project READMEs, with
+brief changes and further details in their updated sections. Do not add those
+callouts, catalog navigation fields or an extra update guide to this website
+for that repository task. Preserve the website's existing project/resource
+links, HandNet viewer and approved content/layout. GitHub README work does not
+require website changes.
