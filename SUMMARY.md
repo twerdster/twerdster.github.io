@@ -30,9 +30,24 @@ existing JSON values, section controls/order, approved anonymous role text,
 publication figures and HandNet viewer assets. CutOut retains its original file
 count of 322, existing resource links and separate native/mobile validation metadata.
 The new badge has 4.52:1 white-text contrast. Maintenance/provenance guides were
-reviewed and remain accurate. No account tools, browser or replacement server
-were used; public HTTPS and desktop/mobile rendering remain publication checks.
-This documentation work adds no scientific or platform runtime evidence.
+reviewed and remain accurate. The local static phase used no account tools,
+browser or replacement server.
+
+Website commit 54a7883808e7fba0ba7c97f2aa65274d5a75571a was published with a
+successful GitHub Pages build. Anonymous HTTP checks matched five static
+resources and the HandNet guide to their committed bytes; public HTML contains
+15 homepage callouts and one HandNet-page callout, linking 15 unique guides.
+Live in-app browser checks at 1280 by 720 pixels in light mode and 390 by 844
+pixels in light/dark modes found no horizontal overflow; all 15 homepage
+callouts stayed within the viewport. Mobile thumbnail frames remained 184 by
+115 pixels. Enter collapsed the Student Projects control, and the Projects
+navigation reopened it for the current hash. Homepage browser error/warning
+logs were empty. At 390 pixels, HandNet's callout followed the H1, had the exact
+label/destination and caused no overflow. These are publication/layout checks,
+not physical-device or model validation. HTML, CSS and runtime code are
+unchanged by this follow-up record. SKILL.md was reread and remains accurate;
+no workflow change is needed. This documentation work adds no scientific or
+platform runtime evidence.
 
 ## Entry points and content
 
