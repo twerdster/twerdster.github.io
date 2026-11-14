@@ -26,6 +26,16 @@ not add an employer name or link without a new request.
 Use `Current` as the current-role label in the Experience list.
 Add Camerai/Apple material only with approved public text/media.
 
+Preserve the homepage order About Me, Publications, Theses, Code & Data,
+Student Projects, Experience & Education, Research Videos and Patents. Each
+section uses its own native details/summary control, expanded by default with
+no persisted collapse state. Retain section/heading IDs and legacy aliases;
+do not make this an exclusive accordion. Same-page links reopen their target
+section with JavaScript, including repeated current-hash clicks. Native
+heading controls must remain usable without JavaScript. Print all sections
+and restore their previous states afterward. The shared script and stylesheet
+also serve HandNet, so keep homepage-specific behavior optional there.
+
 ## Source, data and figures
 
 Preserve the exact approved figures and provenance. All publication,
@@ -86,6 +96,9 @@ redirects. Check standalone/embedded HandNet controls with external requests
 blocked. Distinguish current checks from previous recorded results. When archive
 mapping/filesystem code changes, run its existing six offline regressions and
 check captured-manifest compatibility; no full recovery download is needed.
+For disclosure changes, check all eight controls by pointer/Enter/Space,
+fragment and legacy-alias reopening, same-hash clicks, active navigation,
+filter/citation state across toggles and print-state restoration.
 
 Inspect newly staged files as well as tracked edits. Run git diff --cached
 --check, verify Markdown rendering, repository-relative links, images and source

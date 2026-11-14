@@ -171,6 +171,60 @@
     scheduled = false;
   }
 
+  const disclosures = [...document.querySelectorAll('.section-disclosure')];
+
+  function revealFragment(hash) {
+    let id;
+    try { id = decodeURIComponent(hash.slice(1)); }
+    catch (error) { return null; }
+    const target = document.getElementById(id);
+    if (!target) return null;
+    const section = target.closest('[data-nav-section]');
+    const disclosure = section?.querySelector(':scope > .section-disclosure');
+    let opened = false;
+    for (let ancestor = target; ancestor; ancestor = ancestor.parentElement) {
+      if (ancestor.tagName === 'DETAILS' && !ancestor.open) {
+        ancestor.open = true;
+        opened = true;
+      }
+    }
+    if (disclosure && !disclosure.open) {
+      disclosure.open = true;
+      opened = true;
+    }
+    return { target, opened };
+  }
+
+  function revealCurrentFragment() {
+    const result = revealFragment(location.hash);
+    if (result?.opened) requestAnimationFrame(() => result.target.scrollIntoView({ block: 'start' }));
+    updateNavigation();
+  }
+
+  // Reveal before the browser follows an anchor, including repeated same-hash
+  // clicks that do not dispatch hashchange. Modified clicks retain normal behavior.
+  document.addEventListener('click', (event) => {
+    if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    const link = event.target.closest?.('a[href]');
+    if (!link || link.hasAttribute('download') || (link.target && link.target !== '_self')) return;
+    if (link.origin === location.origin && link.pathname === location.pathname && link.search === location.search && link.hash) {
+      revealFragment(link.hash);
+    }
+  });
+  disclosures.forEach((disclosure) => disclosure.addEventListener('toggle', () => requestAnimationFrame(updateNavigation)));
+  window.addEventListener('hashchange', revealCurrentFragment);
+
+  let closedBeforePrint = null;
+  window.addEventListener('beforeprint', () => {
+    if (closedBeforePrint !== null) return;
+    closedBeforePrint = disclosures.filter((disclosure) => !disclosure.open);
+    closedBeforePrint.forEach((disclosure) => { disclosure.open = true; });
+  });
+  window.addEventListener('afterprint', () => {
+    closedBeforePrint?.forEach((disclosure) => { disclosure.open = false; });
+    closedBeforePrint = null;
+  });
+
   new ResizeObserver(() => {
     root.style.setProperty('--nav-height', `${nav.getBoundingClientRect().height}px`);
     updateNavigation();
@@ -181,5 +235,5 @@
     scheduled = true;
     requestAnimationFrame(updateNavigation);
   }, { passive: true });
-  updateNavigation();
+  revealCurrentFragment();
 })();

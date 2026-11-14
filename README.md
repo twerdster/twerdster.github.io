@@ -14,14 +14,20 @@ research videos and nine patent groups. Code & Data links 12
 software/data repositories. These counts describe the content index, not
 runnable applications or benchmark coverage.
 
+The sections run from About Me to Publications, Theses, Code & Data, Student
+Projects, Experience & Education, Research Videos and Patents. Each heading
+expands or collapses its section; all sections start expanded. These controls
+also work without JavaScript.
+
 `index.html` contains the rendered academic records. `data/site-content.json`
 provides a machine-readable index and provenance; it is maintained alongside
 the HTML rather than rendered into it by a build step. `llms.txt` is a compact
 resource index. Keep all three consistent when academic resources change.
 
 `site.js` adds publication filtering, fetched BibTeX previews/copy controls,
-active-section navigation and a locally saved theme preference. Core text and
-citation links remain usable without JavaScript. `archive.html` redirects old
+active-section navigation, reopening sections for fragment links and a locally
+saved theme preference. Core text and citation links remain usable without
+JavaScript. `archive.html` redirects old
 section URLs to the homepage and supplies direct links when JavaScript is off.
 
 ## Run locally

@@ -2,6 +2,8 @@
 
 Academic homepage for Aaron Wetzler, CTO of an early-stage company building toward a future enabled by Physical AI. Previously Incubation and ML Lead at Apple and CTO of Camerai (acquired). Research areas include computer vision, machine learning, gesture recognition, and numerical geometry.
 
+Homepage section order: About Me, Publications, Theses, Code & Data, Student Projects, Experience & Education, Research Videos, Patents. Each section is independently collapsible and expanded by default. Native heading controls work without JavaScript; with JavaScript, navigation and fragment links also reopen their target sections.
+
 ## Main resources
 
 - Homepage: `https://twerdster.github.io/`

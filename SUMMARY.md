@@ -22,6 +22,18 @@ storage and active navigation. Core text/links work without JavaScript.
 a second academic archive. Historical source is in Git at 7361111.
 `styles.css`, fonts and icons are local, with their existing notices.
 
+The homepage section order is About Me, Publications, Theses, Code & Data,
+Student Projects, Experience & Education, Research Videos and Patents. All
+eight use independent native details/summary controls and start expanded.
+Pointer and keyboard toggles work without JavaScript. JavaScript reopens a
+closed section for same-page fragment links, including repeated current-hash
+clicks, and refreshes active navigation after toggles. Collapse state is not
+persisted. Printing opens every section and restores the previous states
+afterward. Existing section/heading IDs, capitalized aliases and the six-link
+header navigation are retained; header links follow the new content order.
+The shared stylesheet/script are cache-versioned for this change. Academic
+records, approved figures, resource links and content counts are unchanged.
+
 ## HandNet
 
 `HandNet/index.html` embeds `HandNet/explorer/index.html?embed=1` and links the
@@ -292,3 +304,29 @@ unchanged. The linked browser source was published at RobotRun commit
 72b3e08de13c89e61e8db0cf2e6b8c9354157703. Verify the playable project Pages
 deployment before publishing these links, then use a normal website push and
 a separate site deployment check.
+
+## Section controls (2026-11-14)
+
+Chrome 157.0.8103.51 checks at 390/1440-pixel widths, with JavaScript enabled
+and disabled, covered all eight controls by pointer, Enter and Space. Section
+order/numbering, fragment and legacy-alias links, repeated current-hash clicks,
+archive redirect, publication filter/citation state across toggles,
+citation fetch/copy/download and theme persistence passed. All 44 images
+decoded and all 42 thumbnail frames remained 184 by 115 pixels. Additional
+320/390/1440-pixel checks found no overflow or sticky-header overlap. These
+are Chrome layout/input checks, not physical phone or assistive-technology
+tests. No script errors, missing assets or external requests occurred.
+
+Actual PDF printing with JavaScript opened every section and restored the
+previous three closed states; repeated beforeprint events were also checked.
+Without JavaScript, Chrome's print CSS exposed all eight content blocks and
+left their screen states unchanged. Static comparison confirmed unchanged
+academic section payloads apart from numbering/wrappers/whitespace and
+unchanged JSON values apart from the section-map ordering. The revised
+Markdown rendered without overflow, and its relative links resolved. The
+archive importer was not changed, so its separate recovery tests were not
+rerun. Independent source/documentation review found no blocking issues.
+At both main widths, the shared HandNet page retained navigation, theme and
+citation controls; its embedded viewer displayed 20 samples and six sensor
+rows. Standalone rotation and ground-truth normalization left recorded
+measurements unchanged. These are viewer regression checks only.

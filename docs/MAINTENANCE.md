@@ -22,6 +22,14 @@ metadata. The NeurIPS figure is Aaron's supplied glove/robot JPEG, shown in full
 CoBe and Deep Stereo retain their verified source-panel crops. Do not redraw
 scientific values or label display-only fitting as a new result.
 
+Keep the homepage order About Me, Publications, Theses, Code & Data, Student
+Projects, Experience & Education, Research Videos and Patents. Each outer
+section retains its fragment ID and heading ID, with an independent native
+`details[open]` control inside. Do not give these controls a shared `name`:
+readers can leave several sections open. Existing capitalized fragment aliases
+remain outside the controls. All sections start expanded; collapse state is
+not saved between visits.
+
 [STUDENT_PROJECTS.md](../STUDENT_PROJECTS.md) separates recovered source,
 related prototypes, documents and unavailable code. Keep the HTML, JSON source
 status and directory truthful. Four updated Python components have previously recorded tests
@@ -39,6 +47,12 @@ For changes affecting rendered pages or resources, check desktop and phone
 widths, light/dark themes, publication filtering, citation fetch/copy/download,
 image decoding and horizontal overflow. Test with JavaScript disabled: the
 homepage records, citations and archive fallback should remain accessible.
+Check each heading with pointer, Enter and Space, and verify a visible keyboard
+focus indicator. With JavaScript enabled, navigation and fragment links must
+reopen closed sections, including repeated clicks on the current hash and
+links to records inside a section. Check that filtering and citation state
+survive closing and reopening Publications. Printing opens all sections and
+restores the reader's previous open/closed state afterward.
 Check HandNet standalone and embedded URLs and confirm viewer controls work
 with external requests blocked. Counts in the content index are content counts;
 a passing browser check is not model or scientific-software validation.
