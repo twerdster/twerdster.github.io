@@ -13,6 +13,11 @@ Homepage section order: About Me, Publications, Theses, Code & Data, Student Pro
 - Beltrami Denoising (Python and iOS): `https://github.com/twerdster/beltrami-denoising`
 - Deep Patch-Beltrami (PyTorch and Core ML): `https://github.com/twerdster/deep-patch-beltrami`
 - Blender Neural Composer: `https://github.com/twerdster/blender-neural-composer`
+- Winqi coded-beacon source and guide (Python, MATLAB): `https://github.com/twerdster/winqi`
+- Winqi procedural sample video: `https://github.com/twerdster/winqi/blob/main/media/winqi-demo.mp4`
+- Winqi generated Blender scene: `https://github.com/twerdster/winqi/blob/main/media/winqi-demo.blend`
+- Original Winqi paper (2017): `https://arxiv.org/abs/1708.05625v1`
+- Later CoBe paper (2020): `https://arxiv.org/abs/1708.05625v3`
 - Freehand Laser Scanning source and recovery notes: `https://github.com/twerdster/freehand-laser-scanning`
 - Historical iPTAM: `https://github.com/twerdster/iPTAM`
 - Servo tests: `https://github.com/twerdster/servo_tests`
