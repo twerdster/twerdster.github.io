@@ -22,7 +22,7 @@ Fifteen repositories contain reviewed historical source or a pinned public upstr
 | CamPong | [campong](https://github.com/twerdster/campong) | Report, poster, slides and project overview; application source unavailable |
 | Face Depth Estimation from a Single Color Image | [face-depth-estimation-from-a-single-color-image](https://github.com/twerdster/face-depth-estimation-from-a-single-color-image) | Three MATLAB fragments; tested feature notebook |
 | HeartBeat for iOS | [heartbeat-ios](https://github.com/twerdster/heartbeat-ios) | Pinned original; tested signal port and notebook |
-| 3D Scanner on Android | [android-3d-scanner](https://github.com/twerdster/android-3d-scanner) | Partial source; untested |
+| 3D Scanner on Android | [android-3d-scanner](https://github.com/twerdster/android-3d-scanner) | Recovered Eclipse resources and historical source variants; application build unverified |
 | Multi-View 3D reconstruction application for iPhone | [iphone-multiview-reconstruction](https://github.com/twerdster/iphone-multiview-reconstruction) | Documents; code coming soon |
 | Multi-user virtual war-room for Oculus Rift | [oculus-virtual-war-room](https://github.com/twerdster/oculus-virtual-war-room) | Scripts recovered; untested |
 | Full positional tracking for Oculus Rift | [oculus-positional-tracking](https://github.com/twerdster/oculus-positional-tracking) | Original presentation and demo link; application source unavailable |

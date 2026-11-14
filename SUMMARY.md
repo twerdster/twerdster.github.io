@@ -22,7 +22,7 @@ README updates remain separate from the website.
 `index.html` is the academic homepage. `data/site-content.json` is a separately
 maintained machine-readable index, and `llms.txt` is the resource summary. Keep
 these consistent for academic-content changes. Current counts: 19 publications,
-23 student projects, two theses, 12 software/data repositories, six research
+23 student projects, two theses, 13 software/data repositories, six research
 videos and nine patent groups. Sixteen publications and two projects have
 BibTeX files. Conference/preprint versions are combined. Mobile Point Fusion
 and Freehand Voxel Carving are student projects; the ECCV Beam/prism demo stays
@@ -352,3 +352,11 @@ At both main widths, the shared HandNet page retained navigation, theme and
 citation controls; its embedded viewer displayed 20 samples and six sensor
 rows. Standalone rotation and ground-truth normalization left recorded
 measurements unchanged. These are viewer regression checks only.
+
+## Beam and Freehand Laser source recovery (2026-11-14)
+
+Beam Android scanner links the preserved Eclipse source/resources and separate historical Eclipse/Android Studio versions. Its existing 27 text files stay unchanged; recovered pattern/icon assets extend the canonical source snapshot to 62 files. An adjacent iOS renderer is identified separately in the repository. The hardware-dependent historical applications remain unbuilt. Freehand Laser now links its own recovered research repository from the BMVC 2015 publication and a Code & Data entry; it stays distinct from Alex Fish’s Freehand Voxel Carving student project. The research repository preserves MATLAB and modified MIT sample iOS source with original component notices, publication-copy key/signing redactions, and per-file provenance. Proprietary PointCloud SDK material, private recovery archives and credentials are excluded.
+
+Current counts are 19 publications, 23 student projects, 13 software/data repositories and fifteen historical source-bearing/pinned student repositories. HTML, JSON, llms.txt, README counts, STUDENT_PROJECTS.md and provenance were synchronized. No figure, scientific result, site runtime or Winqi/CoBe resource changes are part of this update. Source commits are Beam `07c9a08bbaa881157fb9d4e1bf1210e578d108e3` and Freehand Laser `7bb86f1c924adbc155aafb2dc8d33f1acc072a36`; public Git trees were compared with the reviewed local commits.
+
+Chrome checks at 390/1440 pixels with JavaScript enabled and disabled passed: all 44 homepage images decoded, all 19 publications and 23 projects remained present, new links matched the content index, and there was no overflow, missing local asset or script error. Filters, citation fetch, themes and section controls retained their behavior. With external requests blocked, standalone and embedded HandNet displayed 20 samples and six sensor rows at both widths; display rotation and standalone ground-truth normalization left recorded measurements unchanged. No site runtime files changed. Independent content review confirmed scoped JSON/HTML changes and corrected SDK wording to distinguish excluded private dependencies from availability claims. The five changed Markdown guides rendered at both widths without horizontal overflow, and their relative file links resolved. The archive importer is unchanged, so its separate recovery regressions were not rerun. These checks do not establish historical application execution.

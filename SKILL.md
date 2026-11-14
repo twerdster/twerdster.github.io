@@ -151,3 +151,7 @@ callouts, catalog navigation fields or an extra update guide to this website
 for that repository task. Preserve the website's existing project/resource
 links, HandNet viewer and approved content/layout. GitHub README work does not
 require website changes.
+
+## Recovered scanner sources
+
+Beam’s current Eclipse tree, earlier Eclipse snapshot and Android Studio import retain separate version/provenance records; do not overwrite the original 27 source/config files or imply hardware/build validation from source recovery. Freehand Laser is the Slossberg/Wetzler/Kimmel research project, distinct from Freehand Voxel Carving. Link its repository from the publication and Code & Data; preserve the scoped MIT sample and third-party notices while excluding proprietary PointCloud SDK binaries/headers and private key/signing data. Source publication checks are separate from application execution. The current resource index has thirteen software/data repositories; historical records above may retain their earlier counts. Record reviewed source commit IDs in SUMMARY.md, verify public repository trees before publishing website links, and distinguish excluded private dependencies from claims that those dependencies are unavailable.

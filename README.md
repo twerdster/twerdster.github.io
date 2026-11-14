@@ -10,7 +10,7 @@ Physical AI.
 ## What the site does
 
 The homepage lists 19 publications, 23 student projects, two theses, six
-research videos and nine patent groups. Code & Data links 12
+research videos and nine patent groups. Code & Data links 13
 software/data repositories. These counts describe the content index, not
 runnable applications or benchmark coverage.
 
