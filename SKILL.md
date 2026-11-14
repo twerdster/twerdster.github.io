@@ -25,6 +25,9 @@ future enabled by Physical AI. Preserve the approved biography opening and do
 not add an employer name or link without a new request.
 Use `Current` as the current-role label in the Experience list.
 Add Camerai/Apple material only with approved public text/media.
+Keep the opening profile header to the name, portrait and social links.
+Role/history prose belongs in About Me and Experience, without repeated
+role or previous-employer lines beneath the name.
 
 Preserve the homepage order About Me, Publications, Theses, Code & Data,
 Student Projects, Experience & Education, Research Videos and Patents. Each

@@ -22,6 +22,16 @@ storage and active navigation. Core text/links work without JavaScript.
 a second academic archive. Historical source is in Git at 7361111.
 `styles.css`, fonts and icons are local, with their existing notices.
 
+The opening profile header shows Aaron's name, portrait and social links.
+The role and previous-employer lines beneath the name were removed at Aaron's
+request on 2026-11-14. Role/history prose remains in About Me and Experience;
+the structured role metadata and llms.txt summary remain accurate.
+Targeted Chrome 157 checks at 390/1440-pixel widths passed with JavaScript
+enabled and disabled: the portrait, name, social links and native section
+controls remained usable. JavaScript checks also covered light/dark themes,
+publication filtering and citation fetch. No overflow, missing assets or
+script errors occurred. CSS, runtime scripts and academic records did not change.
+
 The homepage section order is About Me, Publications, Theses, Code & Data,
 Student Projects, Experience & Education, Research Videos and Patents. All
 eight use independent native details/summary controls and start expanded.
@@ -88,7 +98,7 @@ source metadata. CoBe uses its original car crop; Deep Stereo uses two aligned
 source panels. Existing CSS fitting/voxel brightness changes are display-only.
 The NeurIPS workshop JPEG is Aaron's supplied glove/robot figure, shown in full.
 The current role names no company: CTO of an early-stage company building
-toward a future enabled by Physical AI. Keep profile, biography, experience and
+toward a future enabled by Physical AI. Keep biography, experience and
 metadata consistent with that wording. No visitor analytics is installed. Camerai/Apple project additions
 require approved public text/media before inclusion.
 
