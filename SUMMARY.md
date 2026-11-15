@@ -5,6 +5,67 @@ is https://twerdster.github.io/, published by GitHub Pages from the repository
 root on main. The source is static HTML/CSS/JavaScript; no application backend,
 content-generation build, full dataset download or model inference is required.
 
+## Puppify browser resources (2026-11-15)
+
+The existing Puppify card links its browser app, new source, guide and browser
+validation record. Aaron Wetzler's new TypeScript/MediaPipe/Canvas 2D application
+provides reference-photo cutouts, editable joints and video-driven posing.
+Its whole-person mask is partitioned geometrically; it does not run the
+unrecovered Caffe/FashionPose, scribble/segmentation or D3 implementation.
+Thirteen geometry/data tests cover the new rig, mask handling and motion
+mirroring, not model accuracy or reproduction of the historical benchmark.
+Fixed layer order, occlusions, rigid torso and missing texture remain limitations.
+
+The application record confirms sixteen passing browser cases: eight user flows
+repeated at desktop and 390-pixel Chrome phone/touch-emulated viewports. Chrome
+157.0.8103.51 on macOS 15.1.1 used the CPU delegate after software-GPU detection.
+Real prerecorded photo/video from one subject/scene and procedural negative
+controls passed through the actual model. All sixteen contexts recorded zero
+external requests and uncaught errors. No physical phone, Safari/Firefox,
+GPU-execution or accuracy claim follows. The added flow handles an injected
+model-asset HTTP 503, then obtains actual model output and rebuilds the puppet
+without reloading the page.
+
+HTML, JSON, llms.txt, STUDENT_PROJECTS.md and provenance preserve historical
+source_status documentation_recovered and source_files=0, original report and
+figure bytes, and student/supervisor attribution. New code is separately
+identified in updated_browser_implementation metadata. Counts remain 25 student
+projects, 19 publications, 14 software/data repositories and fifteen historical
+source-bearing/pinned project repositories. The other categories now include
+four document-only repositories and two new browser implementations without
+historical source (RobotRun and Puppify). No website badge or Code & Data card
+was added. README setup/counts were explicitly checked and need no edit.
+
+The linked application was published as commit
+`e8b939774cb65b4625e2e82d4daf92f556a9239d`. Its
+[GitHub Actions run](https://github.com/twerdster/planar-marionettes/actions/runs/43748126885)
+passed thirteen geometry/data checks and sixteen bundled-Chromium browser cases
+on Ubuntu 24.04.5 with Node.js 24.22.2. This repeats the same eight flows at two
+viewports; it does not add independent scenes. The app was deployed and its
+public app/source/guide/validation paths were verified before this website
+publication. New source/media have separate terms; the website retains its
+historical figure. Website link/layout checks do not add application accuracy,
+physical-device or original-runtime evidence.
+
+The website update passed Chrome 157.0.8103.51 checks at 390/1440-pixel widths
+with JavaScript enabled and disabled. Puppify's nine links and description match
+JSON; all 25 projects and 19 publications remain present, all 46 images decode,
+and 44 thumbnail frames remain 184 by 115 pixels. There is no overflow, missing
+local asset, script error or external request. All eight disclosures passed
+pointer/Enter/Space controls; themes, filters, citation fetch/clipboard readback/
+download and archive redirect/fallback passed. Standalone and embedded HandNet
+retain 20 samples and six sensor rows; rotation and ground-truth normalization
+leave recorded table values unchanged. Five website Markdown guides rendered at
+both widths with resolved relative links and no page overflow. Static comparison
+limits HTML and JSON value changes to Puppify. Figures, scripts, styles and
+archive-importer code are unchanged; its separate offline tests were not rerun.
+These are website/document checks, separate from the new application's records.
+
+An actual tools-disabled Claude review of the website changes prompted clearer
+independent-implementation and MediaPipe/geometric-cutout wording. Factual
+suggestions were checked against source and execution records; the review is
+not additional application or accuracy validation.
+
 ## Award records and missing student projects (2026-11-15)
 
 OpenFusion now links the Technion announcement of the 2013 Amdocs contest's
@@ -20,7 +81,8 @@ separate public archival repository, project/demo and award links. Both link
 reviewed original reports recovered unchanged from the Internet Archive:
 Puppify ten pages (November 2015 metadata), Snake3D six pages (June 2016).
 An unrelated archived Puppify presentation is excluded. Historical application
-code remains unrecovered; neither entry claims a modern port or current runtime.
+code remains unrecovered. Puppify later gained the separately labeled new browser
+implementation above; Snake3D has no verified current VR runtime.
 The 2017 article repeats the same Marionettes project and separately names
 Snake3D's special citation.
 
@@ -165,8 +227,8 @@ are a benchmark split or a full anatomical skeleton.
 
 STUDENT_PROJECTS.md and JSON distinguish source availability from runnable-app
 status: fifteen source-bearing/pinned repositories,
-five document repositories, two introductory repositories, RobotRun’s
-new browser implementation without historical source, Smartphone Game’s
+four document-only repositories, two introductory repositories, RobotRun’s and
+Puppify's new browser implementations without historical source, Smartphone Game’s
 linked author-hosted source, and GrayOwl after
 source withdrawal. Original source/pins, student credits, vendor terms and
 per-repo provenance must remain intact. Do not add a blanket software license.

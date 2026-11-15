@@ -182,9 +182,49 @@ Planar Marionettes/Puppify and Snake3D are separate student projects with origin
 lab images and public archival repositories. Preserve their authors, supervisors,
 2016 project context and the 2016/2017 award distinctions. The 2017 ceremony's
 repeated Marionettes entry is not a third project. Neither archival repository
-has recovered historical application code or a verified modern runtime; do not
-add source/port badges or source-bearing counts from documentation alone. Keep
+has recovered historical application code. Puppify now has a separately labeled
+new browser implementation; Snake3D has no verified current VR runtime. Do not
+infer recovered code or source-bearing counts from either documentation or new
+implementations. Keep
 reviewed report links, figure provenance and code availability synchronized
 across the HTML, JSON, llms, project directory and repository records. Current
 student count is 25; software/data count remains 14 and historical source-bearing
 or pinned project count remains fifteen.
+
+## Puppify browser resources
+
+Keep Puppify's browser app, new source, guide and validation links synchronized
+across HTML, JSON, llms.txt, STUDENT_PROJECTS.md and provenance. The new
+MediaPipe/Canvas 2D implementation uses a whole-person mask and geometric
+body-part assignment; it does not run the unavailable Caffe/FashionPose,
+Dijkstra/FIGTree or D3 implementation. Preserve source_status documentation_recovered,
+original source_files=0, the historical pipeline figure and student/supervisor
+attribution. New source is credited to Aaron Wetzler. Fixed photo cutouts,
+joint correction and video-driven posing are separate from the original
+photograph workflow and historical benchmark. Keep geometry tests, browser
+workflow checks, phone viewport emulation and physical-device validation
+distinct. No accuracy or original-runtime equivalence is established.
+
+There are four document-only repositories, two introductory repositories and
+two new browser implementations (RobotRun and Puppify) without recovered
+historical source. Historical source-bearing/pinned repositories remain
+fifteen, total student projects 25 and software/data repositories 14. No
+website New! badge or duplicate Code & Data entry is needed. Publish and
+verify the actual browser app and linked repository paths before publishing
+the website resource update.
+
+Puppify's sixteen browser cases are eight user flows repeated at two Chrome
+viewports, not sixteen independent scenes or a photographic benchmark. The
+recorded CPU delegate, single prerecorded subject/scene, procedural negative
+controls and absence of physical-phone/Safari/Firefox/GPU checks remain scoped.
+
+Puppify's thirteen geometry/data checks include mirroring asymmetric motion and
+leaving a symmetric rig in its rest pose. Mirrored motion flips horizontal
+coordinates and exchanges left/right anatomical labels; a coordinate flip alone
+would send limb directions across fixed shoulder/hip attachments. Keep those
+regressions separate from real-media browser flows and model accuracy.
+
+Keep Puppify's local macOS/Chrome CPU record distinct from its successful Linux
+GitHub Actions/Chromium repeat. Published app commit and CI run belong in JSON,
+provenance and SUMMARY.md; repeated platform runs do not increase the number of
+independent input scenes or establish untested device/browser compatibility.
