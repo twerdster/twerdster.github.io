@@ -5,6 +5,57 @@ is https://twerdster.github.io/, published by GitHub Pages from the repository
 root on main. The source is static HTML/CSS/JavaScript; no application backend,
 content-generation build, full dataset download or model inference is required.
 
+## Student follow-ups and CutOut browser resources (2026-11-16)
+
+CamPong now links Rom Herschkovitz's supplied LinkedIn profile and its published
+source-recovery note. A candidate archive was inspected privately and contains
+structured-light scanner code. Its authorship and relationship to CamPong remain
+unconfirmed; no candidate code was published or executed, and no CamPong source
+was recovered. Original project materials, figure and source status are preserved.
+Rom’s publication response and the individual responses from Liav Sitruk,
+Tamir Buchris and Sergey Kucher are
+recorded in their repositories without extending licenses or runtime claims.
+
+The existing CutOut card now links its browser app, source, guide and validation
+record. A new browser interface runs the shared updated recovered C++ core as
+WebAssembly in a Worker, with local image/scribble processing and PNG exports.
+Sixteen native/Wasm comparisons cover eight operator combinations on two inputs
+(one procedural ellipse and one coffee photograph): binary masks and alpha bytes
+match the native CutOut core linked with OpenCV 4.12.0. The Wasm comparison
+ran in Node.js 23.11.0, outside browser decode/stroke rasterization. These are
+implementation-consistency checks, not
+photographic accuracy or restoration of the historical Android interface.
+Browser checks completed eight operator combinations on the coffee photograph,
+image upload, pointer strokes, undo/clear, stale-result handling, cancellation
+recovery and both PNG downloads. Chrome 157 on macOS 15.1.1 passed 390/1440-pixel
+layout checks with no external requests or page errors. A separate Chrome UI-driven
+smoke run observed one FIGTree/pixel/hard result. Physical mobile browsers and
+non-Chrome engines remain untested. Deployment evidence is recorded separately.
+
+HTML, JSON, llms.txt, STUDENT_PROJECTS.md and provenance remain synchronized.
+Counts remain 25 projects, 19 publications, 14 software/data repositories and
+fifteen historical-source-bearing/pinned repositories. README setup/counts were
+explicitly checked and need no change. Original figures, runtime scripts and
+HandNet are unchanged. The app source is published at `6edd6e61fddaa76a0901e61cebcd8fc0ec20e5a1`;
+[build/test/deploy run 43768661137](https://github.com/twerdster/cutout-android/actions/runs/43768661137)
+succeeded. CI repeats comparison and interface checks with native OpenCV 4.6.0
+and Wasm OpenCV 4.12.0, separately from the local same-version comparison.
+The live app returned HTTP 200, and a Chrome UI-driven run completed
+FIGTree/tree/refined segmentation with actual cutout/mask results and PNG links.
+The linked public source/guide/validation files match the reviewed publication.
+
+The four local Chrome website contexts passed at 390/1440 pixels with JavaScript
+on/off: both changed cards match JSON, all images decode, 44 thumbnail frames
+remain 184 by 115 pixels, and there is no overflow, missing asset, page error or
+external request. Filters, citations, themes, project disclosures, archive fallback
+and standalone/embedded HandNet checks passed. A final two-card text/link delta
+check passed at both widths. Five Markdown guides passed GitHub GFM rendering,
+local links/anchors and ten document/viewport checks. These are website/document
+checks, not additional application accuracy or physical-device evidence. Two
+actual tools-disabled Claude reviews of this draft completed; useful factual and
+prose qualifications were checked against the source and execution records.
+
+
 ## Puppify browser resources (2026-11-15)
 
 The existing Puppify card links its browser app, new source, guide and browser

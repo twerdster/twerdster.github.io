@@ -64,7 +64,7 @@ Keep CutOut's author-supplied original Android source under its explicit
 android-app link, separate from the related prototype of unverified authorship
 and the updated Python exercise. The historical Eclipse interface remains
 unbuilt. Keep separately recorded updated/native, updated/desktop and
-updated/android and updated/ios execution distinct from original-app validation
+updated/android, updated/ios and updated/browser execution distinct from original-app validation
 and the earlier 16 Python tests. Native macOS and Ubuntu Linux records have
 separate dependency environments. Linux checks cover the native CLI, not the
 drawing interface; external system OpenCV is not sanitizer-instrumented. Link
@@ -228,3 +228,23 @@ Keep Puppify's local macOS/Chrome CPU record distinct from its successful Linux
 GitHub Actions/Chromium repeat. Published app commit and CI run belong in JSON,
 provenance and SUMMARY.md; repeated platform runs do not increase the number of
 independent input scenes or establish untested device/browser compatibility.
+
+## Student follow-ups and CutOut browser scope
+
+Preserve CamPong's supplied author profile and linked source-recovery note while
+historical application source remains unrecovered. Do not import a differently
+identified scanner archive as CamPong or infer its authorship from delivery.
+Individual author responses in linked repositories do not add a collective
+license or runtime coverage. Keep correspondence and shared-folder keys private.
+
+CutOut's browser interface compiles the same updated recovered C++ segmentation
+core to WebAssembly; it is separate from the independent Python Fast Marching
+exercise and unbuilt historical Android interface. Keep app/source/guide/checks
+links synchronized across HTML, JSON, llms and provenance. Describe local pixel
+processing, Worker execution and PNG outputs factually. Sixteen mask/alpha byte
+comparisons are eight operator combinations on two inputs, not a photograph benchmark
+or general equivalence claim. Keep interaction, viewport emulation, physical
+device, browser family and deployment evidence separate. Original source files,
+figures, attribution and mixed third-party terms remain preserved. Verify the
+app and linked records are public before publishing website links; no new card,
+Code & Data row or source-bearing count is warranted.
