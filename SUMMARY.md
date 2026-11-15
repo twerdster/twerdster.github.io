@@ -5,6 +5,42 @@ is https://twerdster.github.io/, published by GitHub Pages from the repository
 root on main. The source is static HTML/CSS/JavaScript; no application backend,
 content-generation build, full dataset download or model inference is required.
 
+## Scanner simulation and replay resources (2026-11-15)
+
+The existing Beam student-project row now links its synthetic reconstruction guide
+and Android replay guide. Generated camera/projector Gray-code observations run
+through unchanged recovered numerical methods and explicit corrections using
+supplied calibration. The existing Freehand Laser Code & Data row now links its
+generated-scene reconstruction/iOS simulator guide and synthetic results. Its
+adapted filters, laser-plane calibration and reconstruction use supplied poses
+and a metric board. Both historical full applications remain dependency-blocked;
+synthetic replay is separate from physical scanner validation and paper results.
+
+HTML, JSON, llms.txt, STUDENT_PROJECTS.md and provenance/context are synchronized.
+There are still 19 publications, 23 student projects, 14 software/data repositories
+and fifteen historical source-bearing/pinned student repositories. Original
+figures, runtime scripts, HandNet and Winqi/CoBe records are unchanged. README
+setup/counts remain accurate and need no edit. New links target stable `main`
+guides in the source repositories. Reviewed source commits are Beam
+`43e7c912dc924c8b1a9001072eb66adbfacfa438` and Freehand Laser
+`8022886fab8a516c423b30a76d1d294229f00c49`. Their public main commits,
+complete Git blob trees and selected raw guides/results match the reviewed
+local publications. The new linked paths are published before this website update.
+
+Chrome 157.0.8103.51 checks passed at 390/1440-pixel widths with JavaScript
+enabled and disabled: both revised rows and their links matched JSON, all 44
+images decoded, thumbnail frames retained 184 by 115 pixels, and no overflow,
+script error, missing local asset or external request occurred. Filters, theme,
+citation fetch/copy/download and native pointer/keyboard disclosures passed.
+Archive redirect/fallback and standalone/embedded HandNet checks passed; the
+viewer retained 20 frames and six sensor rows, with recorded measurements
+unchanged after rotation and standalone ground-truth normalization. Five guides
+rendered at both widths with resolved relative file links and no overflow.
+Static comparison limits HTML/JSON changes to the existing Beam/Freehand rows;
+Winqi/CoBe and all other records are unchanged. The archive importer itself is
+unchanged, so its separate offline recovery tests were not rerun. These are local
+website checks, not additional scanner validation.
+
 ## GitHub README scope correction (2026-11-14)
 
 Aaron clarified that the **New!** badges and **Updated and ported for modern

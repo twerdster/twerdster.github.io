@@ -156,6 +156,17 @@ require website changes.
 
 Beam’s current Eclipse tree, earlier Eclipse snapshot and Android Studio import retain separate version/provenance records; do not overwrite the original 27 source/config files or imply hardware/build validation from source recovery. Freehand Laser is the Slossberg/Wetzler/Kimmel research project, distinct from Freehand Voxel Carving. Link its repository from the publication and Code & Data; preserve the scoped MIT sample and third-party notices while excluding proprietary PointCloud SDK binaries/headers and private key/signing data. Source publication checks are separate from application execution. The current resource index has fourteen software/data repositories; historical records above may retain their earlier counts. Record reviewed source commit IDs in SUMMARY.md, verify public repository trees before publishing website links, and distinguish excluded private dependencies from claims that those dependencies are unavailable.
 
+Keep the separately requested scanner simulation/replay links in the existing
+Beam student row and Freehand Laser Code & Data row. Beam's new Android replay
+processes generated Gray captures with supplied calibration; Freehand's native
+iOS simulator replay processes generated PNGs and supplied poses/metric board.
+Original full applications remain dependency-blocked. Link stable updated guides
+and explicit synthetic results, preserve documented algorithm changes, and do
+not infer physical camera/projector/laser accuracy, recovered tracking, live
+capture or paper reproduction. These resource updates do not add cards, change
+counts, alter Winqi/CoBe, or authorize the previously excluded New! badges. Verify
+new source paths are published before publishing website links.
+
 ## CoBe / WinQI resource scope
 
 The CoBe publication's `code` resource targets `twerdster/winqi`: archived WinQI MATLAB research and a separate updated binary-observation decoder. Keep its original research, new code and procedural demonstrations distinct from the upstream `baklawe/CoBe` camera/tracking application. Link validation/media records for their actual tested scope; do not infer camera, association, background rejection, pose, SLAM or historical Android execution. Aaron subsequently requested a separate Winqi Code & Data entry. Preserve that entry and its source, sample video, generated Blender scene, original Winqi v1 and later CoBe v3 paper links in synchronized HTML/JSON/llms records; the current software/data repository count is fourteen. Winqi and CoBe are versions of the same arXiv record, with separate authorship by version. Preserve the original CoBe car figure. Verify the reviewed public source tree, sample media and actual CI results before publishing the website link; a passing binary-model test suite or rendered replay does not validate the upstream camera/localization application.
