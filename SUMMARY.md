@@ -5,6 +5,58 @@ is https://twerdster.github.io/, published by GitHub Pages from the repository
 root on main. The source is static HTML/CSS/JavaScript; no application backend,
 content-generation build, full dataset download or model inference is required.
 
+## Award records and missing student projects (2026-11-15)
+
+OpenFusion now links the Technion announcement of the 2013 Amdocs contest's
+March 2014 ceremony. CutOut links its July 2015 Amdocs ceremony and separate
+November 2015 Intel Challenge award. The original descriptions, credits and
+code/execution status are preserved; award coverage is not runtime evidence.
+
+The Student Projects section adds Planar Marionettes (Puppify), by Gil
+Ben-Shachar and Elad Richardson under Anastasia Dubrovina and Aaron Wetzler,
+and Snake3D, by Sapir Eltanani and Simona Gluzman under Aaron Wetzler. Both
+original lab images are copied unchanged with source provenance. Each has a
+separate public archival repository, project/demo and award links. Both link
+reviewed original reports recovered unchanged from the Internet Archive:
+Puppify ten pages (November 2015 metadata), Snake3D six pages (June 2016).
+An unrelated archived Puppify presentation is excluded. Historical application
+code remains unrecovered; neither entry claims a modern port or current runtime.
+The 2017 article repeats the same Marionettes project and separately names
+Snake3D's special citation.
+
+HTML, JSON, llms.txt, README counts, STUDENT_PROJECTS.md and provenance are
+synchronized: 25 student projects, 19 publications, 14 software/data repositories
+and fifteen historical source-bearing/pinned project repositories. Existing
+figures and runtime scripts are unchanged. New documentation repositories do
+not add Code & Data records or alter historical software validation results.
+
+Chrome 157.0.8103.51 checks at 390/1440 pixels passed with JavaScript enabled
+and disabled: all 25 projects and 19 publications remained present, all 46
+homepage images decoded, and 44 thumbnail frames measured 184 by 115 pixels.
+The four changed cards' resource lists matched JSON, including both recovered
+report links. No overflow, script errors, missing local assets or external
+requests occurred. Themes, publication filters, citation fetch/copy/download,
+project disclosure pointer/Enter/Space controls and archive redirect/fallback
+passed. Standalone and embedded HandNet retained 20 samples and six sensor rows;
+standalone rotation and ground-truth normalization preserved recorded table
+values. Five changed Markdown guides rendered at both widths with valid
+relative file links and no page overflow. Independent content review found no
+blocking factual or scope issue. The archive importer is unchanged, so its
+separate offline regressions were not rerun. These are website/document checks,
+not new historical-application or scientific validation.
+
+Published repository revisions verified before the website commit:
+OpenFusion `0e6eaf505bbcf8c4955fbe8517228833f42052af`, CutOut
+`ba75ac010f4004571c851a84c385297cb01c3118`, Puppify
+`dcbf0f435d5a96920ff96afa8ea719a3ce8394b8` and Snake3D
+`2d1c9d3d743577cea4695d0bf05759ab2739095d`. The new repositories' complete
+public Git blob trees and selected raw README/report/image bytes match their
+reviewed local publications. Both new READMEs received completed actual Claude
+editorial review; useful changes were checked against the original materials.
+Puppify's report and unrelated-slide exclusion also received independent
+material review. Publication and document checks establish archival content,
+not recovered application source or modern execution.
+
 ## Scanner simulation and replay resources (2026-11-15)
 
 The existing Beam student-project row now links its synthetic reconstruction guide
@@ -58,7 +110,7 @@ README updates remain separate from the website.
 `index.html` is the academic homepage. `data/site-content.json` is a separately
 maintained machine-readable index, and `llms.txt` is the resource summary. Keep
 these consistent for academic-content changes. Current counts: 19 publications,
-23 student projects, two theses, 14 software/data repositories, six research
+25 student projects, two theses, 14 software/data repositories, six research
 videos and nine patent groups. Sixteen publications and two projects have
 BibTeX files. Conference/preprint versions are combined. Mobile Point Fusion
 and Freehand Voxel Carving are student projects; the ECCV Beam/prism demo stays
@@ -113,7 +165,7 @@ are a benchmark split or a full anatomical skeleton.
 
 STUDENT_PROJECTS.md and JSON distinguish source availability from runnable-app
 status: fifteen source-bearing/pinned repositories,
-three document repositories, two introductory repositories, RobotRun’s
+five document repositories, two introductory repositories, RobotRun’s
 new browser implementation without historical source, Smartphone Game’s
 linked author-hosted source, and GrayOwl after
 source withdrawal. Original source/pins, student credits, vendor terms and

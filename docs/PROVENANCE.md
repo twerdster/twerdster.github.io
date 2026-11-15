@@ -9,8 +9,8 @@ a second academic index.
 
 ## Publications and project materials
 
-The current index contains 19 publications, 23 student projects, two theses,
-13 software/data repositories, six research videos and nine patent groups. Conference/preprint records
+The current index contains 19 publications, 25 student projects, two theses,
+14 software/data repositories, six research videos and nine patent groups. Conference/preprint records
 are combined. Sixteen publications and two projects have BibTeX files. These
 counts were checked against the tracked HTML/JSON, not inferred from a search
 result count. Source URLs and figure references live in `data/site-content.json`.
@@ -129,3 +129,17 @@ The existing Beam student row links its [simulation guide](https://github.com/tw
 The existing Freehand Laser Code & Data row links its [simulation/iOS guide](https://github.com/twerdster/freehand-laser-scanning/blob/main/updated/README.md) and [synthetic metrics](https://github.com/twerdster/freehand-laser-scanning/blob/main/updated/artifacts/metrics.json). New Python and native Accelerate adapters extract laser ridges, fit the camera-attached plane from generated calibration PNGs, and reconstruct scan PNGs with supplied camera poses. The iOS simulator app compiles the same native core; its exact build/runtime scope belongs in the linked repository. Rebuilt kernels, thresholds and safety guards are explicit adaptations, separately licensed from the preserved historical source. The original app failed its unsigned build on missing resources and retains excluded proprietary dependencies. Synthetic errors, occlusion/distractor failures and pose assumptions do not establish physical-device accuracy or reproduce the paper benchmark.
 
 These additions change existing resources and descriptions only. Publication/project/software counts, original figures, runtime assets, Winqi/CoBe records and Freehand Voxel Carving are unchanged. Publish the reviewed source updates before publishing website links to their new paths.
+
+## Award records and two missing projects, 2026-11-15
+
+The [2014 ceremony announcement](https://www.cs.technion.ac.il/news/view-new.php?nwid=673) identifies OpenFusion's students, Vered Cohen and Nurit Schwevsky (Schwabsky in the existing project record), under “Real Time 3D Surface Reconstruction.” It describes the 2013 Amdocs contest and a March 2014 ceremony. The repo preserves the announcement's supervisor credits separately from its other historical credits. CutOut links the [July 2015 Amdocs ceremony](https://www.cs.technion.ac.il/news/view-new.php?nwid=783) and the separate [November 2015 Intel Challenge award](https://www.cs.technion.ac.il/news/view-new.php?nwid=813). Repeated news coverage is not counted as another project or an additional independent award.
+
+[Planar Marionettes (Puppify)](https://github.com/twerdster/planar-marionettes) is the 2016 project by Gil Ben-Shachar and Elad Richardson, supervised by Anastasia Dubrovina and Aaron Wetzler. Its [GIP description](https://gip.cs.technion.ac.il/lab-projects.php?id=6), original pipeline figure and [historical video](https://www.youtube.com/watch?v=RPFcZ8bozjM) establish the project context; the [2016 ceremony](https://www.cs.technion.ac.il/news/view-new.php?nwid=866) credits the students and supervisors. The homepage preserves the original figure bytes at Projects/PlanarMarionettes/projImg.png; its source URL/hash and recovery limits are recorded in the project repository. No recovered application code or modern execution is claimed.
+
+[Snake3D](https://github.com/twerdster/snake3d), by Sapir Eltanani and Simona Gluzman under Aaron Wetzler, is the [2016 GIP VR game](https://gip.cs.technion.ac.il/last-projects-2016-6.html) using Oculus Rift and Leap Motion. The homepage's Projects/Snake3D/projImg.png preserves the original project artwork, rather than a new screenshot. The [2017 ceremony article](https://www.cs.technion.ac.il/news/view-new.php?nwid=944) names Snake3D's special citation and separately repeats the same Marionettes project. Historical application source remains unrecovered; a current VR build has not been validated. Figure hashes and reviewed archival materials belong in the project repository's provenance record.
+
+These two additions bring the Student Projects index to 25, with fifteen historical source-bearing/pinned repositories unchanged. They do not add publications or Code & Data entries. The rest of the website records, approved figures and runtime are preserved.
+
+Snake3D’s [original six-page report](https://github.com/twerdster/snake3d/blob/main/docs/report.pdf) was recovered unchanged from the Internet Archive’s 2017-09-19 capture of the original GIP document, after its current URL returned 404. Repository review covered all six rasterized pages, text, metadata and embedded objects before publication. It documents the historical Unity/C# game; it is not source recovery or a new execution record. The original figure URL is https://gip.cs.technion.ac.il/img/3DSnake/Capture.png.
+
+Puppify’s [original ten-page report](https://github.com/twerdster/planar-marionettes/blob/main/docs/report.pdf) was recovered unchanged from the Internet Archive. Its creation metadata is November 18, 2015; the official GIP listing and award are from 2016. Independent review covered all ten rendered pages, extracted text, metadata and PDF objects; no redaction was identified. The archived presentation URL returned an unrelated 2012 recruitment notice, which is excluded. The report and figure retain their existing terms and original attribution; no source code or modern execution is claimed.

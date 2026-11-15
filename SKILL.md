@@ -170,3 +170,21 @@ new source paths are published before publishing website links.
 ## CoBe / WinQI resource scope
 
 The CoBe publication's `code` resource targets `twerdster/winqi`: archived WinQI MATLAB research and a separate updated binary-observation decoder. Keep its original research, new code and procedural demonstrations distinct from the upstream `baklawe/CoBe` camera/tracking application. Link validation/media records for their actual tested scope; do not infer camera, association, background rejection, pose, SLAM or historical Android execution. Aaron subsequently requested a separate Winqi Code & Data entry. Preserve that entry and its source, sample video, generated Blender scene, original Winqi v1 and later CoBe v3 paper links in synchronized HTML/JSON/llms records; the current software/data repository count is fourteen. Winqi and CoBe are versions of the same arXiv record, with separate authorship by version. Preserve the original CoBe car figure. Verify the reviewed public source tree, sample media and actual CI results before publishing the website link; a passing binary-model test suite or rendered replay does not validate the upstream camera/localization application.
+
+## Award records and additional archival projects
+
+Keep OpenFusion's 2013 Amdocs contest / March 2014 ceremony link distinct from
+modern execution. CutOut's Amdocs and Intel Challenge records describe separate
+2015 events. Preserve source-specific historical credits rather than replacing
+them with a news story's credits.
+
+Planar Marionettes/Puppify and Snake3D are separate student projects with original
+lab images and public archival repositories. Preserve their authors, supervisors,
+2016 project context and the 2016/2017 award distinctions. The 2017 ceremony's
+repeated Marionettes entry is not a third project. Neither archival repository
+has recovered historical application code or a verified modern runtime; do not
+add source/port badges or source-bearing counts from documentation alone. Keep
+reviewed report links, figure provenance and code availability synchronized
+across the HTML, JSON, llms, project directory and repository records. Current
+student count is 25; software/data count remains 14 and historical source-bearing
+or pinned project count remains fifteen.
