@@ -9,7 +9,7 @@ Physical AI.
 
 ## What the site does
 
-The homepage lists 19 publications, 25 student projects, two theses, six
+The homepage lists 19 publications, 26 student projects, two theses, six
 research videos and nine patent groups. Code & Data links 14
 software/data repositories. These counts describe the content index, not
 runnable applications or benchmark coverage.
@@ -68,7 +68,7 @@ Read SUMMARY.md, then SKILL.md and AGENTS.md before editing. The
 [maintenance guide](docs/MAINTENANCE.md) covers file organization, content
 updates, browser checks, publication and the historical local-server setup.
 [STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) describes source availability and
-links the 25 project repositories; repository presence does not imply a full
+links the 26 project repositories; repository presence does not imply a full
 build. GrayOwl's repository contains project records only; its source was withdrawn.
 
 The existing maintenance record describes browser checks for mobile/desktop

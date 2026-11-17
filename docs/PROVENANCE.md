@@ -9,7 +9,7 @@ a second academic index.
 
 ## Publications and project materials
 
-The current index contains 19 publications, 25 student projects, two theses,
+The current index contains 19 publications, 26 student projects, two theses,
 14 software/data repositories, six research videos and nine patent groups. Conference/preprint records
 are combined. Sixteen publications and two projects have BibTeX files. These
 counts were checked against the tracked HTML/JSON, not inferred from a search
@@ -175,3 +175,11 @@ For the sixteen core comparisons, WebAssembly ran in Node.js 23.11.0 on macOS 15
 The browser app source is published at [`6edd6e6`](https://github.com/twerdster/cutout-android/commit/6edd6e61fddaa76a0901e61cebcd8fc0ec20e5a1). [GitHub Actions run 43768661137](https://github.com/twerdster/cutout-android/actions/runs/43768661137) rebuilt the package, passed its native/WebAssembly and browser checks, and deployed GitHub Pages. The CI comparison uses native OpenCV 4.6.0 and WebAssembly OpenCV 4.12.0; it is separate from the same-version local byte comparison. Generated build-path diagnostics are normalized, and packaging rejects recorded private path prefixes before deployment.
 
 The deployed app returned HTTP 200 and completed a Chrome UI-driven FIGTree/tree/refined run at the 400-pixel working limit, with actual cutout/mask results and PNG links. This is one public-deployment smoke check, separate from local/CI operator comparisons and browser checks.
+
+## TermiNet recovery and demo directory — 2026-11-17
+
+The official GIP record explicitly names Itai Caspi and supervisor Aaron Wetzler. The report cover dates the work to Spring 2016; GIP catalogs it under 2017. The final-submission project page links the public agent implementation, confirming the association with `itaicaspi/keras-dqn-doom`, pinned at `4241a994a49a39b88bfe5261b37d5abe6e0459a4`. The new archival repository preserves fifteen original files unchanged (two Python modules, four configurations, the upstream README, eight referenced figures), links the six original checkpoints and records SHA-256 hashes. It makes no claim that the legacy environment has been restored.
+
+The displayed GIF is copied unchanged from https://gip.cs.technion.ac.il/img-projects/1488090770_545.9_pict_1.gif and matches `img/robots.gif` in the final submission. The private submission documents, archive and correspondence are not published. The browser page plays historical clips converted from OGV to MP4 and supplies new softmax/ε-greedy calculations from synthetic Q values; it performs no neural-network inference, Doom execution or training. Upstream terms remain unspecified rather than being assigned a new license. This raises current student projects to 26 and historical source-bearing/pinned repositories to 16; other category counts stay unchanged.
+
+The current 25 demo links are verified interactive resources, excluding GrayOwl. Saved-output viewers expose recorded geometry/signals/frames rather than rerunning reconstruction. New synthetic or illustrative implementations are separately labeled, and existing CutOut, RobotRun and Puppify applications retain their prior scope and terms. These resources do not add recovered historical source for missing-code projects, grant collective author permission, or establish physical Android/iOS/VR testing. Browser and numerical checks remain in per-project validation guides. The site's navigation/runtime and all previously approved images remain unchanged.

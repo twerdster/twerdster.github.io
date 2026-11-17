@@ -114,3 +114,35 @@ CutOut browser interface, 2026-11-16: https://twerdster.github.io/cutout-android
 CutOut browser checks: Chrome 157 on macOS 15.1.1, eight operator combinations on one coffee photograph plus upload/strokes/undo/clear/stale-result/cancel/PNG checks; 390/1440-pixel layouts with zero external requests or uncaught page errors. Separate Chrome UI-driven interaction smoke: FIGTree/pixel/hard. These do not establish physical Android/iOS browser or Safari/Firefox compatibility.
 For the sixteen core comparisons, WebAssembly ran in Node.js 23.11.0 on macOS 15.1.1 arm64, separately from browser decode/stroke rasterization. Aaron Wetzler added the browser interface and Worker bridge around the shared updated core.
 CutOut browser source revision: 6edd6e61fddaa76a0901e61cebcd8fc0ec20e5a1; successful build/test/Pages deployment: https://github.com/twerdster/cutout-android/actions/runs/43768661137. CI compares native OpenCV 4.6.0 and WebAssembly OpenCV 4.12.0 separately from the same-version local comparison. Packaging rejects recorded private build-path prefixes.
+
+TermiNet, added 2026-11-17: https://twerdster.github.io/#terminet; Itai Caspi, supervised by Aaron Wetzler, Spring 2016 (GIP listing 2017). Repository https://github.com/twerdster/terminet; browser demo https://twerdster.github.io/terminet/; pinned original implementation https://github.com/itaicaspi/keras-dqn-doom/tree/4241a994a49a39b88bfe5261b37d5abe6e0459a4. The original submission project page confirms this code link. A fifteen-file unchanged subset is preserved with hashes; six source/configuration files, eight referenced figures and the original README. The browser plays converted historical recordings and calculates exploration probabilities from synthetic Q values. It does not run Doom or checkpoints. Legacy environment remains unrestored; private submission reports/slides are not distributed. Current student-project count 26; historical source-bearing/pinned repositories 16; publications 19 and Code & Data 14. Earlier dated counts describe earlier snapshots.
+
+## Updated interactive student demos — 2026-11-17
+
+Each of the 25 projects other than source-withdrawn GrayOwl has an updated browser demo. A demo may be a saved-output viewer, a synthetic component exercise or a new implementation; it does not imply a recovered historical app builds. Detailed scopes and browser checks are in each repository. GrayOwl retains documentation only.
+
+- Mobile Point Fusion: https://twerdster.github.io/mobile-point-fusion/ (interactive saved output viewer)
+- Freehand Voxel Carving Scanning on a Mobile Device: https://twerdster.github.io/freehand-voxel-carving/ (interactive saved output viewer)
+- AR / 3D Skype to Android: https://twerdster.github.io/android-3d-skype/ (new project specific demonstration)
+- Augmented Reality Posters: https://twerdster.github.io/augmented-reality-posters/ (new project specific demonstration)
+- QR code applications on Android: https://twerdster.github.io/android-qr-applications/ (new project specific demonstration)
+- Smartphone Game: https://twerdster.github.io/smartphone-game/ (new project specific demonstration)
+- Hebrew Speech Recognition on iPad: https://twerdster.github.io/hebrew-speech-ipad/ (new project specific demonstration)
+- 3D Stereo Reconstruction using iPhones: https://twerdster.github.io/iphone-stereo-reconstruction/ (new project specific demonstration)
+- Marker tracking: https://twerdster.github.io/marker-tracking/ (interactive saved output viewer)
+- Predator TLD on iOS: https://twerdster.github.io/predator-tld-ios/ (interactive saved output viewer)
+- 3D Volume Carving on iPhone: https://twerdster.github.io/iphone-volume-carving/ (interactive saved output viewer)
+- Hand tracking: https://twerdster.github.io/hand-tracking-pmd/ (new project specific demonstration)
+- OpenFusion: https://twerdster.github.io/openfusion/ (interactive saved output viewer)
+- CamPong: https://twerdster.github.io/campong/ (new project specific demonstration)
+- Face Depth Estimation from a Single Color Image: https://twerdster.github.io/face-depth-estimation-from-a-single-color-image/ (synthetic feature component)
+- HeartBeat for iOS: https://twerdster.github.io/heartbeat-ios/ (interactive saved output viewer)
+- 3D Scanner on Android: https://twerdster.github.io/android-3d-scanner/ (interactive saved output viewer)
+- Multi-View 3D reconstruction application for iPhone: https://twerdster.github.io/iphone-multiview-reconstruction/ (interactive saved output viewer)
+- Multi-user virtual war-room for Oculus Rift: https://twerdster.github.io/oculus-virtual-war-room/ (new project specific demonstration)
+- Full positional tracking for Oculus Rift: https://twerdster.github.io/oculus-positional-tracking/ (new project specific demonstration)
+- CutOut for Android: https://twerdster.github.io/cutout-android/ (separately labeled updated application)
+- RobotRun game: https://twerdster.github.io/robotrun-game/ (separately labeled updated application)
+- Planar Marionettes (Puppify): https://twerdster.github.io/planar-marionettes/ (separately labeled updated application)
+- Snake3D: https://twerdster.github.io/snake3d/ (new project specific demonstration)
+- TermiNet: https://twerdster.github.io/terminet/ (historical playback and new policy lab)

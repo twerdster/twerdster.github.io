@@ -1,5 +1,10 @@
 # Maintain the academic website
 
+## Current student-project update — 2026-11-17
+
+Current index: 26 student projects, 16 repositories with historical source or pinned public upstream, 19 publications and 14 Code & Data entries. Earlier dated counts below describe earlier snapshots. TermiNet adds Itai Caspi's Spring 2016 work (GIP listing 2017), an unchanged public source subset and fixed original upstream, plus a new browser policy lab and historical playback. It does not run the legacy model. Original GIP animation bytes match the private final-submission image; private archive/report/slides stay private. The site retains generic content and unchanged navigation/runtime. Student demo resource links will be verified before publication and distinguish illustrations, saved-output viewers and algorithm execution. GrayOwl stays source-free with no runnable-demo addition.
+
+
 Read SUMMARY.md first, then this file, AGENTS.md/README.md and the relevant HTML, content
 index, source/provenance and validation records. Keep SUMMARY.md and this file
 accurate before every commit. New commits use Aaron Wetzler with
@@ -248,3 +253,11 @@ device, browser family and deployment evidence separate. Original source files,
 figures, attribution and mixed third-party terms remain preserved. Verify the
 app and linked records are public before publishing website links; no new card,
 Code & Data row or source-bearing count is warranted.
+
+## Student demo resource checks — 2026-11-17
+
+All 26 student project READMEs received actual Claude review. Every project except intentionally source-withdrawn GrayOwl now has a project-specific browser demo. Website resources link all 25 demos and identify recorded-output viewers, new illustrations, existing updated applications and synthetic feature calculations in machine-readable scope metadata; source availability remains separately recorded. TermiNet adds one historical source-bearing/pinned repository (16 total), not a recovered modern runtime. Long conversion and validation details stay in linked project guides.
+
+Local website Chrome checks passed at 390/1440px with JavaScript on/off: all 26 cards/resources match JSON, images decode, 25 demo links are present, no overflow/page errors/external requests. Themes, filters and citation fetch smoke checks pass. These are site checks, not application or accuracy validation. The added TermiNet image is unchanged; other figures, navigation, styles and scripts are unchanged. Actual Claude review of the new TermiNet wording completed and factual suggestions were checked.
+
+Independent final review checked 26 concise READMEs, 167 linked Markdown files, all 25 public demo URLs and source/updated boundaries. Generic path cleanup in the linked repositories preserves original source and keeps exact operator logs private. Current documentation revisions are bound in updated_browser_demo.documentation_commit; deployments and application checks remain separately scoped in each repository.
