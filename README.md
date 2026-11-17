@@ -66,7 +66,7 @@ Hugging Face iframe or backend request.
 
 Read SUMMARY.md, then SKILL.md and AGENTS.md before editing. The
 [maintenance guide](docs/MAINTENANCE.md) covers file organization, content
-updates, browser checks, publication and the historical local-server setup.
+updates, browser checks, publication and the optional local-server template.
 [STUDENT_PROJECTS.md](STUDENT_PROJECTS.md) describes source availability and
 links the 26 project repositories; repository presence does not imply a full
 build. GrayOwl's repository contains project records only; its source was withdrawn.

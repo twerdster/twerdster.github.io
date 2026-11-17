@@ -69,21 +69,17 @@ root; no production build command or package installation is required locally.
 Check the Pages build and actual public homepage, HandNet and changed-resource
 URLs. Do not infer deployment success solely from a successful push.
 
-## Historical local-server setup
+## Optional macOS local-server template
 
-The following configuration was recorded in the pre-revision README at commit
-fe1eb1968532dc5c71b655bd7ba37500460fa345 and reviewed on 2026-11-13. Its original
-setup date has not been established.
+[ops/org.example.academic-site.plist](../ops/org.example.academic-site.plist)
+is an optional LaunchAgent example for serving a local checkout. Set the Python
+interpreter and website directory to absolute paths on your system before using
+it. It binds to `127.0.0.1:4173` and writes to generic `/tmp/academic-site` log
+files. Rename the label and log paths if you run multiple instances.
 
-[ops/com.aaronwetzler.website.plist](../ops/com.aaronwetzler.website.plist) is a
-machine-specific macOS LaunchAgent template. Its recorded working directory is
-`/Users/aaron/repos/website`, server address `127.0.0.1:4173`, and log paths
-`/tmp/aaron-website.log` and `/tmp/aaron-website.error.log`. The earlier setup
-record used `~/Library/LaunchAgents/com.aaronwetzler.website.plist` and a
-Tailscale Serve URL at `http://aw-mbp.tail02f936.ts.net:4173/`.
-These are configuration/history records, not a fresh service-availability check.
-Inspect paths and the existing service before adopting the template on another
-machine. This documentation revision does not install or restart it.
+The normal Python command in the README works without a background service.
+This repository update does not install, activate or restart a LaunchAgent.
+A template is not evidence that a local or remote server is available.
 
 Dedicated Camerai or Apple project material requires approved public text and
 media before inclusion, as recorded in AGENTS.md/SKILL.md. No visitor tracking
