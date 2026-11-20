@@ -14,7 +14,7 @@ The current directory contains 26 projects. Detailed recovery, installation, con
 | Augmented Reality Posters | [augmented-reality-posters](https://github.com/twerdster/augmented-reality-posters) | Partial Java/JNI/configuration source; missing QCAR/assets; new poster-placement illustration |
 | QR code applications on Android | [android-qr-applications](https://github.com/twerdster/android-qr-applications) | Partial Android/PHP source; original backend unsafe to deploy; new local room/QR-payload demonstration |
 | Smartphone Game | [smartphone-game](https://github.com/twerdster/smartphone-game) | Externally linked source without an inspected Xcode project; new ball-and-trampoline browser implementation |
-| Hebrew Speech Recognition on iPad | [hebrew-speech-ipad](https://github.com/twerdster/hebrew-speech-ipad) | Original app source unrecovered; new Hebrew text interface with optional browser speech service; live recognition unverified |
+| Hebrew Speech Recognition on iPad | [hebrew-speech-ipad](https://github.com/twerdster/hebrew-speech-ipad) | Historical student-project context and image only; original app source unrecovered; no updated code or browser demo |
 | 3D Stereo Reconstruction using iPhones | [iphone-stereo-reconstruction](https://github.com/twerdster/iphone-stereo-reconstruction) | Pinned original with missing legacy dependencies; new synthetic stereo-geometry demonstration |
 | Marker tracking | [marker-tracking](https://github.com/twerdster/marker-tracking) | Recovered classifier-tree port with recorded native checks; browser video/frame viewer does not rerun tracking |
 | Predator TLD on iOS | [predator-tld-ios](https://github.com/twerdster/predator-tld-ios) | Pinned original and repaired native tracking/detection/learning replay; saved-result browser viewer; no live capture |
@@ -43,7 +43,6 @@ The current directory contains 26 projects. Detailed recovery, installation, con
 - [Augmented Reality Posters](https://twerdster.github.io/augmented-reality-posters/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/augmented-reality-posters#updated).
 - [QR code applications on Android](https://twerdster.github.io/android-qr-applications/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/android-qr-applications#updated).
 - [Smartphone Game](https://twerdster.github.io/smartphone-game/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/smartphone-game#updated).
-- [Hebrew Speech Recognition on iPad](https://twerdster.github.io/hebrew-speech-ipad/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/hebrew-speech-ipad#updated).
 - [3D Stereo Reconstruction using iPhones](https://twerdster.github.io/iphone-stereo-reconstruction/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/iphone-stereo-reconstruction#updated).
 - [Marker tracking](https://twerdster.github.io/marker-tracking/) — interactive saved output viewer; [scope and checks](https://github.com/twerdster/marker-tracking#updated).
 - [Predator TLD on iOS](https://twerdster.github.io/predator-tld-ios/) — interactive saved output viewer; [scope and checks](https://github.com/twerdster/predator-tld-ios#updated).

@@ -1,5 +1,26 @@
 # Academic website: maintenance state
 
+## Hebrew Speech historical-only scope — 2026-11-20
+
+Hebrew Speech Recognition on iPad now retains only its historical description,
+Nadav Merlis and Liora Neeman’s credits, original thumbnail and repository link.
+Removed the browser-demo link and updated-demo metadata from HTML, JSON and
+resource guides to match removal of that implementation from the project
+repository. Original application source remains unrecovered. There are 24
+student demo links among 26 projects; other category counts are unchanged.
+Earlier dated 25-demo checks below describe the previous snapshot. Runtime,
+styles, figures and unrelated project entries are unchanged.
+
+Targeted Chrome checks at 390/1440-pixel widths passed with JavaScript on/off:
+all 26 project cards remain, the historical Hebrew Speech card has only its
+repository link, all homepage images decode and there is no overflow, page
+error, missing asset or external request. Theme, publication filter, citation
+fetch/copy/download, archive fallback and unchanged standalone/embedded HandNet
+checks passed. Non-Hebrew content-index values match the previous revision.
+The four changed Markdown guides render with GitHub GFM and their relative
+links resolve. README setup/counts were reviewed and need no change. These
+are website checks; no application or speech-recognition test was performed.
+
 ## Current student-project update — 2026-11-17
 
 Current index: 26 student projects, 16 repositories with historical source or pinned public upstream, 19 publications and 14 Code & Data entries. Earlier dated counts below describe earlier snapshots. TermiNet adds Itai Caspi's Spring 2016 work (GIP listing 2017), an unchanged public source subset and fixed original upstream, plus a new browser policy lab and historical playback. It does not run the legacy model. Original GIP animation bytes match the private final-submission image; private archive/report/slides stay private. The site retains generic content and unchanged navigation/runtime. Student demo resource links will be verified before publication and distinguish illustrations, saved-output viewers and algorithm execution. GrayOwl stays source-free with no runnable-demo addition.

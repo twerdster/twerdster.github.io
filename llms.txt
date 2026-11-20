@@ -119,7 +119,7 @@ TermiNet, added 2026-11-17: https://twerdster.github.io/#terminet; Itai Caspi, s
 
 ## Updated interactive student demos — 2026-11-17
 
-Each of the 25 projects other than source-withdrawn GrayOwl has an updated browser demo. A demo may be a saved-output viewer, a synthetic component exercise or a new implementation; it does not imply a recovered historical app builds. Detailed scopes and browser checks are in each repository. GrayOwl retains documentation only.
+There are 24 updated browser demos among the 26 student projects. GrayOwl and Hebrew Speech Recognition on iPad retain historical documentation only. A demo may be a saved-output viewer, a synthetic component exercise or a new implementation; it does not imply a recovered historical app builds. Detailed scopes and browser checks are in each repository.
 
 - Mobile Point Fusion: https://twerdster.github.io/mobile-point-fusion/ (interactive saved output viewer)
 - Freehand Voxel Carving Scanning on a Mobile Device: https://twerdster.github.io/freehand-voxel-carving/ (interactive saved output viewer)
@@ -127,7 +127,6 @@ Each of the 25 projects other than source-withdrawn GrayOwl has an updated brows
 - Augmented Reality Posters: https://twerdster.github.io/augmented-reality-posters/ (new project specific demonstration)
 - QR code applications on Android: https://twerdster.github.io/android-qr-applications/ (new project specific demonstration)
 - Smartphone Game: https://twerdster.github.io/smartphone-game/ (new project specific demonstration)
-- Hebrew Speech Recognition on iPad: https://twerdster.github.io/hebrew-speech-ipad/ (new project specific demonstration)
 - 3D Stereo Reconstruction using iPhones: https://twerdster.github.io/iphone-stereo-reconstruction/ (new project specific demonstration)
 - Marker tracking: https://twerdster.github.io/marker-tracking/ (interactive saved output viewer)
 - Predator TLD on iOS: https://twerdster.github.io/predator-tld-ios/ (interactive saved output viewer)
