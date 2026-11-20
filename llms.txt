@@ -119,7 +119,7 @@ TermiNet, added 2026-11-17: https://twerdster.github.io/#terminet; Itai Caspi, s
 
 ## Updated interactive student demos — 2026-11-17
 
-There are 24 updated browser demos among the 26 student projects. GrayOwl and Hebrew Speech Recognition on iPad retain historical documentation only. A demo may be a saved-output viewer, a synthetic component exercise or a new implementation; it does not imply a recovered historical app builds. Detailed scopes and browser checks are in each repository.
+There are 23 updated browser demos among the 26 student projects. GrayOwl and Hebrew Speech Recognition on iPad retain historical documentation only. Hand tracking retains its recovered original source and historical materials without updated browser code. A demo may be a saved-output viewer, a synthetic component exercise or a new implementation; it does not imply a recovered historical app builds. Detailed scopes and browser checks are in each repository.
 
 - Mobile Point Fusion: https://twerdster.github.io/mobile-point-fusion/ (interactive saved output viewer)
 - Freehand Voxel Carving Scanning on a Mobile Device: https://twerdster.github.io/freehand-voxel-carving/ (interactive saved output viewer)
@@ -131,7 +131,6 @@ There are 24 updated browser demos among the 26 student projects. GrayOwl and He
 - Marker tracking: https://twerdster.github.io/marker-tracking/ (interactive saved output viewer)
 - Predator TLD on iOS: https://twerdster.github.io/predator-tld-ios/ (interactive saved output viewer)
 - 3D Volume Carving on iPhone: https://twerdster.github.io/iphone-volume-carving/ (interactive saved output viewer)
-- Hand tracking: https://twerdster.github.io/hand-tracking-pmd/ (new project specific demonstration)
 - OpenFusion: https://twerdster.github.io/openfusion/ (interactive saved output viewer)
 - CamPong: https://twerdster.github.io/campong/ (new project specific demonstration)
 - Face Depth Estimation from a Single Color Image: https://twerdster.github.io/face-depth-estimation-from-a-single-color-image/ (synthetic feature component)

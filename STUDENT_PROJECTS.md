@@ -19,7 +19,7 @@ The current directory contains 26 projects. Detailed recovery, installation, con
 | Marker tracking | [marker-tracking](https://github.com/twerdster/marker-tracking) | Recovered classifier-tree port with recorded native checks; browser video/frame viewer does not rerun tracking |
 | Predator TLD on iOS | [predator-tld-ios](https://github.com/twerdster/predator-tld-ios) | Pinned original and repaired native tracking/detection/learning replay; saved-result browser viewer; no live capture |
 | 3D Volume Carving on iPhone | [iphone-volume-carving](https://github.com/twerdster/iphone-volume-carving) | Partial original plus carving compatibility harness; recorded supplied-calibration replay and geometry viewer |
-| Hand tracking | [hand-tracking-pmd](https://github.com/twerdster/hand-tracking-pmd) | Nine MATLAB/C++ files, June report and unfinished April slides; original PMD app unbuilt; new synthetic depth illustration |
+| Hand tracking | [hand-tracking-pmd](https://github.com/twerdster/hand-tracking-pmd) | Nine original MATLAB/C++ files, June report, unfinished April slides and historical video; original PMD app unbuilt; no updated code or browser demo |
 | OpenFusion | [openfusion](https://github.com/twerdster/openfusion) | Pinned original and corrected Linux/CUDA recorded-depth replay; browser inspects saved outputs |
 | CamPong | [campong](https://github.com/twerdster/campong) | Report, poster, slides and overview; original Pong code missing; separate new pointer/camera Pong demo |
 | Face Depth Estimation from a Single Color Image | [face-depth-estimation-from-a-single-color-image](https://github.com/twerdster/face-depth-estimation-from-a-single-color-image) | Three original MATLAB scripts; maintained feature components and synthetic browser exercise; no trained color-to-depth estimator |
@@ -47,7 +47,6 @@ The current directory contains 26 projects. Detailed recovery, installation, con
 - [Marker tracking](https://twerdster.github.io/marker-tracking/) — interactive saved output viewer; [scope and checks](https://github.com/twerdster/marker-tracking#updated).
 - [Predator TLD on iOS](https://twerdster.github.io/predator-tld-ios/) — interactive saved output viewer; [scope and checks](https://github.com/twerdster/predator-tld-ios#updated).
 - [3D Volume Carving on iPhone](https://twerdster.github.io/iphone-volume-carving/) — interactive saved output viewer; [scope and checks](https://github.com/twerdster/iphone-volume-carving#updated).
-- [Hand tracking](https://twerdster.github.io/hand-tracking-pmd/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/hand-tracking-pmd#updated).
 - [OpenFusion](https://twerdster.github.io/openfusion/) — interactive saved output viewer; [scope and checks](https://github.com/twerdster/openfusion#updated).
 - [CamPong](https://twerdster.github.io/campong/) — new project specific demonstration; [scope and checks](https://github.com/twerdster/campong#updated).
 - [Face Depth Estimation from a Single Color Image](https://twerdster.github.io/face-depth-estimation-from-a-single-color-image/) — synthetic feature component; [scope and checks](https://github.com/twerdster/face-depth-estimation-from-a-single-color-image#updated).

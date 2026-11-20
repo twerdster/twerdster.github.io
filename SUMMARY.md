@@ -1,5 +1,23 @@
 # Academic website: maintenance state
 
+## Hand tracking original-materials scope — 2026-11-20
+
+Removed Hand tracking’s separately authored browser-demo link and updated-demo
+metadata from the homepage, content index and resource guides. Sa’ar Zehavi’s
+historical card, description, image, recovered original source, report, draft
+slides, video and repository links remain unchanged. The current directory has
+23 student demo links among 26 projects; historical source counts and all other
+project records are unchanged. Earlier dated 24/25-demo records describe older
+snapshots. README setup/counts, site runtime, styles and figures need no change.
+
+Focused Chrome checks at 390/1440-pixel widths passed with JavaScript enabled
+and disabled: Hand tracking’s credits, description, 184×115 thumbnail and five
+historical/repository links remain; only the new browser-demo link is gone.
+All other content-index values match the previous revision, and there are 23
+updated-demo records. The four changed Markdown guides render with GitHub GFM
+and their relative links resolve. No runtime, style, application or original
+source changes are part of this website update.
+
 ## Hebrew Speech historical-only scope — 2026-11-20
 
 Hebrew Speech Recognition on iPad now retains only its historical description,
